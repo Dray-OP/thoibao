@@ -1,0 +1,27 @@
+{
+  "id": 0,									x
+  "code": "string",							x
+  "name": "string",							x
+  "birthday": "2021-03-23T07:59:18.149Z",	x
+  "gender": 0,								x
+  "districtId": 0,							x
+  "address": "string",						x	lấy từ groupID = 110
+  "nation": 0,													108
+  "curator": 0,	
+  "phone": "string",						x		
+  "gmail": "string",						x
+  "facebook": "string",
+  "originCustomer": "string",				x
+  "skype": "string",						
+  "description": "string",
+  "customerType": 0,
+  "totalRecord": 0,
+  "isDeleted": true
+}
+
+
+select*from [dbo].[System_MasterData] where groupid = 110
+
+groupid = 110;	tỉnh thành
+groupid = 108; quốc gia
+select * from [dbo].[Data_Customer] where [name] =N'Hồ Long Nhật'
