@@ -2,10 +2,15 @@ $grey1: #222222;
 $grey2: #444444;
 $grey3: #666666;
 $grey4: #999999;
-$grey5: #C6C6C6;
-$grey6: #DEDEDE;
-$grey7: #F5F5F5;
-$red: #EC0001;
+$grey5: #c6c6c6;
+$grey6: #dedede;
+$grey7: #f5f5f5;
+$red: #ec0001;
+@mixin w970VsCenter {
+    width: 970px;
+    margin: 0 auto;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +19,7 @@ $red: #EC0001;
 @font-face {
     font-family: Roboto;
     src: url(../fonts/Roboto-Medium.ttf);
-  }
+}
 @font-face {
     font-family: Roboto-bold;
     src: url(../fonts/Roboto-Bold.ttf);
@@ -23,58 +28,56 @@ $red: #EC0001;
     font-family: Roboto-regular;
     src: url(../fonts/Roboto-Regular.ttf);
 }
-h1{
+h1 {
     font-size: 28px;
     line-height: 34px;
     font-family: "Roboto-bold";
 }
-h2{
+h2 {
     font-size: 24px;
     line-height: 30px;
     font-family: "Roboto-bold";
 }
-h3{
+h3 {
     font-size: 20px;
     line-height: 26px;
     font-family: "Roboto-bold";
 }
-h4{
+h4 {
     font-size: 18px;
     line-height: 23px;
     font-family: "Roboto-bold";
 }
-h5{
+h5 {
     font-size: 16px;
     line-height: 22px;
     font-family: "Roboto-bold";
 }
-h6{
+h6 {
     font-size: 14px;
     line-height: 20px;
     font-family: "Roboto-regular";
 }
-.h6-Bold{
+.h6-bold {
     font-size: 14px;
     line-height: 20px;
     font-family: "Roboto-bold";
 }
-.h7{
+.h7 {
     font-size: 13px;
     line-height: 19px;
     font-family: "Roboto-regular";
 }
-.h7-Bold{
+.h7-bold {
     font-size: 13px;
     line-height: 19px;
     font-family: "Roboto-bold";
 }
-.h8{
+.h8 {
     font-size: 12px;
     line-height: 15px;
     font-family: "Roboto-regular";
 }
-
-
 
 a {
     color: $grey1;
@@ -90,6 +93,28 @@ body {
 }
 
 #footer {
+    
+    .top-footer {
+        background-color: $grey6;
+        height: 50px;
+        line-height: 50px;
+        justify-content: space-between;
+        .top-footer-left {
+            display: flex;
+            .box-icon {
+                img {
+                    background-color: $grey4;
+                    padding: 5px;
+                    border-radius: 3px;
+                    margin-right: 10px;
+                    margin-left: 15px;
+                }
+            }
+        }
+        .top-footer-right {
+            display: flex;
+        }
+    }
     .mid-footer {
         background-color: $grey7;
         .row > div {
@@ -121,4 +146,32 @@ body {
             color: $grey2;
         }
     }
+}
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+    #footer {
+        .top-footer {
+            @include w970VsCenter;
+        }
+        .mid-footer{
+            @include w970VsCenter;
+            h6{
+                font-family: "Roboto-bold";
+            }
+            .row > div {
+                h6 {
+                    padding-bottom: 0;
+                }
+            }
+        }
+        
+    }
+}
+
+@media (min-width: 1200px) {
 }
