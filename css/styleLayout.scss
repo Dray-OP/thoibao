@@ -105,7 +105,9 @@ li {
 body {
     font-family: "Roboto";
 }
-
+.n-icon-hide{
+    display:none;
+}
 .bg-top-footer {
     background-color: $grey6;
 }
@@ -114,6 +116,48 @@ body {
     background-color: $grey7;
 
 }
+/* Styles for wrapping the search box */
+
+.main {
+    width: 50%;
+    margin: 50px auto;
+}
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+#header{
+    .navbar{
+        height: 54px;
+    }
+    .logo{
+        width: 116px;
+        height: 35px;
+        img{
+            width:100%;
+        }
+    }
+    .user-icon{
+        // filter: grayscale(100%);
+    }
+}
+
+
 
 #footer {
 

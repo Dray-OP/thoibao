@@ -88,3 +88,11 @@ wow.init();
 //     this.parentNode.insertBefore(section, this);
 // };
 
+$(".n-icon-show").on("click", function(){
+    $(".n-icon-show").css({'display': 'none'})
+    $(".n-icon-hide").css({'display': 'block'})
+})
+$(".n-icon-hide").on("click", function(){
+    $(".n-icon-show").css({'display': 'block'})
+    $(".n-icon-hide").css({'display': 'none'})
+})

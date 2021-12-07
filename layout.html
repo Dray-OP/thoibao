@@ -26,17 +26,78 @@
 <body>
     <!-- header -->
     <section id="header">
-        <div class="header-right">
-            <h1></h1>
-        </div>
-        <div class="header-left">
-            <div class="header-left-icon">
-
+        <nav class="navbar navbar-expand-md  bg-light">
+            <div class="d-flex">
+                <div class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarN" aria-controls="navbarN" aria-expanded="false" aria-label="Toggle navigation">
+                    <img class="n-icon-show" src="./images/Icon_menu.png" alt="">
+                    <img class="n-icon-hide" src="./images/icon_close.png" style=" width: 18px; height: 18px;filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);" alt="">
+                </div>
+               <div class="logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
             </div>
-            <div class="header-left-search">
-
+            
+            <a class="navbar-brand user-icon" href="#">
+                <img class="d-none d-md-block" src="./images/User.png" alt="">
+                <img class="d-md-none" src="./images/fa-solid_user.png" alt="">
+            </a>
+           
+          
+            <div class="collapse navbar-collapse" id="navbarN">
+                <form class="form-inline my-2 my-lg-0">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm">
+                        <div class="input-group-append">
+                          <button class="btn btn-default" type="button">
+                            <i class="fa fa-search"></i>
+                          </button>
+                        </div>
+                      </div>
+                  </form>
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Thời sự</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tài chính</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Chứng khoán</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Bất động sản</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Doanh nghiệp</a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-light  btn-block">
+                        <img src="./images/Icon_computer.png" alt="">
+                        Phiên bản máy tính
+                    </button>
+                    <button type="button" class="btn btn-secondary  btn-block">
+                        <img src="./images/icon_send.png" style="color:white" alt="">
+                        Liên hệ quảng cáo
+                    </button>
+                </li>
+              </ul>
+              
             </div>
-        </div>
+          </nav>
     </section>
     <!-- end header -->
     <!-- nav -->
@@ -57,7 +118,7 @@
 
     <!-- content is here -->
 
-    <section id="footer">
+    <!-- <section id="footer">
         <div class="bg-top-footer">
             <div class="top-footer d-none d-md-flex">
                 <div class="top-footer-left">
@@ -265,7 +326,7 @@
             </div>
         </div>
         </footer>
-
+    </section> -->
 
         <!-- bootstrap 4 -->
         <script src="./js/jquery.min.js"></script>
