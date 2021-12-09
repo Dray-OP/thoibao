@@ -4,12 +4,12 @@ $(".banner-regular").slick({
     slidesToShow: 1,
     slidesToScroll: 1
 });
-$(".the-face-regular").slick({
+$(".video-regular").slick({
     dots: true,
     infinite: true,
     speed: 300,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     responsive: [
         {
         breakpoint: 1024,
@@ -30,7 +30,7 @@ $(".the-face-regular").slick({
         {
         breakpoint: 480,
         settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1
         }
         }
@@ -39,33 +39,33 @@ $(".the-face-regular").slick({
         // instead of a settings object
     ]
 });
-$(".logos-company-regular").slick({
-    dots: false,
+$(".typical-products-regular").slick({
+    dots: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 5,
+    slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
         {
         breakpoint: 1024,
         settings: {
-            slidesToShow: 5,
+            slidesToShow: 3,
             slidesToScroll: 1,
             infinite: true,
-            dots: false
+            dots: true
         }
         },
         {
         breakpoint: 600,
         settings: {
-            slidesToShow: 3,
+            slidesToShow: 2,
             slidesToScroll: 1
         }
         },
         {
         breakpoint: 480,
         settings: {
-            slidesToShow: 3,
+            slidesToShow: 2,
             slidesToScroll: 1
         }
         }

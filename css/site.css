@@ -4,3 +4,44 @@ nav.navbar.navbar-expand-md.nav-header {
 div#navbarN {
     background: white;
 }
+
+#typical-products .slick-prev,
+#typical-products .slick-next
+{
+    display:none !important;
+}
+
+.slick-slide {
+    margin: 0 15px ;
+}
+.slick-track{
+    margin: 0 -15px ;
+
+}
+
+.slick-dots li button{
+    border: 0;
+    background: transparent;
+    display: block;
+    height: 20px;
+    width: 20px;
+    outline: none;
+    line-height: 0px;
+    font-size: 0px;
+    color: transparent;
+    padding: 5px;
+    cursor: pointer;
+}
+.slick-dots li.slick-active button:before{
+    color: red;
+    opacity: 0.75;
+    font-size: 23px;
+    border:0;
+    line-height: 23px;
+}
+.slick-dots li button:before{
+    font-size: 5px;
+    color: #fff;
+    border: 1px solid gray;
+    border-radius: 100%;
+}

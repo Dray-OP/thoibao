@@ -1,13 +1,33 @@
 @import 'variable';
 
+@mixin w970VsCenter {
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+@mixin wAutoVsCenter {
+    width: auto;
+    margin: 0 auto;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-section{
+
+img {
+    width: 100%;
+}
+
+section {
     margin-top: 30px;
 }
+
+.box-header {
+    color: $red;
+}
+
 .no-gutters {
     margin-right: 0;
     margin-left: 0;
@@ -19,20 +39,72 @@ section{
     }
 }
 
+.slick-next {
+    left: 88%;
+}
+
+.slick-prev {
+    left: 20px;
+    z-index: 9;
+}
+
 .n-btn-red {
     color: #fff;
     background-color: $red;
     padding: 8px 20px 8px 20px;
+    border-radius: 2px;
+}
+.n-color-red { color: $red; }
+.n-btn-light {
+    color: $grey3;
+    background-color: $grey7;
+    padding: 8px 20px 8px 20px;
+    border-radius: 2px;
 }
 
-@mixin w970VsCenter {
-    max-width: 970px;
-    margin: 0 auto;
+.heading-category {
+    text-transform: uppercase;
+
+    .heading {
+        margin: 40px 0;
+        position: relative;
+        background-color: $red;
+        height: 1px;
+        width: 100%;
+    }
+
+    .heading-content {
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        transform: translate(50%, -50%);
+    }
 }
 
-@mixin wAutoVsCenter {
-    width: auto;
-    margin: 0 auto;
+.heading-category-2 {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    padding-top: 20px;
+    align-items: center;
+    color: $white;
+
+    .heeding-line {
+        background-color: $white;
+        height: 1px;
+        width: 100px;
+    }
+
+    .heading-content {
+        margin: 0 20px;
+        span{
+            font-size:12px;
+            border: 1px solid #fff;
+            border-radius: 100%;
+            padding: 3px
+        }
+    }
 }
 
 .n-icon-hide {
@@ -76,6 +148,7 @@ section{
     pointer-events: none;
     color: #aaa;
 }
+
 .box {
     .box-img {
         img {
@@ -84,6 +157,7 @@ section{
         }
     }
 }
+
 #header {
     .navbar {
         height: 54px;
@@ -98,9 +172,7 @@ section{
         }
     }
 
-    .user-icon {
-        // filter: grayscale(100%);
-    }
+
 
 }
 
@@ -126,7 +198,6 @@ section{
         padding: 15px;
         background-color: $grey7;
 
-        .container-fluid {}
 
         .box-news {
             .box-header {
@@ -195,35 +266,281 @@ section{
     }
 }
 
+#finance,#video,
+#enterprise {
+    .finance-main {
+        .content-main {
+            border-bottom: 1px dotted $grey6;
+        }
 
-.heading-category{
-    .heading{
-        margin: 20px 0;
-        position: relative;
-        background-color: $red;
-        height: 1px;
-        width: 100%;
-    }
-    .heading-content{
-        position:absolute;
-        right: 50%;
-        top: 50%;
-        transform: translate(50%, -50%);
+        .finance-main-top {
+            .box-news-child {
+                display: flex;
+                padding: 10px 0 10px 0;
+                border-bottom: 1px dotted $grey6;
+
+                .box-news-child-image {
+                    width: 50%;
+                }
+
+                .box-news-child-content {
+                    width: 50%;
+                    padding-left: 10px;
+                }
+            }
+
+            .box-news-child:last-child {
+                border-bottom: 0;
+            }
+        }
+
+        .finance-main-bottom {
+            padding-left: 15px;
+
+            .box-header {
+                color: $red;
+            }
+
+            .finance-main-top {
+                .box-news-child {
+                    display: flex;
+                    padding: 10px 0 10px 0;
+                    border-bottom: 1px dotted $grey6;
+
+                    .box-news-child-image {
+                        width: 50%;
+                    }
+
+                    .box-news-child-content {
+                        width: 50%;
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+
+        .box-ads {
+            padding-right: 15px;
+            margin: 40px 0 20px 0;
+        }
     }
 }
-#thoi-su{
-    @include w970VsCenter;
-    .thoi-su-main {
-        margin-top:40px;
+
+#stock {
+    .stock-main {
+        .box-header {
+            margin-top: 20px;
+        }
+
+        .box-stock {
+            border-bottom: 1px dotted $grey6;
+            padding: 10px 0;
+
+            .box-stock-child {
+
+                display: flex;
+
+                .box-stock-child-image {
+                    width: 30%;
+                }
+
+                .box-stock-child-content {
+                    width: 70%;
+                    padding-left: 10px;
+                }
+            }
+        }
+
+        .box-stock:last-child {
+            margin-bottom: 10px;
+            border-bottom: 0;
+        }
+
+        .form-vat {
+            border: 1px solid $grey6;
+            padding: 15px 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
     }
 
 }
 
+#real-estate {
+    .real-estate-main {
+        .content-main {
+            border-bottom: 1px dotted $grey6;
+        }
 
+        .real-estate-main-top {
+            .box-news-child {
+                display: flex;
+                padding: 10px 0 10px 0;
+                border-bottom: 1px dotted $grey6;
 
+                .box-news-child-image {
+                    width: 50%;
+                }
 
+                .box-news-child-content {
+                    width: 50%;
+                    padding-left: 10px;
+                }
+            }
 
+        }
 
+        .real-estate-main-bottom {
+            padding-left: 15px;
+
+            .box-header {
+                color: $red;
+            }
+
+            .real-estate-main-top {
+                .box-news-child {
+                    display: flex;
+                    padding: 10px 0 10px 0;
+                    border-bottom: 1px dotted $grey6;
+
+                    .box-news-child-image {
+                        width: 50%;
+                    }
+
+                    .box-news-child-content {
+                        width: 50%;
+                        padding-left: 10px;
+                    }
+                }
+
+            }
+        }
+
+        .box-ads {
+            padding-right: 15px;
+            margin: 40px 0 20px 0;
+        }
+
+        .box-image.d-md-none {
+            padding: 20px;
+        }
+    }
+}
+
+#image {
+    background: $grey2;
+    color: $white;
+
+    .image-main {
+        .content-main {
+            border-bottom: 1px dotted $grey6;
+        }
+
+        .image-main-top {
+            .box-news-child {
+                display: flex;
+                padding: 10px 0 10px 0;
+                border-bottom: 1px dotted $grey6;
+
+                .box-news-child-image {
+                    width: 50%;
+                }
+
+                .box-news-child-content {
+                    width: 50%;
+                    padding-left: 10px;
+                }
+            }
+
+        }
+
+        .image-main-bottom {
+            padding-left: 15px;
+
+            .box-header {
+                color: $red;
+            }
+
+            .image-main-top {
+                .box-news-child {
+                    display: flex;
+                    padding: 10px 0 10px 0;
+                    border-bottom: 1px dotted $grey6;
+
+                    .box-news-child-image {
+                        width: 50%;
+                    }
+
+                    .box-news-child-content {
+                        width: 50%;
+                        padding-left: 10px;
+                    }
+                }
+
+            }
+        }
+
+        .box-ads {
+            padding-right: 15px;
+            margin: 40px 0 20px 0;
+        }
+
+        .box-image.d-md-none {
+            padding: 20px;
+        }
+    }
+}
+
+#cooperative, #startup {
+    .box {
+        display: flex;
+        border-bottom: 1px dashed $grey6;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+
+        .box-image {
+            width: 50%;
+        }
+
+        .box-title {
+            padding-left: 10px;
+            width: 50%;
+        }
+    }
+
+    .col-md-3:last-child {
+        .box {
+            border: 0;
+        }
+    }
+}
+#business{
+    background-color: $grey2;
+    color:#fff;
+    padding-bottom: 40px;
+    .slick-prev, .slick-next{
+        display:none !important;
+    }
+    .slick-list.draggable {
+        margin: 0 15px;
+    }
+    .slick-dots li.slick-active button:before{
+        color: $red;
+        border: 0;
+
+    }
+    .slick-dots li button:before{
+        color:$grey2;
+        border: 1px solid #fff;
+
+    }
+    // .slick-slide{
+    //     margin: 0;
+    // }
+    // .box-news-child{
+    //     margin: 0 15px;
+    // }
+}
 
 #footer {
 
@@ -302,8 +619,7 @@ section{
 @media (min-width: 576px) {}
 
 @media (min-width: 768px) {
-
-
+  
     #header {
         .top-header {
             @include w970VsCenter;
@@ -314,7 +630,6 @@ section{
                 display: flex;
                 align-items: center;
 
-                input.form-control {}
             }
 
             button.btn.btn-light {
@@ -348,6 +663,7 @@ section{
     #first-content {
         @include w970VsCenter;
         margin-top: 20px;
+
         .box-header {
             h4 {
                 padding-left: 10px;
@@ -358,12 +674,8 @@ section{
             padding: 15px;
         }
 
-        .container-fluid {
-            // padding: 0;
-        }
-
         .right-first-content {
-            background-color: $bg-white;
+            background-color: $white;
             border: 1px solid $grey6;
         }
 
@@ -407,7 +719,8 @@ section{
             }
 
         }
-        .box-top-views{
+
+        .box-top-views {
             border: 1px solid $grey6;
             padding: 10px;
             margin-top: 20px;
@@ -423,19 +736,22 @@ section{
 
             .box-main {
                 .box-main-content {
-                    .box-main-content-child{
-                        padding-top:15px;
+                    .box-main-content-child {
+                        padding-top: 15px;
                         display: flex;
                         border-bottom: 1px dotted $grey6;
-                        h2{
+
+                        h2 {
                             color: $grey6;
-                            padding:0 10px;
+                            padding: 0 10px;
                         }
-                        h6{
+
+                        h6 {
                             color: $grey1;
                         }
                     }
-                    .box-main-content-child:last-child{
+
+                    .box-main-content-child:last-child {
                         border-bottom: 0px;
 
                     }
@@ -444,14 +760,187 @@ section{
         }
     }
 
+    #thoi-su,
+    #hi-tech,
+    #live {
+        @include w970VsCenter;
+
+        .thoi-su-main {
+            margin-top: 40px;
+        }
+
+    }
+
+    #finance,#video,
+    #enterprise {
+        @include w970VsCenter;
+
+        .finance-main {
+            .content-main {
+                border: 0;
+
+                .box-title {
+                    h3 {
+                        font-size: 24px;
+                        line-height: 30px;
+                        font-family: "Roboto-bold";
+                    }
+
+                }
+            }
+
+            .finance-main-top {
+                border-bottom: 1px solid $grey6;
+            }
+
+            .finance-main-bottom {
+                padding-left: 0;
+            }
+        }
 
 
+    }
+
+    #stock {
+        @include w970VsCenter;
+
+        .stock-main {
+            .box-header {
+                margin-top: 20px;
+            }
+
+            .box-stock {
+                border-bottom: 1px dotted $grey6;
+                padding: 10px 0;
+
+                .box-stock-child {
+
+                    display: flex;
+
+                    .box-stock-child-image {
+                        width: 30%;
+                    }
+
+                    .box-stock-child-content {
+                        width: 70%;
+                        padding-left: 10px;
+                    }
+                }
+            }
+
+            .box-stock:last-child {
+                margin-bottom: 10px;
+                border-bottom: 0;
+            }
+
+            .form-vat {
+                border: 1px solid $grey6;
+                padding: 15px 20px;
+                margin-top: 0px;
+                margin-bottom: 10px;
+            }
+
+            .col-md-6:last-child {
+                border-left: 1px dotted $grey6;
+
+            }
+        }
+
+    }     
+
+    #real-estate {
+        @include w970VsCenter;
+
+        .real-estate-main {
+            .content-main {
+                border: 0;
+            }
+
+            .finance-main-top {
+                border-bottom: 1px solid $grey6;
+            }
+
+            .finance-main-bottom {
+                padding-left: 0;
+            }
+        }
+    }
+
+    #image {
+        @include w970VsCenter;
+
+        .image-main {
+            padding-left: 15px;
+
+            .content-main {
+                border: 0;
+            }
+
+            .image-main-top {
+                border-bottom: 1px solid $grey6;
+
+                .box-news-child:first-child {
+                    padding-top: 0;
+                }
+            }
+
+        }
+    }
+
+    #cooperative , #startup {
+        @include w970VsCenter;
+        .box {
+            display: inherit;
+            border-bottom: 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
+
+            .box-image {
+                width: auto;
+            }
+
+            .box-title {
+                padding-left: 0;
+                width: auto;
+            }
+        }
+
+        .col-md-6 {
+            .box-title {
+                h5 {
+                    font-size: 20px;
+                    line-height: 26px;
+                    font-family: "Roboto-bold";
+                }
+            }
+        }
+
+        .col-md-3:last-child {
+            .box {
+                border: 0;
+            }
+        }
+    }
+    #business{
+        @include w970VsCenter;
+    }
 
 
 
     #footer {
         .top-footer {
             @include w970VsCenter;
+
+            .top-footer-left {
+                .box-icon {
+                    margin-left: 0;
+
+                    img {
+                        width: auto;
+                        margin-left: 0;
+                    }
+                }
+            }
         }
 
         .mid-footer {
