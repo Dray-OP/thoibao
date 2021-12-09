@@ -1,0 +1,100 @@
+$grey1: #222222;
+$grey2: #444444;
+$grey3: #666666;
+$grey4: #999999;
+$grey5: #c6c6c6;
+$grey6: #dedede;
+$grey7: #f5f5f5;
+$red: #ec0001;
+$bg-white: #ffffff;
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: Roboto-bold;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Roboto-regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+h1 {
+    font-size: 28px;
+    line-height: 34px;
+    font-family: "Roboto-bold";
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 30px;
+    font-family: "Roboto-bold";
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 26px;
+    font-family: "Roboto-bold";
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 23px;
+    font-family: "Roboto-bold";
+}
+
+h5 {
+    font-size: 16px;
+    line-height: 22px;
+    font-family: "Roboto-bold";
+}
+
+h6 {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Roboto-regular";
+}
+
+.h6-bold {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Roboto-bold";
+}
+
+.h7 {
+    font-size: 13px;
+    line-height: 19px;
+    font-family: "Roboto-regular";
+}
+
+.h7-bold {
+    font-size: 13px;
+    line-height: 19px;
+    font-family: "Roboto-bold";
+}
+
+.h8 {
+    font-size: 12px;
+    line-height: 15px;
+    font-family: "Roboto-regular";
+}
+
+a {
+    color: $grey1;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: "Roboto";
+}
+
+.n-color-red{
+    color:$red;
+}

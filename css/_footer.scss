@@ -1,0 +1,120 @@
+
+#footer {
+
+    .top-footer {
+        background-color: $grey6;
+        height: 50px;
+        line-height: 50px;
+        justify-content: space-between;
+
+        .top-footer-left {
+            display: flex;
+
+            .box-icon {
+                img {
+                    background-color: $grey4;
+                    padding: 5px;
+                    border-radius: 3px;
+                    margin-right: 10px;
+                    margin-left: 15px;
+                }
+            }
+        }
+
+        .top-footer-right {
+            display: flex;
+        }
+    }
+
+    .mid-footer {
+        background-color: $grey7;
+
+        .row>div {
+            border-bottom: 1px dashed #dedede;
+
+            h6 {
+                padding: 10px 0;
+            }
+        }
+        .mid-footer-child{
+            display:none;
+        }
+    }
+
+    .bot-footer {
+        .bot-footer-logo {
+            margin: 15px;
+            
+        }
+
+        .bot-footer-icons {
+            display:flex;
+           
+        }
+    }
+
+    .bot-footer-content {
+        > div{
+            margin-bottom: 10px;
+        }
+        margin: 15px;
+    }
+
+    .bot-footer-btn {
+        margin: 0 15px;
+        background-color: $grey7;
+        text-align: center;
+
+        a {
+            color: $grey2;
+        }
+    }
+}
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+ 
+
+
+    #footer {
+        .top-footer {
+            @include w970VsCenter;
+        }
+
+        .mid-footer {
+            @include w970VsCenter;
+            padding: 20px 0 24px 0;
+            .row>div {
+                border-bottom: 0 ;
+                h6 {
+                    padding-bottom: 0;
+                    color: red;
+                    font-family: "Roboto-bold";
+
+                }
+            }
+            .mid-footer-child{
+                display:block;
+            }
+        }
+        .bot-footer{
+            @include w970VsCenter;
+            display:flex;
+            justify-content: space-between;
+            .bot-footer-icons{
+                display: none;
+            }
+            .bot-footer-content{
+                display: flex;
+            }
+        }
+    }
+
+
+
+
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}

@@ -25,55 +25,101 @@
 
 <body>
     <!-- header -->
-    <section id="header">
-        <nav class="navbar navbar-expand-md  bg-light">
-            <div class="d-flex">
-                <div class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarN" aria-controls="navbarN" aria-expanded="false" aria-label="Toggle navigation">
-                    <img class="n-icon-show" src="./images/Icon_menu.png" alt="">
-                    <img class="n-icon-hide" src="./images/icon_close.png" style=" width: 18px; height: 18px;filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);" alt="">
+    <header id="header">
+        <div class="top-header d-none d-md-flex">
+            <div class="top-header-logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div class="top-header-icons">
+                <div class="box-icon">
+                    <a href="" title=""><img src="./images/icons/FB.png" alt=""></a>
                 </div>
-               <div class="logo">
+                <div class="box-icon">
+                    <a href="" title=""><img src="./images/icons/Twitter.png" alt=""></a>
+                </div>
+                <div class="box-icon">
+                    <a href="" title=""><img src="./images/icons/G+.png" alt=""></a>
+                </div>
+                <div class="box-icon">
+                    <a href="" title=""><img src="./images/icons/Linkedin.png" alt=""></a>
+                </div>
+                <div class="box-icon">
+                    <a href="" title=""><img src="./images/icons/Mail.png" alt=""></a>
+                </div>
+                <div class="box-icon box-search">
+                    <div class="input-group">
+                        <input type="text" class="form-control bg-light" placeholder="Tìm kiếm">
+                        <div class="input-group-append">
+                            <button class="btn btn-light" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-icon">
+                    <a href="" title=""><img class="d-none d-md-block" src="./images/User.png" alt=""></a>
+                </div>
+            </div>
+
+
+            <div class="bot-footer-btn d-md-none">
+                <a href="" title="" class="btn ">Trở về phiên bản máy tính</a>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-md nav-header">
+            <div class="d-flex">
+                <div class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarN"
+                    aria-controls="navbarN" aria-expanded="false" aria-label="Toggle navigation">
+                    <img class="n-icon-show" src="./images/Icon_menu.png" alt="">
+                    <img class="n-icon-hide" src="./images/icon_close.png"
+                        style=" width: 18px; height: 18px;filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);"
+                        alt="">
+                </div>
+                <div class="logo d-md-none">
                     <img src="./images/logo.png" alt="">
                 </div>
             </div>
-            
-            <a class="navbar-brand user-icon" href="#">
-                <img class="d-none d-md-block" src="./images/User.png" alt="">
-                <img class="d-md-none" src="./images/fa-solid_user.png" alt="">
+
+            <a class="navbar-brand user-icon d-md-none" href="#">
+                <!-- <img class="d-none d-md-block" src="./images/User.png" alt=""> -->
+                <img class="" src="./images/fa-solid_user.png" alt="">
             </a>
-           
-          
+
+
             <div class="collapse navbar-collapse" id="navbarN">
-                <form class="form-inline my-2 my-lg-0">
+                <form class="form-inline my-2 my-lg-0 d-md-none">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Tìm kiếm">
                         <div class="input-group-append">
-                          <button class="btn btn-default" type="button">
-                            <i class="fa fa-search"></i>
-                          </button>
+                            <button class="btn btn-default" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
                         </div>
-                      </div>
-                  </form>
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Trang chủ</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Thời sự</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Tài chính</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Chứng khoán</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Bất động sản</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Doanh nghiệp</a>
-                  </li>
-                <li class="nav-item dropdown">
+                    </div>
+                </form>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link d-none d-md-block" href="#">
+                            <img src="./images/icon_home.png" alt="">
+                        </a>
+                        <a class="nav-link d-md-none" href="#">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Thời sự</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tài chính</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Chứng khoán</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Bất động sản</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Doanh nghiệp</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Dropdown
                   </a>
@@ -83,43 +129,435 @@
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Something else here</a>
                   </div>
-                </li>
-                <li class="nav-item">
-                    <button type="button" class="btn btn-light  btn-block">
-                        <img src="./images/Icon_computer.png" alt="">
-                        Phiên bản máy tính
-                    </button>
-                    <button type="button" class="btn btn-secondary  btn-block">
-                        <img src="./images/icon_send.png" style="color:white" alt="">
-                        Liên hệ quảng cáo
-                    </button>
-                </li>
-              </ul>
-              
+                </li> -->
+                    <li class="nav-item d-md-none">
+                        <button type="button" class="btn btn-light  btn-block">
+                            <img src="./images/Icon_computer.png" alt="">
+                            Phiên bản máy tính
+                        </button>
+                        <button type="button" class="btn btn-secondary  btn-block">
+                            <img src="./images/icon_send.png" style="color:white" alt="">
+                            Liên hệ quảng cáo
+                        </button>
+                    </li>
+                </ul>
+
             </div>
-          </nav>
-    </section>
+        </nav>
+        <div class="header-stock-api">
+
+        </div>
+        <div class="header-banner-ads d-none d-md-block">
+            <img src="./images/Ads 970x90.png " alt="">
+        </div>
+    </header>
     <!-- end header -->
-    <!-- nav -->
-    <section id="nav">
+    <!-- first-content -->
+    <section id="first-content">
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="left-first-content ">
+                        <!-- tin chính -->
+                        <div class="container-fluid">
+                            <div class="row ">
+                                <div class="col-md-8">
+                                    <div class="left-first-content-main">
+                                        <div class="box">
+                                            <div class="box-img">
+                                                <img src="./images/1.png" alt="">
+                                            </div>
+                                            <div class="box-title">
+                                                <h2>
+                                                    Tìm đột phá để đưa nền kinh tế tăng trưởng trở lại
+                                                </h2>
+                                            </div>
+                                            <div class="box-content">
+                                                <h6>
+                                                    Từ năm 2013 đến nay, số lượng hợp tác xã (HTX) nông nghiệp tăng
+                                                    nhanh,
+                                                    trung bình mỗi năm tăng gần 800 HTX. Tuy nhiên, chất lượng hoạt
+                                                    động,
+                                                    quy mô thành viên của các HTX vẫn chưa đạt như kỳ...
+                                                </h6>
+                                            </div>
+                                            <div class="box-link">
+                                                <div class="h7-bold">
+                                                    <span class="n-color-red">>&#160;&#160;</span>
+                                                    Thương vụ M&A Thế giới di động và Trần Anh đã không còn là tin đồn
+                                                </div>
+                                                <div class="h7-bold">
+                                                    <span class="n-color-red">>&#160;&#160;</span>
+                                                    Thương vụ M&A Thế giới di động và Trần Anh đã không còn là tin đồn
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 d-none d-md-block pt-md-0">
+                                    <div class="left-first-content-child">
+                                        <div class="box">
+                                            <div class="box-title">
+                                                <h5>
+                                                    Nghịch lý trái cây dư thừa, doanh nghiệp 'đói' nguyên liệu
+                                                </h5>
+                                            </div>
+                                            <div class="box-content">
+                                                <h6>
+                                                    Trái cây tươi theo mùa vụ nên không ...
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <div class="box">
+                                            <div class="box-title">
+                                                <h5>
+                                                    Nghịch lý trái cây dư thừa, doanh nghiệp 'đói' nguyên liệu
+                                                </h5>
+                                            </div>
+                                            <div class="box-content">
+                                                <h6>
+                                                    Trái cây tươi theo mùa vụ nên không ...
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <div class="box">
+                                            <div class="box-title">
+                                                <h5>
+                                                    Nghịch lý trái cây dư thừa, doanh nghiệp 'đói' nguyên liệu
+                                                </h5>
+                                            </div>
+                                            <div class="box-content">
+                                                <h6>
+                                                    Trái cây tươi theo mùa vụ nên không ...
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- tin con -->
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="box">
+                                        <div class="box-img">
+                                            <img src="./images/2.png" alt="">
+                                        </div>
+                                        <div class="box-title">
+                                            <div class="h6-bold">
+                                                HTX nhập cuộc thương mại điện tử xuyên biên giới
+                                            </div>
+                                        </div>
+                                        <div class="box-content">
+                                            <h6>
+                                                Lãi đậm nhờ thoái vốn, nhưng dòng tiền từ hoạt động kinh doanh Công ty
+                                                CP Louis Land (mã: BII) lại âm hàng trăm tỷ đồng do kẹt vốn trong ...
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="box">
+                                        <div class="box-img">
+                                            <img src="./images/2.png" alt="">
+                                        </div>
+                                        <div class="box-title">
+                                            <div class="h6-bold">
+                                                HTX nhập cuộc thương mại điện tử xuyên biên giới
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-content">
+                                        <h6>
+                                            Lãi đậm nhờ thoái vốn, nhưng dòng tiền từ hoạt động kinh doanh Công ty CP
+                                            Louis Land (mã: BII) lại âm hàng trăm tỷ đồng do kẹt vốn trong ...
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="box">
+                                        <div class="box-img">
+                                            <img src="./images/2.png" alt="">
+                                        </div>
+                                        <div class="box-title">
+                                            <div class="h6-bold">
+                                                HTX nhập cuộc thương mại điện tử xuyên biên giới
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-content">
+                                        <h6>
+                                            Lãi đậm nhờ thoái vốn, nhưng dòng tiền từ hoạt động kinh doanh Công ty CP
+                                            Louis Land (mã: BII) lại âm hàng trăm tỷ đồng do kẹt vốn trong ...
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="box">
+                                        <div class="box-img">
+                                            <img src="./images/2.png" alt="">
+                                        </div>
+                                        <div class="box-title">
+                                            <div class="h6-bold">
+                                                HTX nhập cuộc thương mại điện tử xuyên biên giới
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-content">
+                                        <h6>
+                                            Lãi đậm nhờ thoái vốn, nhưng dòng tiền từ hoạt động kinh doanh Công ty CP
+                                            Louis Land (mã: BII) lại âm hàng trăm tỷ đồng do kẹt vốn trong ...
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="box">
+                                        <div class="box-img">
+                                            <img src="./images/2.png" alt="">
+                                        </div>
+                                        <div class="box-title">
+                                            <div class="h6-bold">
+                                                HTX nhập cuộc thương mại điện tử xuyên biên giới
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-content">
+                                        <h6>
+                                            Lãi đậm nhờ thoái vốn, nhưng dòng tiền từ hoạt động kinh doanh Công ty CP
+                                            Louis Land (mã: BII) lại âm hàng trăm tỷ đồng do kẹt vốn trong ...
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="box">
+                                        <div class="box-img">
+                                            <img src="./images/2.png" alt="">
+                                        </div>
+                                        <div class="box-title">
+                                            <div class="h6-bold">
+                                                HTX nhập cuộc thương mại điện tử xuyên biên giới
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-content">
+                                        <h6>
+                                            Lãi đậm nhờ thoái vốn, nhưng dòng tiền từ hoạt động kinh doanh Công ty CP
+                                            Louis Land (mã: BII) lại âm hàng trăm tỷ đồng do kẹt vốn trong ...
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="right-first-content">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="box-news">
+                                    <div class="box-header">
+                                        <h4>Tin mới</h4>
+                                    </div>
+                                    <div class="box-body">
+                                        <div class="box-body-time">
+                                            <h5>16:20</h5>
+                                        </div>
+                                        <div class="box-body-content">
+                                            <h6>Thương vụ M&A Thế giới di động và Trần Anh đã không còn là tin...</h6>
+                                        </div>
+                                    </div>
 
+                                    <div class="box-body">
+                                        <div class="box-body-time">
+                                            <h5>16:20</h5>
+                                        </div>
+                                        <div class="box-body-content">
+                                            <h6>Thương vụ M&A Thế giới di động và Trần Anh đã không còn là tin...</h6>
+                                        </div>
+                                    </div>
+                                    <div class="box-body">
+                                        <div class="box-body-time">
+                                            <h5>16:20</h5>
+                                        </div>
+                                        <div class="box-body-content">
+                                            <h6>Thương vụ M&A Thế giới di động và Trần Anh đã không còn là tin...</h6>
+                                        </div>
+                                    </div>
+                                    <div class="box-body">
+                                        <div class="box-body-time">
+                                            <h5>16:20</h5>
+                                        </div>
+                                        <div class="box-body-content">
+                                            <h6>Thương vụ M&A Thế giới di động và Trần Anh đã không còn là tin...</h6>
+                                        </div>
+                                    </div>
+                                    <div class="box-bottom text-end">
+                                        <div class="d-flex justify-content-end">
+                                            <div class="box-bottom-icon">
+                                                <i class="fas fa-chevron-left"></i>
+                                            </div>
+                                            <div class="box-bottom-content">
+                                                <h6>1/5</h6>
+                                            </div>
+                                            <div class="box-bottom-icon">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="box-ads">
+                        <img src="./images/Ads 300x250.png" alt="">
+                    </div>
+                    <div class="box-bao-giay d-none d-md-block">
+                        <div class="box-header">
+                            <h4>Báo giấy</h4>
+                        </div>
+                        <div class="box-main">
+                            <div class="box-main-image">
+                                <img src="./images/baogiay.png" alt="">
+                            </div>
+                            <div class="box-main-content">
+                                <div>
+                                    <h5>Thời báo kinh doanh - Số 10</h5>
+                                    <div class="h8">
+                                        Phát hành: 15/08/2017
+                                    </div>
+                                </div>
+                                <div class="box-btn">
+                                    <a class="n-btn-red" href="">Đặt mua</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-top-views d-none d-md-block">
+                        <div class="box-header">
+                            <h4>Xem nhiều nhất</h4>
+                        </div>
+                        <div class="box-main">
+
+                            <div class="box-main-content">
+                                <div class="box-main-content-child">
+                                    <h2>1</h2>
+                                    <h6> Thương vụ M&A Thế giới di động và Trần Anh đã không còn là tin đồn
+                                    </h6>
+                                </div>
+                                <div class="box-main-content-child">
+                                    <h2>2</h2>
+                                    <h6> Thương vụ M&A Thế giới di động và Trần Anh đã không còn là tin đồn
+                                    </h6>
+                                </div>
+                                <div class="box-main-content-child">
+                                    <h2>3</h2>
+                                    <h6> Thương vụ M&A Thế giới di động và Trần Anh đã không còn là tin đồn
+                                    </h6>
+                                </div>
+                                <div class="box-main-content-child">
+                                    <h2>4</h2>
+                                    <h6> Thương vụ M&A Thế giới di động và Trần Anh đã không còn là tin đồn
+                                    </h6>
+                                </div>
+                                <div class="box-main-content-child">
+                                    <h2>5</h2>
+                                    <h6> Thương vụ M&A Thế giới di động và Trần Anh đã không còn là tin đồn
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <!-- end nav -->
+    <!-- end first-content -->
     <!-- stock-api -->
-    <section id="stock-api">
-
+    <section id="thoi-su">
+        <div class="heading-category">
+            <div class="heading">
+                <div class="heading-content n-btn-red">
+                    Thời sự
+                </div>
+            </div>
+        </div>
+        <div class="thoi-su-main">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="box">
+                            <div class="box-img">
+                                <img src="./images/2.png" alt="">
+                            </div>
+                            <div class="box-title">
+                                <div class="h6-bold">
+                                    HTX nhập cuộc thương mại điện tử xuyên biên giới
+                                </div>
+                            </div>
+                            <div class="box-content">
+                                <h6>
+                                    Lãi đậm nhờ thoái vốn, nhưng dòng tiền từ hoạt động kinh doanh Công ty
+                                    CP Louis Land (mã: BII) lại âm hàng trăm tỷ đồng do kẹt vốn trong ...
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box">
+                            <div class="box-img">
+                                <img src="./images/2.png" alt="">
+                            </div>
+                            <div class="box-title">
+                                <div class="h6-bold">
+                                    HTX nhập cuộc thương mại điện tử xuyên biên giới
+                                </div>
+                            </div>
+                            <div class="box-content">
+                                <h6>
+                                    Lãi đậm nhờ thoái vốn, nhưng dòng tiền từ hoạt động kinh doanh Công ty
+                                    CP Louis Land (mã: BII) lại âm hàng trăm tỷ đồng do kẹt vốn trong ...
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box">
+                            <div class="box-img">
+                                <img src="./images/2.png" alt="">
+                            </div>
+                            <div class="box-title">
+                                <div class="h6-bold">
+                                    HTX nhập cuộc thương mại điện tử xuyên biên giới
+                                </div>
+                            </div>
+                            <div class="box-content">
+                                <h6>
+                                    Lãi đậm nhờ thoái vốn, nhưng dòng tiền từ hoạt động kinh doanh Công ty
+                                    CP Louis Land (mã: BII) lại âm hàng trăm tỷ đồng do kẹt vốn trong ...
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
     </section>
     <!-- end stock-api  -->
     <!-- banner-ads -->
-    <section id="banner-ads">
+    <section id="">
 
     </section>
     <!-- end banner-ads -->
 
     <!-- content is here -->
 
-    <!-- <section id="footer">
-        <div class="bg-top-footer">
+    <footer id="footer">
+        <div class="bg-grey6">
             <div class="top-footer d-none d-md-flex">
                 <div class="top-footer-left">
                     <div class="box-icon">
@@ -132,7 +570,7 @@
                 <div class="top-footer-right">
                     <div class="mr-1">
                         <a href="" title="" class="h8">
-                            Hotline: 043.7347943 
+                            Hotline: 043.7347943
                         </a>
                     </div>
                     |
@@ -144,7 +582,7 @@
                 </div>
             </div>
         </div>
-        <div class="bg-mid-footer">
+        <div class="bg-grey7">
             <div class="mid-footer">
                 <div class="container-fluid">
                     <div class="row">
@@ -161,7 +599,7 @@
                         </div>
                         <div class="col-6 col-md-2">
                             <h6>Hi-Tech</h6>
-                             <div class="mid-footer-child">
+                            <div class="mid-footer-child">
                                 <div>
                                     <a href="" class="h7"> Việt Nam</a>
                                 </div>
@@ -172,7 +610,7 @@
                         </div>
                         <div class="col-6 col-md-2">
                             <h6>Thời sự</h6>
-                             <div class="mid-footer-child">
+                            <div class="mid-footer-child">
                                 <div>
                                     <a href="" class="h7"> Việt Nam</a>
                                 </div>
@@ -183,7 +621,7 @@
                         </div>
                         <div class="col-6 col-md-2">
                             <h6>Cooperative</h6>
-                             <div class="mid-footer-child">
+                            <div class="mid-footer-child">
                                 <div>
                                     <a href="" class="h7"> Việt Nam</a>
                                 </div>
@@ -201,11 +639,11 @@
                                 <div>
                                     <a href="" class="h7"> Thế giới</a>
                                 </div>
-                            </div> 
+                            </div>
                         </div>
                         <div class="col-6 col-md-2">
                             <h6>Startup</h6>
-                             <div class="mid-footer-child">
+                            <div class="mid-footer-child">
                                 <div>
                                     <a href="" class="h7"> Việt Nam</a>
                                 </div>
@@ -216,7 +654,7 @@
                         </div>
                         <div class="col-6 col-md-2">
                             <h6>Chứng khoán</h6>
-                             <div class="mid-footer-child">
+                            <div class="mid-footer-child">
                                 <div>
                                     <a href="" class="h7"> Việt Nam</a>
                                 </div>
@@ -227,7 +665,7 @@
                         </div>
                         <div class="col-6 col-md-2">
                             <h6>Sống</h6>
-                             <div class="mid-footer-child">
+                            <div class="mid-footer-child">
                                 <div>
                                     <a href="" class="h7"> Việt Nam</a>
                                 </div>
@@ -238,7 +676,7 @@
                         </div>
                         <div class="col-6 col-md-2">
                             <h6>Bất động sản</h6>
-                             <div class="mid-footer-child">
+                            <div class="mid-footer-child">
                                 <div>
                                     <a href="" class="h7"> Việt Nam</a>
                                 </div>
@@ -249,7 +687,7 @@
                         </div>
                         <div class="col-6 col-md-2">
                             <h6>Ảnh</h6>
-                             <div class="mid-footer-child">
+                            <div class="mid-footer-child">
                                 <div>
                                     <a href="" class="h7"> Việt Nam</a>
                                 </div>
@@ -260,7 +698,7 @@
                         </div>
                         <div class="col-6 col-md-2">
                             <h6>Doanh nghiệp</h6>
-                             <div class="mid-footer-child">
+                            <div class="mid-footer-child">
                                 <div>
                                     <a href="" class="h7"> Việt Nam</a>
                                 </div>
@@ -271,7 +709,7 @@
                         </div>
                         <div class="col-6 col-md-2">
                             <h6>Video</h6>
-                             <div class="mid-footer-child">
+                            <div class="mid-footer-child">
                                 <div>
                                     <a href="" class="h7"> Việt Nam</a>
                                 </div>
@@ -284,7 +722,7 @@
                 </div>
             </div>
         </div>
-       
+
         <div class="bot-footer">
             <div class="bot-footer-logo">
                 <img src="./images/logo.png" alt="">
@@ -325,19 +763,19 @@
                 <a href="" title="" class="btn ">Trở về phiên bản máy tính</a>
             </div>
         </div>
-        </footer>
-    </section> -->
+    </footer>
+    </section>
 
-        <!-- bootstrap 4 -->
-        <script src="./js/jquery.min.js"></script>
-        <script src="./js/popper.min.js"></script>
-        <script src="./js/bootstrap.min.js"></script>
-        <!-- slick -->
-        <script src="slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
-        <!-- wow -->
-        <script src="dist/wow.js"></script>
-        <!-- js -->
-        <script src="js/scriptLayout.js"></script>
+    <!-- bootstrap 4 -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- slick -->
+    <script src="slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
+    <!-- wow -->
+    <script src="dist/wow.js"></script>
+    <!-- js -->
+    <script src="js/scriptLayout.js"></script>
 </body>
 
 </html>
