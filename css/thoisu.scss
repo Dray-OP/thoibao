@@ -1,0 +1,67 @@
+@import 'variable';
+#first-content-thoi-su{
+    .box-top-views{
+        .box-header{
+            display: flex;
+            border: 0;
+            h4{
+                color: $grey4;
+                cursor: pointer;
+                border-bottom: 1px solid $grey6;
+            }
+            h4.active{
+                color: $red;
+                padding-bottom: 5px;
+                border-bottom: 1px solid $red;
+            }
+        }
+       
+    }
+    .professional{
+        
+            padding: 16px 20px;
+
+        .box{
+            display: flex;
+            border-right: 1px dotted $grey6;
+            .box-image{
+                width: 30%;
+            }
+            .box-content{
+                padding-left: 10px;
+                width: 70%;
+            }
+        }
+        .box:last-child{
+            border-right:0;
+
+        }
+    }
+}
+#top-reading{
+    .box-header{
+        padding-left: 15px;
+    }
+}
+@media (min-width: 768px) {
+    #top-reading{
+        @include w970VsCenter;
+        .box-header{
+            padding-left: 0;
+        }
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .box{
+            margin-top: 10px;
+            display: flex;
+            .box-image{
+                width: 50%;
+            }
+            .box-content{
+                padding-left: 10px;
+                width: 50%;
+            }
+        }
+
+    }
+}

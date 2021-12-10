@@ -32,15 +32,18 @@ div#navbarN {
     padding: 5px;
     cursor: pointer;
 }
+
 .slick-dots li.slick-active button:before{
     color: red;
     opacity: 0.75;
-    font-size: 23px;
+    font-size: 14px;
     border:0;
-    line-height: 23px;
+    line-height: 14px;
 }
 .slick-dots li button:before{
-    font-size: 5px;
+    width: 10px;
+    height: 10px;
+    font-size: 0px;
     color: #fff;
     border: 1px solid gray;
     border-radius: 100%;

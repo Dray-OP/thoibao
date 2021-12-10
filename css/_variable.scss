@@ -7,6 +7,16 @@ $grey6: #dedede;
 $grey7: #f5f5f5;
 $red: #ec0001;
 $white: #ffffff;
+
+@mixin w970VsCenter {
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+@mixin wAutoVsCenter {
+    width: auto;
+    margin: 0 auto;
+}
 @font-face {
     font-family: Roboto;
     src: url(../fonts/Roboto-Medium.ttf);

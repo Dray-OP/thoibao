@@ -1,14 +1,6 @@
 @import 'variable';
 
-@mixin w970VsCenter {
-    max-width: 970px;
-    margin: 0 auto;
-}
 
-@mixin wAutoVsCenter {
-    width: auto;
-    margin: 0 auto;
-}
 
 * {
     margin: 0;
@@ -176,7 +168,7 @@ section {
 
 }
 
-#first-content {
+#first-content,#first-content-thoi-su {
     .left-first-content {
         .left-first-content-child {
             .box {
@@ -266,7 +258,7 @@ section {
     }
 }
 
-#finance,#video,
+#finance,#video,#world,
 #enterprise {
     .finance-main {
         .content-main {
@@ -366,7 +358,7 @@ section {
 
 }
 
-#real-estate {
+#real-estate,#vietnam {
     .real-estate-main {
         .content-main {
             border-bottom: 1px dotted $grey6;
@@ -644,6 +636,7 @@ section {
 
         .active {
             a.nav-link {
+                color: $red;
                 border-bottom: 2px solid $red;
 
             }
@@ -660,7 +653,7 @@ section {
         }
     }
 
-    #first-content {
+    #first-content,#first-content-thoi-su {
         @include w970VsCenter;
         margin-top: 20px;
 
@@ -771,7 +764,7 @@ section {
 
     }
 
-    #finance,#video,
+    #finance,#video,#world,
     #enterprise {
         @include w970VsCenter;
 
@@ -848,7 +841,7 @@ section {
 
     }     
 
-    #real-estate {
+    #real-estate,#vietnam {
         @include w970VsCenter;
 
         .real-estate-main {

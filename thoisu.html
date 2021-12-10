@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thời sự</title>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+    <script src="./js/fontawesome-free.js"></script>
+    <!-- bootstrap 4 -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <link rel="stylesheet" href="./css/styleSlick.css">
+    <!-- wow -->
+    <link rel="stylesheet" href="./css/libs/animate.css">
+    <link rel="stylesheet" href="./css/site.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styleLayout.css">
+    <link rel="stylesheet" href="./css/thoisu.css">
+    <link rel="stylesheet" href="./css/detail.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header">
+        <div class="top-header d-none d-md-flex">
+            <div class="top-header-logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div class="top-header-icons">
+                <div class="box-icon">
+                    <a href="" title=""><img src="./images/icons/FB.png" alt=""></a>
+                </div>
+                <div class="box-icon">
+                    <a href="" title=""><img src="./images/icons/Twitter.png" alt=""></a>
+                </div>
+                <div class="box-icon">
+                    <a href="" title=""><img src="./images/icons/G+.png" alt=""></a>
+                </div>
+                <div class="box-icon">
+                    <a href="" title=""><img src="./images/icons/Linkedin.png" alt=""></a>
+                </div>
+                <div class="box-icon">
+                    <a href="" title=""><img src="./images/icons/Mail.png" alt=""></a>
+                </div>
+                <div class="box-icon box-search">
+                    <div class="input-group">
+                        <input type="text" class="form-control bg-light" placeholder="Tìm kiếm">
+                        <div class="input-group-append">
+                            <button class="btn btn-light" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-icon">
+                    <a href="" title=""><img class="d-none d-md-block" src="./images/User.png" alt=""></a>
+                </div>
+            </div>
+
+
+            <div class="bot-footer-btn d-md-none">
+                <a href="" title="" class="btn ">Trở về phiên bản máy tính</a>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-md nav-header">
+            <div class="d-flex">
+                <div class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarN"
+                    aria-controls="navbarN" aria-expanded="false" aria-label="Toggle navigation">
+                    <img class="n-icon-show" src="./images/Icon_menu.png" alt="">
+                    <img class="n-icon-hide" src="./images/icon_close.png"
+                        style=" width: 18px; height: 18px;filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);"
+                        alt="">
+                </div>
+                <div class="logo d-md-none">
+                    <img src="./images/logo.png" alt="">
+                </div>
+            </div>
+
+            <a class="navbar-brand user-icon d-md-none" href="#">
+                <!-- <img class="d-none d-md-block" src="./images/User.png" alt=""> -->
+                <img class="" src="./images/fa-solid_user.png" alt="">
+            </a>
+
+
+            <div class="collapse navbar-collapse" id="navbarN">
+                <form class="form-inline my-2 my-lg-0 d-md-none">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm">
+                        <div class="input-group-append">
+                            <button class="btn btn-default" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link d-none d-md-block" href="#">
+                            <img src="./images/icon_home.png" alt="">
+                        </a>
+                        <a class="nav-link d-md-none" href="#">Trang chủ</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link " href="#">Thời sự</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tài chính</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Chứng khoán</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Bất động sản</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Doanh nghiệp</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li> -->
+                    <li class="nav-item d-md-none">
+                        <button type="button" class="btn btn-light  btn-block">
+                            <img src="./images/Icon_computer.png" alt="">
+                            Phiên bản máy tính
+                        </button>
+                        <button type="button" class="btn btn-secondary  btn-block">
+                            <img src="./images/icon_send.png" style="color:white" alt="">
+                            Liên hệ quảng cáo
+                        </button>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <div class="header-stock-api">
+
+        </div>
+        <div class="header-banner-ads d-none d-md-block">
+            <img src="./images/Ads 970x90.png " alt="">
+        </div>
+    </header>
+    <!-- end header -->
+    <section id="first-content-thoi-su">
+        <div class="box-header d-none d-md-block">
+            THỜI SỰ
+        </div>
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="left-first-content ">
+                        <!-- tin chính -->
+                        <div class="container-fluid">
+                            <div class="row ">
+                                <div class="col-md-8">
+                                    <div class="left-first-content-main">
+                                        <div class="box">
+                                            <div class="box-img">
+                                                <img src="./images/1.png" alt="">
+                                            </div>
+                                            <div class="box-title">
+                                                <h2>
+                                                    Tìm đột phá để đưa nền kinh tế tăng trưởng trở lại
+                                                </h2>
+                                            </div>
+                                            <div class="box-content">
+                                                <h6>
+                                                    Từ năm 2013 đến nay, số lượng hợp tác xã (HTX) nông nghiệp tăng
+                                                    nhanh,
+                                                    trung bình mỗi năm tăng gần 800 HTX. Tuy nhiên, chất lượng hoạt
+                                                    động,
+                                                    quy mô thành viên của các HTX vẫn chưa đạt như kỳ...
+                                                </h6>
+                                            </div>
+                                            <div class="box-link">
+                                                <div class="h7-bold">
+                                                    <span class="n-color-red">>&#160;&#160;</span>
+                                                    Thương vụ M&A Thế giới di động và Trần Anh đã không còn là tin đồn
+                                                </div>
+                                                <div class="h7-bold">
+                                                    <span class="n-color-red">>&#160;&#160;</span>
+                                                    Thương vụ M&A Thế giới di động và Trần Anh đã không còn là tin đồn
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 d-none d-md-block pt-md-0">
+                                    <div class="left-first-content-child">
+                                        <div class="box">
+                                            <div class="box-title">
+                                                <h5>
+                                                    Nghịch lý trái cây dư thừa, doanh nghiệp 'đói' nguyên liệu
+                                                </h5>
+                                            </div>
+                                            <div class="box-content">
+                                                <h6>
+                                                    Trái cây tươi theo mùa vụ nên không ...
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <div class="box">
+                                            <div class="box-title">
+                                                <h5>
+                                                    Nghịch lý trái cây dư thừa, doanh nghiệp 'đói' nguyên liệu
+                                                </h5>
+                                            </div>
+                                            <div class="box-content">
+                                                <h6>
+                                                    Trái cây tươi theo mùa vụ nên không ...
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <div class="box">
+                                            <div class="box-title">
+                                                <h5>
+                                                    Nghịch lý trái cây dư thừa, doanh nghiệp 'đói' nguyên liệu
+                                                </h5>
+                                            </div>
+                                            <div class="box-content">
+                                                <h6>
+                                                    Trái cây tươi theo mùa vụ nên không ...
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- tin con -->
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="box">
+                                        <div class="box-img">
+                                            <img src="./images/2.png" alt="">
+                                        </div>
+                                        <div class="box-title">
+                                            <div class="h6-bold">
+                                                HTX nhập cuộc thương mại điện tử xuyên biên giới
+                                            </div>
+                                        </div>
+                                        <div class="box-content">
+                                            <h6>
+                                                Lãi đậm nhờ thoái vốn, nhưng dòng tiền từ hoạt động kinh doanh Công ty
+                                                CP Louis Land (mã: BII) lại âm hàng trăm tỷ đồng do kẹt vốn trong ...
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="box">
+                                        <div class="box-img">
+                                            <img src="./images/2.png" alt="">
+                                        </div>
+                                        <div class="box-title">
+                                            <div class="h6-bold">
+                                                HTX nhập cuộc thương mại điện tử xuyên biên giới
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-content">
+                                        <h6>
+                                            Lãi đậm nhờ thoái vốn, nhưng dòng tiền từ hoạt động kinh doanh Công ty CP
+                                            Louis Land (mã: BII) lại âm hàng trăm tỷ đồng do kẹt vốn trong ...
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="box">
+                                        <div class="box-img">
+                                            <img src="./images/2.png" alt="">
+                                        </div>
+                                        <div class="box-title">
+                                            <div class="h6-bold">
+                                                HTX nhập cuộc thương mại điện tử xuyên biên giới
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-content">
+                                        <h6>
+                                            Lãi đậm nhờ thoái vốn, nhưng dòng tiền từ hoạt động kinh doanh Công ty CP
+                                            Louis Land (mã: BII) lại âm hàng trăm tỷ đồng do kẹt vốn trong ...
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="box">
+                                        <div class="box-img">
+                                            <img src="./images/2.png" alt="">
+                                        </div>
+                                        <div class="box-title">
+                                            <div class="h6-bold">
+                                                HTX nhập cuộc thương mại điện tử xuyên biên giới
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-content">
+                                        <h6>
+                                            Lãi đậm nhờ thoái vốn, nhưng dòng tiền từ hoạt động kinh doanh Công ty CP
+                                            Louis Land (mã: BII) lại âm hàng trăm tỷ đồng do kẹt vốn trong ...
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="box">
+                                        <div class="box-img">
+                                            <img src="./images/2.png" alt="">
+                                        </div>
+                                        <div class="box-title">
+                                            <div class="h6-bold">
+                                                HTX nhập cuộc thương mại điện tử xuyên biên giới
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-content">
+                                        <h6>
+                                            Lãi đậm nhờ thoái vốn, nhưng dòng tiền từ hoạt động kinh doanh Công ty CP
+                                            Louis Land (mã: BII) lại âm hàng trăm tỷ đồng do kẹt vốn trong ...
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="box">
+                                        <div class="box-img">
+                                            <img src="./images/2.png" alt="">
+                                        </div>
+                                        <div class="box-title">
+                                            <div class="h6-bold">
+                                                HTX nhập cuộc thương mại điện tử xuyên biên giới
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-content">
+                                        <h6>
+                                            Lãi đậm nhờ thoái vốn, nhưng dòng tiền từ hoạt động kinh doanh Công ty CP
+                                            Louis Land (mã: BII) lại âm hàng trăm tỷ đồng do kẹt vốn trong ...
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 pt-md-0">
+                    <div class="box-ads mt-md-0 mb-md-3">
+                        <img src="./images/Ads 300x250.png" alt="">
+                    </div>
+                    <div class="right-first-content">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="box-news">
+                                    <div class="box-header">
+                                        <h4>Tin mới</h4>
+                                    </div>
+                                    <div class="box-body">
+                                        <div class="box-body-time">
+                                            <h5>16:20</h5>
+                                        </div>
+                                        <div class="box-body-content">
+                                            <h6>Thương vụ M&A Thế giới di động và Trần Anh đã không còn là tin...</h6>
+                                        </div>
+                                    </div>
+
+                                    <div class="box-body">
+                                        <div class="box-body-time">
+                                            <h5>16:20</h5>
+                                        </div>
+                                        <div class="box-body-content">
+                                            <h6>Thương vụ M&A Thế giới di động và Trần Anh đã không còn là tin...</h6>
+                                        </div>
+                                    </div>
+                                    <div class="box-body">
+                                        <div class="box-body-time">
+                                            <h5>16:20</h5>
+                                        </div>
+                                        <div class="box-body-content">
+                                            <h6>Thương vụ M&A Thế giới di động và Trần Anh đã không còn là tin...</h6>
+                                        </div>
+                                    </div>
+                                    <div class="box-body">
+                                        <div class="box-body-time">
+                                            <h5>16:20</h5>
+                                        </div>
+                                        <div class="box-body-content">
+                                            <h6>Thương vụ M&A Thế giới di động và Trần Anh đã không còn là tin...</h6>
+                                        </div>
+                                    </div>
+                                    <div class="box-bottom text-end">
+                                        <div class="d-flex justify-content-end">
+                                            <div class="box-bottom-icon">
+                                                <i class="fas fa-chevron-left"></i>
+                                            </div>
+                                            <div class="box-bottom-content">
+                                                <h6>1/5</h6>
+                                            </div>
+                                            <div class="box-bottom-icon">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="box-ads">
+                        <img src="./images/Ads 300x250.png" alt="">
+                    </div>
+                    <div class="box-top-views d-none d-md-block">
+                        <div class="box-header">
+                            <h4 class="active">Xem nhiều nhất</h4>
+                            <h4>Bình luận nhiều</h4>
+                        </div>
+                        <div class="box-main">
+
+                            <div class="box-main-content">
+                                <div class="box-main-content-child">
+                                    <h2>1</h2>
+                                    <h6> Thương vụ M&A Thế giới di động và Trần Anh đã không còn là tin đồn
+                                    </h6>
+                                </div>
+                                <div class="box-main-content-child">
+                                    <h2>2</h2>
+                                    <h6> Thương vụ M&A Thế giới di động và Trần Anh đã không còn là tin đồn
+                                    </h6>
+                                </div>
+                                <div class="box-main-content-child">
+                                    <h2>3</h2>
+                                    <h6> Thương vụ M&A Thế giới di động và Trần Anh đã không còn là tin đồn
+                                    </h6>
+                                </div>
+                                <div class="box-main-content-child">
+                                    <h2>4</h2>
+                                    <h6> Thương vụ M&A Thế giới di động và Trần Anh đã không còn là tin đồn
+                                    </h6>
+                                </div>
+                                <div class="box-main-content-child">
+                                    <h2>5</h2>
+                                    <h6> Thương vụ M&A Thế giới di động và Trần Anh đã không còn là tin đồn
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="professional bg-grey7">
+                        <div class="box-header">
+                            <h5>
+                                GÓC NHÌN CHUYÊN GIA
+                            </h5>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="box-image">
+                                        <img src="./images/Rectangle 145.png" alt="">
+                                    </div>
+                                    <div class="box-content">
+                                        <h5>Tuyệt đối không được chủ quan, lơ là trong lúc này</h5>
+                                        <h6>Có lần, tôi viết trên một tạp chí câu chuyện về những đứa trẻ...</h6>
+                                        <div class="h8">
+                                            PGS.TS Phạm Thế Anh
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="box-image">
+                                        <img src="./images/Rectangle 145.png" alt="">
+                                    </div>
+                                    <div class="box-content">
+                                        <h5>Tuyệt đối không được chủ quan, lơ là trong lúc này</h5>
+                                        <h6>Có lần, tôi viết trên một tạp chí câu chuyện về những đứa trẻ...</h6>
+                                        <div class="h8">
+                                            PGS.TS Phạm Thế Anh
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="box-image">
+                                        <img src="./images/Rectangle 145.png" alt="">
+                                    </div>
+                                    <div class="box-content">
+                                        <h5>Tuyệt đối không được chủ quan, lơ là trong lúc này</h5>
+                                        <h6>Có lần, tôi viết trên một tạp chí câu chuyện về những đứa trẻ...</h6>
+                                        <div class="h8">
+                                            PGS.TS Phạm Thế Anh
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="vietnam">
+        <div class="heading-category">
+            <div class="heading">
+                <div class="heading-content n-btn-red">
+                    việt nam
+                </div>
+            </div>
+        </div>
+        <div class="real-estate-main">
+            <div class="real-estate-main-top">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="content-main">
+                                <div class="box-image">
+                                    <img src="./images/3.png" alt="">
+                                </div>
+                                <div class="box-title">
+                                    <h3> VPBank giảm lãi suất, tăng ưu đãi cho doanh nghiệp có phụ nữ làm chủ</h3>
+                                </div>
+                                <div class="box-content  d-none d-md-block">
+                                    <h6>Chúng ta đang dần chuyển trạng thái từ “không COVID” sang “thích ứng an toàn,
+                                        linh hoạt, kiểm soát có hiệu quả dịch COVID-19”. Các hoạt động xã hội, sản xuất
+                                        kinh doanh đang từng bước đượ...</h6>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box-image d-none d-md-block">
+                                <img src="./images/Ads 300x250.png" alt="">
+                            </div>
+                            <div class="box-news-child">
+                                <div class="box-news-child-image">
+                                    <img src="./images/4.png" alt="">
+                                </div>
+                                <div class="box-news-child-content">
+                                    <h5>Tuyệt đối không được chủ quan, lơ là trong lúc này</h5>
+                                </div>
+                            </div>
+                            <div class="box-news-child border-0">
+                                <div class="box-news-child-image">
+                                    <img src="./images/4.png" alt="">
+                                </div>
+                                <div class="box-news-child-content">
+                                    <h5>Tuyệt đối 1 không được chủ quan, lơ là trong lúc này</h5>
+                                </div>
+                            </div>
+                            <div class="box-image d-md-none">
+                                <img src="./images/Ads 300x250.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="image">
+        <div class="heading-category-2">
+            <div class="heeding-line"></div>
+            <div class="heading-content">
+                <i class="fas fa-image"> </i> Ảnh
+            </div>
+            <div class="heeding-line"></div>
+        </div>
+        <div class="image-main">
+            <div class="image-main-top">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="content-main">
+                                <div class="box-image">
+                                    <img src="./images/3.png" alt="">
+                                </div>
+                                <div class="box-title">
+                                    <h3> VPBank giảm lãi suất, tăng ưu đãi cho doanh nghiệp có phụ nữ làm chủ</h2>
+                                </div>
+                                <div class="box-content  d-none d-md-block">
+                                    <h6>Chúng ta đang dần chuyển trạng thái từ “không COVID” sang “thích ứng an toàn,
+                                        linh hoạt, kiểm soát có hiệu quả dịch COVID-19”. Các hoạt động xã hội, sản xuất
+                                        kinh doanh đang từng bước đượ...</h6>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box-news-child">
+                                <div class="box-news-child-image">
+                                    <img src="./images/4.png" alt="">
+                                </div>
+                                <div class="box-news-child-content">
+                                    <h5>Tuyệt đối không được chủ quan, lơ là trong lúc này</h5>
+                                </div>
+                            </div>
+                            <div class="box-news-child">
+                                <div class="box-news-child-image">
+                                    <img src="./images/4.png" alt="">
+                                </div>
+                                <div class="box-news-child-content">
+                                    <h5>Tuyệt đối không được chủ quan, lơ là trong lúc này</h5>
+                                </div>
+                            </div>
+
+                            <div class="box-news-child border-0">
+                                <div class="box-news-child-image">
+                                    <img src="./images/4.png" alt="">
+                                </div>
+                                <div class="box-news-child-content">
+                                    <h5>Tuyệt đối 1 không được chủ quan, lơ là trong lúc này</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="world">
+        <div class="heading-category">
+            <div class="heading">
+                <div class="heading-content n-btn-red">
+                    thế giới
+                </div>
+            </div>
+        </div>
+        <div class="finance-main">
+            <div class="finance-main-top">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="content-main">
+                                <div class="box-image">
+                                    <img src="./images/3.png" alt="">
+                                </div>
+                                <div class="box-title">
+                                    <h3> VPBank giảm lãi suất, tăng ưu đãi cho doanh nghiệp có phụ nữ làm chủ</h3>
+                                </div>
+                                <div class="box-content  d-none d-md-block">
+                                    <h6>Chúng ta đang dần chuyển trạng thái từ “không COVID” sang “thích ứng an toàn,
+                                        linh hoạt, kiểm soát có hiệu quả dịch COVID-19”. Các hoạt động xã hội, sản xuất
+                                        kinh doanh đang từng bước đượ...</h6>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box-news-child">
+                                <div class="box-news-child-image">
+                                    <img src="./images/4.png" alt="">
+                                </div>
+                                <div class="box-news-child-content">
+                                    <h5>Tuyệt đối không được chủ quan, lơ là trong lúc này</h5>
+                                </div>
+                            </div>
+                            <div class="box-news-child">
+                                <div class="box-news-child-image">
+                                    <img src="./images/4.png" alt="">
+                                </div>
+                                <div class="box-news-child-content">
+                                    <h5>Tuyệt đối không được chủ quan, lơ là trong lúc này</h5>
+                                </div>
+                            </div>
+                            <div class="box-news-child">
+                                <div class="box-news-child-image">
+                                    <img src="./images/4.png" alt="">
+                                </div>
+                                <div class="box-news-child-content">
+                                    <h5>Tuyệt đối không được chủ quan, lơ là trong lúc này</h5>
+                                </div>
+                            </div>
+                            <div class="box-news-child">
+                                <div class="box-news-child-image">
+                                    <img src="./images/4.png" alt="">
+                                </div>
+                                <div class="box-news-child-content">
+                                    <h5>Tuyệt đối không được chủ quan, lơ là trong lúc này</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+        </div>
+    </section>
+
+    <section id="business">
+        <div class="heading-category-2">
+            <div class="heeding-line "></div>
+            <div class="heading-content">
+                video
+            </div>
+            <div class="heeding-line "></div>
+        </div>
+        <div>
+            <div class="typical-products-regular slider">
+                <div>
+                    <div class="box-news-child">
+                        <div class="box-news-child-image">
+                            <img src="./images/4.png" alt="">
+                        </div>
+                        <div class="box-news-child-content">
+                            <h5>Tuyệt đối không được chủ quan, lơ là trong lúc này</h5>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="box-news-child">
+                        <div class="box-news-child-image">
+                            <img src="./images/4.png" alt="">
+                        </div>
+                        <div class="box-news-child-content">
+                            <h5>Tuyệt đối không được chủ quan, lơ là trong lúc này</h5>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="box-news-child">
+                        <div class="box-news-child-image">
+                            <img src="./images/4.png" alt="">
+                        </div>
+                        <div class="box-news-child-content">
+                            <h5>Tuyệt đối không được chủ quan, lơ là trong lúc này</h5>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="box-news-child">
+                        <div class="box-news-child-image">
+                            <img src="./images/4.png" alt="">
+                        </div>
+                        <div class="box-news-child-content">
+                            <h5>Tuyệt đối không được chủ quan, lơ là trong lúc này</h5>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="box-news-child">
+                        <div class="box-news-child-image">
+                            <img src="./images/4.png" alt="">
+                        </div>
+                        <div class="box-news-child-content">
+                            <h5>Tuyệt đối không được chủ quan, lơ là trong lúc này</h5>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="box-news-child">
+                        <div class="box-news-child-image">
+                            <img src="./images/4.png" alt="">
+                        </div>
+                        <div class="box-news-child-content">
+                            <h5>Tuyệt đối không được chủ quan, lơ là trong lúc này</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="top-reading">
+        <div class="box-header ">
+            ĐỌC NHIỀU NHẤT
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 col-md-4">
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="./images/4.png" alt="">
+                        </div>
+                        <div class="box-content">
+                            <h5>Tuyệt đối không được chủ quan, lơ là trong lúc này</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="./images/4.png" alt="">
+                        </div>
+                        <div class="box-content">
+                            <h5>Tuyệt đối không được chủ quan, lơ là trong lúc này</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="./images/4.png" alt="">
+                        </div>
+                        <div class="box-content">
+                            <h5>Tuyệt đối không được chủ quan, lơ là trong lúc này</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="./images/4.png" alt="">
+                        </div>
+                        <div class="box-content">
+                            <h5>Tuyệt đối không được chủ quan, lơ là trong lúc này</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="./images/4.png" alt="">
+                        </div>
+                        <div class="box-content">
+                            <h5>Tuyệt đối không được chủ quan, lơ là trong lúc này</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="./images/4.png" alt="">
+                        </div>
+                        <div class="box-content">
+                            <h5>Tuyệt đối không được chủ quan, lơ là trong lúc này</h5>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer">
+        <div class="bg-grey6">
+            <div class="top-footer d-none d-md-flex">
+                <div class="top-footer-left">
+                    <div class="box-icon">
+                        <img src="./images/icon_home_gray.png" alt="">
+                    </div>
+                    <div class="">
+                        <a href="" title="" class="h7-bold">Về trang chủ</a>
+                    </div>
+                </div>
+                <div class="top-footer-right">
+                    <div class="mr-1">
+                        <a href="" title="" class="h8">
+                            Hotline: 043.7347943
+                        </a>
+                    </div>
+                    |
+                    <div class="ml-1">
+                        <a href="" title="" class="h8">
+                            Liên hệ quảng cáo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-grey7">
+            <div class="mid-footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-6 col-md-2">
+                            <h6>Trang chủ</h6>
+                            <div class="mid-footer-child">
+                                <div>
+                                    <a href="" class="h7"> Việt Nam</a>
+                                </div>
+                                <div>
+                                    <a href="" class="h7"> Thế giới</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <h6>Hi-Tech</h6>
+                            <div class="mid-footer-child">
+                                <div>
+                                    <a href="" class="h7"> Việt Nam</a>
+                                </div>
+                                <div>
+                                    <a href="" class="h7"> Thế giới</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <h6>Thời sự</h6>
+                            <div class="mid-footer-child">
+                                <div>
+                                    <a href="" class="h7"> Việt Nam</a>
+                                </div>
+                                <div>
+                                    <a href="" class="h7"> Thế giới</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <h6>Cooperative</h6>
+                            <div class="mid-footer-child">
+                                <div>
+                                    <a href="" class="h7"> Việt Nam</a>
+                                </div>
+                                <div>
+                                    <a href="" class="h7"> Thế giới</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <h6>Tài chính</h6>
+                            <div class="mid-footer-child">
+                                <div>
+                                    <a href="" class="h7"> Việt Nam</a>
+                                </div>
+                                <div>
+                                    <a href="" class="h7"> Thế giới</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <h6>Startup</h6>
+                            <div class="mid-footer-child">
+                                <div>
+                                    <a href="" class="h7"> Việt Nam</a>
+                                </div>
+                                <div>
+                                    <a href="" class="h7"> Thế giới</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <h6>Chứng khoán</h6>
+                            <div class="mid-footer-child">
+                                <div>
+                                    <a href="" class="h7"> Việt Nam</a>
+                                </div>
+                                <div>
+                                    <a href="" class="h7"> Thế giới</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <h6>Sống</h6>
+                            <div class="mid-footer-child">
+                                <div>
+                                    <a href="" class="h7"> Việt Nam</a>
+                                </div>
+                                <div>
+                                    <a href="" class="h7"> Thế giới</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <h6>Bất động sản</h6>
+                            <div class="mid-footer-child">
+                                <div>
+                                    <a href="" class="h7"> Việt Nam</a>
+                                </div>
+                                <div>
+                                    <a href="" class="h7"> Thế giới</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <h6>Ảnh</h6>
+                            <div class="mid-footer-child">
+                                <div>
+                                    <a href="" class="h7"> Việt Nam</a>
+                                </div>
+                                <div>
+                                    <a href="" class="h7"> Thế giới</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <h6>Doanh nghiệp</h6>
+                            <div class="mid-footer-child">
+                                <div>
+                                    <a href="" class="h7"> Việt Nam</a>
+                                </div>
+                                <div>
+                                    <a href="" class="h7"> Thế giới</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <h6>Video</h6>
+                            <div class="mid-footer-child">
+                                <div>
+                                    <a href="" class="h7"> Việt Nam</a>
+                                </div>
+                                <div>
+                                    <a href="" class="h7"> Thế giới</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bot-footer">
+            <div class="bot-footer-logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div class="bot-footer-icons">
+                <div class="box-icon">
+                    <a href="" title=""><img src="./images/icons/FB.png" alt=""></a>
+                </div>
+                <div class="box-icon">
+                    <a href="" title=""><img src="./images/icons/Twitter.png" alt=""></a>
+                </div>
+                <div class="box-icon">
+                    <a href="" title=""><img src="./images/icons/G+.png" alt=""></a>
+                </div>
+                <div class="box-icon">
+                    <a href="" title=""><img src="./images/icons/Linkedin.png" alt=""></a>
+                </div>
+                <div class="box-icon">
+                    <a href="" title=""><img src="./images/icons/Mail.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="bot-footer-content">
+                <div class="h7 mr-md-3">
+                    Báo điện tử Thời báo Kinh Doanh. <br>
+                    Cơ quan chủ quản: Liên minh HTX Việt Nam <br>
+                    Giấy phép xuất bản số 371/GP-BTTTT cấp ngày 05-7-2016
+                    Tổng Biên Tập: Long Nhật
+                </div>
+                <div class="h7 text-lg-right">
+                    Tòa soạn: Số 6, Dương Đình Nghệ, Cầu Giấy, Hà Nội <br>
+                    ĐT: 043.7347943; Fax: 043.7347944 <br>
+                    © Thời Báo Kinh Doanh giữ bản quyền nội dung trên
+                    website này
+                </div>
+            </div>
+            <div class="bot-footer-btn d-md-none">
+                <a href="" title="" class="btn ">Trở về phiên bản máy tính</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- bootstrap 4 -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- slick -->
+    <script src="slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
+    <!-- wow -->
+    <script src="dist/wow.js"></script>
+    <!-- js -->
+    <script src="js/scriptLayout.js"></script>
+</body>
+
+</html>
