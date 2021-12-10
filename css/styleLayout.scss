@@ -140,6 +140,9 @@ section {
     pointer-events: none;
     color: #aaa;
 }
+.box-title{
+    padding-top: 10px;
+}
 
 .box {
     .box-img {
@@ -163,12 +166,18 @@ section {
             width: 100%;
         }
     }
+    .btn-icon-header{
+img{
+    width: auto;
 
+}
+    }
+        
 
 
 }
 
-#first-content,#first-content-thoi-su {
+#first-content,#first-content-thoi-su,#first-content-detail {
     .left-first-content {
         .left-first-content-child {
             .box {
@@ -177,6 +186,9 @@ section {
 
                 .box-content {
                     border-bottom: 1px dotted $grey6;
+                }
+                .box-title:first-child{
+                    padding-top:0;
                 }
             }
         }
@@ -653,7 +665,7 @@ section {
         }
     }
 
-    #first-content,#first-content-thoi-su {
+    #first-content,#first-content-thoi-su,#first-content-detail {
         @include w970VsCenter;
         margin-top: 20px;
 
@@ -754,7 +766,7 @@ section {
     }
 
     #thoi-su,
-    #hi-tech,
+    #hi-tech,#other-news,
     #live {
         @include w970VsCenter;
 
