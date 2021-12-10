@@ -156,7 +156,7 @@ section {
 }
 
 .heading-category .heading {
-  margin: 40px 0;
+  margin: 35px 0;
   position: relative;
   background-color: #ec0001;
   height: 1px;
@@ -243,16 +243,26 @@ section {
   color: #aaa;
 }
 
-.box-title {
-  padding-top: 10px;
+.box {
+  margin-top: 10px;
+}
+
+.box .box-title {
+  padding-top: 16px;
 }
 
 .box .box-img img {
   width: 100%;
 }
 
+#header {
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.22);
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.22);
+}
+
 #header .navbar {
   height: 54px;
+  padding: 0;
 }
 
 #header .logo {
@@ -268,37 +278,53 @@ section {
   width: auto;
 }
 
-#first-content .left-first-content .left-first-content-child .box, #first-content-thoi-su .left-first-content .left-first-content-child .box, #first-content-detail .left-first-content .left-first-content-child .box {
+#first-content .left-first-content .left-first-content-child .box,
+#first-content-thoi-su .left-first-content .left-first-content-child .box,
+#first-content-detail .left-first-content .left-first-content-child .box {
   border-right: 1px solid #dedede;
   padding-right: 10px;
 }
 
-#first-content .left-first-content .left-first-content-child .box .box-content, #first-content-thoi-su .left-first-content .left-first-content-child .box .box-content, #first-content-detail .left-first-content .left-first-content-child .box .box-content {
+#first-content .left-first-content .left-first-content-child .box .box-content,
+#first-content-thoi-su .left-first-content .left-first-content-child .box .box-content,
+#first-content-detail .left-first-content .left-first-content-child .box .box-content {
   border-bottom: 1px dotted #dedede;
 }
 
-#first-content .left-first-content .left-first-content-child .box .box-title:first-child, #first-content-thoi-su .left-first-content .left-first-content-child .box .box-title:first-child, #first-content-detail .left-first-content .left-first-content-child .box .box-title:first-child {
+#first-content .left-first-content .left-first-content-child .box .box-title:first-child,
+#first-content-thoi-su .left-first-content .left-first-content-child .box .box-title:first-child,
+#first-content-detail .left-first-content .left-first-content-child .box .box-title:first-child {
   padding-top: 0;
 }
 
-#first-content .col-md-4, #first-content-thoi-su .col-md-4, #first-content-detail .col-md-4 {
+#first-content .col-md-4,
+#first-content-thoi-su .col-md-4,
+#first-content-detail .col-md-4 {
   padding: 0;
 }
 
-#first-content .right-first-content, #first-content-thoi-su .right-first-content, #first-content-detail .right-first-content {
+#first-content .right-first-content,
+#first-content-thoi-su .right-first-content,
+#first-content-detail .right-first-content {
   padding: 15px;
   background-color: #f5f5f5;
 }
 
-#first-content .right-first-content .box-news .box-header, #first-content-thoi-su .right-first-content .box-news .box-header, #first-content-detail .right-first-content .box-news .box-header {
+#first-content .right-first-content .box-news .box-header,
+#first-content-thoi-su .right-first-content .box-news .box-header,
+#first-content-detail .right-first-content .box-news .box-header {
   border-bottom: 1px solid #dedede;
 }
 
-#first-content .right-first-content .box-news .box-header h4, #first-content-thoi-su .right-first-content .box-news .box-header h4, #first-content-detail .right-first-content .box-news .box-header h4 {
+#first-content .right-first-content .box-news .box-header h4,
+#first-content-thoi-su .right-first-content .box-news .box-header h4,
+#first-content-detail .right-first-content .box-news .box-header h4 {
   color: #ec0001;
 }
 
-#first-content .right-first-content .box-news .box-body, #first-content-thoi-su .right-first-content .box-news .box-body, #first-content-detail .right-first-content .box-news .box-body {
+#first-content .right-first-content .box-news .box-body,
+#first-content-thoi-su .right-first-content .box-news .box-body,
+#first-content-detail .right-first-content .box-news .box-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,27 +332,37 @@ section {
   margin-top: 10px;
 }
 
-#first-content .right-first-content .box-news .box-body .box-body-time h5, #first-content-thoi-su .right-first-content .box-news .box-body .box-body-time h5, #first-content-detail .right-first-content .box-news .box-body .box-body-time h5 {
+#first-content .right-first-content .box-news .box-body .box-body-time h5,
+#first-content-thoi-su .right-first-content .box-news .box-body .box-body-time h5,
+#first-content-detail .right-first-content .box-news .box-body .box-body-time h5 {
   padding: 10px;
   border-right: 1px solid #dedede;
   color: #dedede;
 }
 
-#first-content .right-first-content .box-news .box-body .box-body-content h6, #first-content-thoi-su .right-first-content .box-news .box-body .box-body-content h6, #first-content-detail .right-first-content .box-news .box-body .box-body-content h6 {
+#first-content .right-first-content .box-news .box-body .box-body-content h6,
+#first-content-thoi-su .right-first-content .box-news .box-body .box-body-content h6,
+#first-content-detail .right-first-content .box-news .box-body .box-body-content h6 {
   padding-left: 10px;
   color: #222222;
 }
 
-#first-content .right-first-content .box-news .box-bottom, #first-content-thoi-su .right-first-content .box-news .box-bottom, #first-content-detail .right-first-content .box-news .box-bottom {
+#first-content .right-first-content .box-news .box-bottom,
+#first-content-thoi-su .right-first-content .box-news .box-bottom,
+#first-content-detail .right-first-content .box-news .box-bottom {
   margin-top: 10px;
 }
 
-#first-content .right-first-content .box-news .box-bottom .box-bottom-content h6, #first-content-thoi-su .right-first-content .box-news .box-bottom .box-bottom-content h6, #first-content-detail .right-first-content .box-news .box-bottom .box-bottom-content h6 {
+#first-content .right-first-content .box-news .box-bottom .box-bottom-content h6,
+#first-content-thoi-su .right-first-content .box-news .box-bottom .box-bottom-content h6,
+#first-content-detail .right-first-content .box-news .box-bottom .box-bottom-content h6 {
   margin: 0;
   line-height: 25px;
 }
 
-#first-content .right-first-content .box-news .box-bottom .box-bottom-icon i, #first-content-thoi-su .right-first-content .box-news .box-bottom .box-bottom-icon i, #first-content-detail .right-first-content .box-news .box-bottom .box-bottom-icon i {
+#first-content .right-first-content .box-news .box-bottom .box-bottom-icon i,
+#first-content-thoi-su .right-first-content .box-news .box-bottom .box-bottom-icon i,
+#first-content-detail .right-first-content .box-news .box-bottom .box-bottom-icon i {
   font-size: 10px;
   color: #c6c6c6;
   margin: 0 5px;
@@ -334,20 +370,28 @@ section {
   border: 1px solid #c6c6c6;
 }
 
-#first-content .box-ads, #first-content-thoi-su .box-ads, #first-content-detail .box-ads {
+#first-content .box-ads,
+#first-content-thoi-su .box-ads,
+#first-content-detail .box-ads {
   padding: 37.5px;
 }
 
-#first-content .box-ads img, #first-content-thoi-su .box-ads img, #first-content-detail .box-ads img {
+#first-content .box-ads img,
+#first-content-thoi-su .box-ads img,
+#first-content-detail .box-ads img {
   width: 100%;
 }
 
-#finance .finance-main .content-main, #video .finance-main .content-main, #world .finance-main .content-main,
+#finance .finance-main .content-main,
+#video .finance-main .content-main,
+#world .finance-main .content-main,
 #enterprise .finance-main .content-main {
   border-bottom: 1px dotted #dedede;
 }
 
-#finance .finance-main .finance-main-top .box-news-child, #video .finance-main .finance-main-top .box-news-child, #world .finance-main .finance-main-top .box-news-child,
+#finance .finance-main .finance-main-top .box-news-child,
+#video .finance-main .finance-main-top .box-news-child,
+#world .finance-main .finance-main-top .box-news-child,
 #enterprise .finance-main .finance-main-top .box-news-child {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -356,33 +400,38 @@ section {
   border-bottom: 1px dotted #dedede;
 }
 
-#finance .finance-main .finance-main-top .box-news-child .box-news-child-image, #video .finance-main .finance-main-top .box-news-child .box-news-child-image, #world .finance-main .finance-main-top .box-news-child .box-news-child-image,
+#finance .finance-main .finance-main-top .box-news-child .box-news-child-image,
+#video .finance-main .finance-main-top .box-news-child .box-news-child-image,
+#world .finance-main .finance-main-top .box-news-child .box-news-child-image,
 #enterprise .finance-main .finance-main-top .box-news-child .box-news-child-image {
   width: 50%;
 }
 
-#finance .finance-main .finance-main-top .box-news-child .box-news-child-content, #video .finance-main .finance-main-top .box-news-child .box-news-child-content, #world .finance-main .finance-main-top .box-news-child .box-news-child-content,
+#finance .finance-main .finance-main-top .box-news-child .box-news-child-content,
+#video .finance-main .finance-main-top .box-news-child .box-news-child-content,
+#world .finance-main .finance-main-top .box-news-child .box-news-child-content,
 #enterprise .finance-main .finance-main-top .box-news-child .box-news-child-content {
   width: 50%;
   padding-left: 10px;
 }
 
-#finance .finance-main .finance-main-top .box-news-child:last-child, #video .finance-main .finance-main-top .box-news-child:last-child, #world .finance-main .finance-main-top .box-news-child:last-child,
-#enterprise .finance-main .finance-main-top .box-news-child:last-child {
-  border-bottom: 0;
-}
-
-#finance .finance-main .finance-main-bottom, #video .finance-main .finance-main-bottom, #world .finance-main .finance-main-bottom,
+#finance .finance-main .finance-main-bottom,
+#video .finance-main .finance-main-bottom,
+#world .finance-main .finance-main-bottom,
 #enterprise .finance-main .finance-main-bottom {
   padding-left: 15px;
 }
 
-#finance .finance-main .finance-main-bottom .box-header, #video .finance-main .finance-main-bottom .box-header, #world .finance-main .finance-main-bottom .box-header,
+#finance .finance-main .finance-main-bottom .box-header,
+#video .finance-main .finance-main-bottom .box-header,
+#world .finance-main .finance-main-bottom .box-header,
 #enterprise .finance-main .finance-main-bottom .box-header {
   color: #ec0001;
 }
 
-#finance .finance-main .finance-main-bottom .finance-main-top .box-news-child, #video .finance-main .finance-main-bottom .finance-main-top .box-news-child, #world .finance-main .finance-main-bottom .finance-main-top .box-news-child,
+#finance .finance-main .finance-main-bottom .finance-main-top .box-news-child,
+#video .finance-main .finance-main-bottom .finance-main-top .box-news-child,
+#world .finance-main .finance-main-bottom .finance-main-top .box-news-child,
 #enterprise .finance-main .finance-main-bottom .finance-main-top .box-news-child {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -391,21 +440,31 @@ section {
   border-bottom: 1px dotted #dedede;
 }
 
-#finance .finance-main .finance-main-bottom .finance-main-top .box-news-child .box-news-child-image, #video .finance-main .finance-main-bottom .finance-main-top .box-news-child .box-news-child-image, #world .finance-main .finance-main-bottom .finance-main-top .box-news-child .box-news-child-image,
+#finance .finance-main .finance-main-bottom .finance-main-top .box-news-child .box-news-child-image,
+#video .finance-main .finance-main-bottom .finance-main-top .box-news-child .box-news-child-image,
+#world .finance-main .finance-main-bottom .finance-main-top .box-news-child .box-news-child-image,
 #enterprise .finance-main .finance-main-bottom .finance-main-top .box-news-child .box-news-child-image {
   width: 50%;
 }
 
-#finance .finance-main .finance-main-bottom .finance-main-top .box-news-child .box-news-child-content, #video .finance-main .finance-main-bottom .finance-main-top .box-news-child .box-news-child-content, #world .finance-main .finance-main-bottom .finance-main-top .box-news-child .box-news-child-content,
+#finance .finance-main .finance-main-bottom .finance-main-top .box-news-child .box-news-child-content,
+#video .finance-main .finance-main-bottom .finance-main-top .box-news-child .box-news-child-content,
+#world .finance-main .finance-main-bottom .finance-main-top .box-news-child .box-news-child-content,
 #enterprise .finance-main .finance-main-bottom .finance-main-top .box-news-child .box-news-child-content {
   width: 50%;
   padding-left: 10px;
 }
 
-#finance .finance-main .box-ads, #video .finance-main .box-ads, #world .finance-main .box-ads,
+#finance .finance-main .box-ads,
+#video .finance-main .box-ads,
+#world .finance-main .box-ads,
 #enterprise .finance-main .box-ads {
   padding-right: 15px;
   margin: 40px 0 20px 0;
+}
+
+#stock .stock-main .bg-grey7 {
+  margin-bottom: 10px;
 }
 
 #stock .stock-main .box-header {
@@ -413,11 +472,13 @@ section {
 }
 
 #stock .stock-main .box-stock {
-  border-bottom: 1px dotted #dedede;
+  border-bottom: 1px dashed #dedede;
   padding: 10px 0;
 }
 
 #stock .stock-main .box-stock .box-stock-child {
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #dedede;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,7 +494,6 @@ section {
 }
 
 #stock .stock-main .box-stock:last-child {
-  margin-bottom: 10px;
   border-bottom: 0;
 }
 
@@ -444,11 +504,17 @@ section {
   margin-bottom: 10px;
 }
 
-#real-estate .real-estate-main .content-main, #vietnam .real-estate-main .content-main {
+#stock .stock-main .col-md-8 {
+  background-color: #f5f5f5;
+}
+
+#real-estate .real-estate-main .content-main,
+#vietnam .real-estate-main .content-main {
   border-bottom: 1px dotted #dedede;
 }
 
-#real-estate .real-estate-main .real-estate-main-top .box-news-child, #vietnam .real-estate-main .real-estate-main-top .box-news-child {
+#real-estate .real-estate-main .real-estate-main-top .box-news-child,
+#vietnam .real-estate-main .real-estate-main-top .box-news-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -456,24 +522,29 @@ section {
   border-bottom: 1px dotted #dedede;
 }
 
-#real-estate .real-estate-main .real-estate-main-top .box-news-child .box-news-child-image, #vietnam .real-estate-main .real-estate-main-top .box-news-child .box-news-child-image {
+#real-estate .real-estate-main .real-estate-main-top .box-news-child .box-news-child-image,
+#vietnam .real-estate-main .real-estate-main-top .box-news-child .box-news-child-image {
   width: 50%;
 }
 
-#real-estate .real-estate-main .real-estate-main-top .box-news-child .box-news-child-content, #vietnam .real-estate-main .real-estate-main-top .box-news-child .box-news-child-content {
+#real-estate .real-estate-main .real-estate-main-top .box-news-child .box-news-child-content,
+#vietnam .real-estate-main .real-estate-main-top .box-news-child .box-news-child-content {
   width: 50%;
   padding-left: 10px;
 }
 
-#real-estate .real-estate-main .real-estate-main-bottom, #vietnam .real-estate-main .real-estate-main-bottom {
+#real-estate .real-estate-main .real-estate-main-bottom,
+#vietnam .real-estate-main .real-estate-main-bottom {
   padding-left: 15px;
 }
 
-#real-estate .real-estate-main .real-estate-main-bottom .box-header, #vietnam .real-estate-main .real-estate-main-bottom .box-header {
+#real-estate .real-estate-main .real-estate-main-bottom .box-header,
+#vietnam .real-estate-main .real-estate-main-bottom .box-header {
   color: #ec0001;
 }
 
-#real-estate .real-estate-main .real-estate-main-bottom .real-estate-main-top .box-news-child, #vietnam .real-estate-main .real-estate-main-bottom .real-estate-main-top .box-news-child {
+#real-estate .real-estate-main .real-estate-main-bottom .real-estate-main-top .box-news-child,
+#vietnam .real-estate-main .real-estate-main-bottom .real-estate-main-top .box-news-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -481,21 +552,25 @@ section {
   border-bottom: 1px dotted #dedede;
 }
 
-#real-estate .real-estate-main .real-estate-main-bottom .real-estate-main-top .box-news-child .box-news-child-image, #vietnam .real-estate-main .real-estate-main-bottom .real-estate-main-top .box-news-child .box-news-child-image {
+#real-estate .real-estate-main .real-estate-main-bottom .real-estate-main-top .box-news-child .box-news-child-image,
+#vietnam .real-estate-main .real-estate-main-bottom .real-estate-main-top .box-news-child .box-news-child-image {
   width: 50%;
 }
 
-#real-estate .real-estate-main .real-estate-main-bottom .real-estate-main-top .box-news-child .box-news-child-content, #vietnam .real-estate-main .real-estate-main-bottom .real-estate-main-top .box-news-child .box-news-child-content {
+#real-estate .real-estate-main .real-estate-main-bottom .real-estate-main-top .box-news-child .box-news-child-content,
+#vietnam .real-estate-main .real-estate-main-bottom .real-estate-main-top .box-news-child .box-news-child-content {
   width: 50%;
   padding-left: 10px;
 }
 
-#real-estate .real-estate-main .box-ads, #vietnam .real-estate-main .box-ads {
+#real-estate .real-estate-main .box-ads,
+#vietnam .real-estate-main .box-ads {
   padding-right: 15px;
   margin: 40px 0 20px 0;
 }
 
-#real-estate .real-estate-main .box-image.d-md-none, #vietnam .real-estate-main .box-image.d-md-none {
+#real-estate .real-estate-main .box-image.d-md-none,
+#vietnam .real-estate-main .box-image.d-md-none {
   padding: 20px;
 }
 
@@ -559,7 +634,8 @@ section {
   padding: 20px;
 }
 
-#cooperative .box, #startup .box {
+#cooperative .box,
+#startup .box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -568,16 +644,19 @@ section {
   padding-bottom: 10px;
 }
 
-#cooperative .box .box-image, #startup .box .box-image {
+#cooperative .box .box-image,
+#startup .box .box-image {
   width: 50%;
 }
 
-#cooperative .box .box-title, #startup .box .box-title {
+#cooperative .box .box-title,
+#startup .box .box-title {
   padding-left: 10px;
   width: 50%;
 }
 
-#cooperative .col-md-3:last-child .box, #startup .col-md-3:last-child .box {
+#cooperative .col-md-3:last-child .box,
+#startup .col-md-3:last-child .box {
   border: 0;
 }
 
@@ -587,7 +666,8 @@ section {
   padding-bottom: 40px;
 }
 
-#business .slick-prev, #business .slick-next {
+#business .slick-prev,
+#business .slick-next {
   display: none !important;
 }
 
@@ -717,112 +797,162 @@ section {
     max-width: 970px;
     margin: 0 auto;
   }
-  #first-content, #first-content-thoi-su, #first-content-detail {
+  #first-content,
+  #first-content-thoi-su,
+  #first-content-detail {
     max-width: 970px;
     margin: 0 auto;
     margin-top: 20px;
   }
-  #first-content .box-header h4, #first-content-thoi-su .box-header h4, #first-content-detail .box-header h4 {
+  #first-content .box-header h4,
+  #first-content-thoi-su .box-header h4,
+  #first-content-detail .box-header h4 {
     padding-left: 10px;
   }
-  #first-content .col-md-4, #first-content-thoi-su .col-md-4, #first-content-detail .col-md-4 {
+  #first-content .col-md-4,
+  #first-content-thoi-su .col-md-4,
+  #first-content-detail .col-md-4 {
     padding: 15px;
   }
-  #first-content .right-first-content, #first-content-thoi-su .right-first-content, #first-content-detail .right-first-content {
+  #first-content .right-first-content,
+  #first-content-thoi-su .right-first-content,
+  #first-content-detail .right-first-content {
     background-color: #ffffff;
     border: 1px solid #dedede;
   }
-  #first-content .box-ads, #first-content-thoi-su .box-ads, #first-content-detail .box-ads {
+  #first-content .box-ads,
+  #first-content-thoi-su .box-ads,
+  #first-content-detail .box-ads {
     margin-top: 20px;
     padding: 0;
   }
-  #first-content .box-bao-giay, #first-content-thoi-su .box-bao-giay, #first-content-detail .box-bao-giay {
+  #first-content .box-bao-giay,
+  #first-content-thoi-su .box-bao-giay,
+  #first-content-detail .box-bao-giay {
     border: 1px solid #dedede;
     padding: 10px;
     margin-top: 20px;
   }
-  #first-content .box-bao-giay .box-header, #first-content-thoi-su .box-bao-giay .box-header, #first-content-detail .box-bao-giay .box-header {
+  #first-content .box-bao-giay .box-header,
+  #first-content-thoi-su .box-bao-giay .box-header,
+  #first-content-detail .box-bao-giay .box-header {
     border-bottom: 1px solid #dedede;
   }
-  #first-content .box-bao-giay .box-header h4, #first-content-thoi-su .box-bao-giay .box-header h4, #first-content-detail .box-bao-giay .box-header h4 {
+  #first-content .box-bao-giay .box-header h4,
+  #first-content-thoi-su .box-bao-giay .box-header h4,
+  #first-content-detail .box-bao-giay .box-header h4 {
     color: #ec0001;
   }
-  #first-content .box-bao-giay .box-main, #first-content-thoi-su .box-bao-giay .box-main, #first-content-detail .box-bao-giay .box-main {
+  #first-content .box-bao-giay .box-main,
+  #first-content-thoi-su .box-bao-giay .box-main,
+  #first-content-detail .box-bao-giay .box-main {
     margin-top: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  #first-content .box-bao-giay .box-main .box-main-image, #first-content-thoi-su .box-bao-giay .box-main .box-main-image, #first-content-detail .box-bao-giay .box-main .box-main-image {
+  #first-content .box-bao-giay .box-main .box-main-image,
+  #first-content-thoi-su .box-bao-giay .box-main .box-main-image,
+  #first-content-detail .box-bao-giay .box-main .box-main-image {
     padding-right: 10px;
   }
-  #first-content .box-bao-giay .box-main .box-main-content, #first-content-thoi-su .box-bao-giay .box-main .box-main-content, #first-content-detail .box-bao-giay .box-main .box-main-content {
+  #first-content .box-bao-giay .box-main .box-main-content,
+  #first-content-thoi-su .box-bao-giay .box-main .box-main-content,
+  #first-content-detail .box-bao-giay .box-main .box-main-content {
     position: relative;
   }
-  #first-content .box-bao-giay .box-main .box-main-content .box-btn, #first-content-thoi-su .box-bao-giay .box-main .box-main-content .box-btn, #first-content-detail .box-bao-giay .box-main .box-main-content .box-btn {
+  #first-content .box-bao-giay .box-main .box-main-content .box-btn,
+  #first-content-thoi-su .box-bao-giay .box-main .box-main-content .box-btn,
+  #first-content-detail .box-bao-giay .box-main .box-main-content .box-btn {
     position: absolute;
     bottom: 8px;
     left: 0;
   }
-  #first-content .box-top-views, #first-content-thoi-su .box-top-views, #first-content-detail .box-top-views {
+  #first-content .box-top-views,
+  #first-content-thoi-su .box-top-views,
+  #first-content-detail .box-top-views {
     border: 1px solid #dedede;
     padding: 10px;
     margin-top: 20px;
   }
-  #first-content .box-top-views .box-header, #first-content-thoi-su .box-top-views .box-header, #first-content-detail .box-top-views .box-header {
+  #first-content .box-top-views .box-header,
+  #first-content-thoi-su .box-top-views .box-header,
+  #first-content-detail .box-top-views .box-header {
     border-bottom: 1px solid #dedede;
   }
-  #first-content .box-top-views .box-header h4, #first-content-thoi-su .box-top-views .box-header h4, #first-content-detail .box-top-views .box-header h4 {
+  #first-content .box-top-views .box-header h4,
+  #first-content-thoi-su .box-top-views .box-header h4,
+  #first-content-detail .box-top-views .box-header h4 {
     color: #ec0001;
   }
-  #first-content .box-top-views .box-main .box-main-content .box-main-content-child, #first-content-thoi-su .box-top-views .box-main .box-main-content .box-main-content-child, #first-content-detail .box-top-views .box-main .box-main-content .box-main-content-child {
+  #first-content .box-top-views .box-main .box-main-content .box-main-content-child,
+  #first-content-thoi-su .box-top-views .box-main .box-main-content .box-main-content-child,
+  #first-content-detail .box-top-views .box-main .box-main-content .box-main-content-child {
     padding-top: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     border-bottom: 1px dotted #dedede;
   }
-  #first-content .box-top-views .box-main .box-main-content .box-main-content-child h2, #first-content-thoi-su .box-top-views .box-main .box-main-content .box-main-content-child h2, #first-content-detail .box-top-views .box-main .box-main-content .box-main-content-child h2 {
+  #first-content .box-top-views .box-main .box-main-content .box-main-content-child h2,
+  #first-content-thoi-su .box-top-views .box-main .box-main-content .box-main-content-child h2,
+  #first-content-detail .box-top-views .box-main .box-main-content .box-main-content-child h2 {
     color: #dedede;
     padding: 0 10px;
   }
-  #first-content .box-top-views .box-main .box-main-content .box-main-content-child h6, #first-content-thoi-su .box-top-views .box-main .box-main-content .box-main-content-child h6, #first-content-detail .box-top-views .box-main .box-main-content .box-main-content-child h6 {
+  #first-content .box-top-views .box-main .box-main-content .box-main-content-child h6,
+  #first-content-thoi-su .box-top-views .box-main .box-main-content .box-main-content-child h6,
+  #first-content-detail .box-top-views .box-main .box-main-content .box-main-content-child h6 {
     color: #222222;
   }
-  #first-content .box-top-views .box-main .box-main-content .box-main-content-child:last-child, #first-content-thoi-su .box-top-views .box-main .box-main-content .box-main-content-child:last-child, #first-content-detail .box-top-views .box-main .box-main-content .box-main-content-child:last-child {
+  #first-content .box-top-views .box-main .box-main-content .box-main-content-child:last-child,
+  #first-content-thoi-su .box-top-views .box-main .box-main-content .box-main-content-child:last-child,
+  #first-content-detail .box-top-views .box-main .box-main-content .box-main-content-child:last-child {
     border-bottom: 0px;
   }
   #thoi-su,
-  #hi-tech, #other-news,
+  #hi-tech,
+  #other-news,
   #live {
     max-width: 970px;
     margin: 0 auto;
   }
   #thoi-su .thoi-su-main,
-  #hi-tech .thoi-su-main, #other-news .thoi-su-main,
+  #hi-tech .thoi-su-main,
+  #other-news .thoi-su-main,
   #live .thoi-su-main {
     margin-top: 40px;
   }
-  #finance, #video, #world,
+  #finance,
+  #video,
+  #world,
   #enterprise {
     max-width: 970px;
     margin: 0 auto;
   }
-  #finance .finance-main .content-main, #video .finance-main .content-main, #world .finance-main .content-main,
+  #finance .finance-main .content-main,
+  #video .finance-main .content-main,
+  #world .finance-main .content-main,
   #enterprise .finance-main .content-main {
     border: 0;
   }
-  #finance .finance-main .content-main .box-title h3, #video .finance-main .content-main .box-title h3, #world .finance-main .content-main .box-title h3,
+  #finance .finance-main .content-main .box-title h3,
+  #video .finance-main .content-main .box-title h3,
+  #world .finance-main .content-main .box-title h3,
   #enterprise .finance-main .content-main .box-title h3 {
     font-size: 24px;
     line-height: 30px;
     font-family: "Roboto-bold";
   }
-  #finance .finance-main .finance-main-top, #video .finance-main .finance-main-top, #world .finance-main .finance-main-top,
+  #finance .finance-main .finance-main-top,
+  #video .finance-main .finance-main-top,
+  #world .finance-main .finance-main-top,
   #enterprise .finance-main .finance-main-top {
     border-bottom: 1px solid #dedede;
   }
-  #finance .finance-main .finance-main-bottom, #video .finance-main .finance-main-bottom, #world .finance-main .finance-main-bottom,
+  #finance .finance-main .finance-main-bottom,
+  #video .finance-main .finance-main-bottom,
+  #world .finance-main .finance-main-bottom,
   #enterprise .finance-main .finance-main-bottom {
     padding-left: 0;
   }
@@ -833,17 +963,22 @@ section {
   #stock .stock-main .box-header {
     margin-top: 20px;
   }
+  #stock .stock-main .col-md-8 {
+    background-color: #ffffff;
+  }
   #stock .stock-main .box-stock {
     border-bottom: 1px dotted #dedede;
     padding: 10px 0;
   }
   #stock .stock-main .box-stock .box-stock-child {
+    border-bottom: 0 !important;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
   #stock .stock-main .box-stock .box-stock-child .box-stock-child-image {
     width: 30%;
+    padding-left: 10px;
   }
   #stock .stock-main .box-stock .box-stock-child .box-stock-child-content {
     width: 70%;
@@ -856,23 +991,27 @@ section {
   #stock .stock-main .form-vat {
     border: 1px solid #dedede;
     padding: 15px 20px;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-bottom: 10px;
   }
   #stock .stock-main .col-md-6:last-child {
     border-left: 1px dotted #dedede;
   }
-  #real-estate, #vietnam {
+  #real-estate,
+  #vietnam {
     max-width: 970px;
     margin: 0 auto;
   }
-  #real-estate .real-estate-main .content-main, #vietnam .real-estate-main .content-main {
+  #real-estate .real-estate-main .content-main,
+  #vietnam .real-estate-main .content-main {
     border: 0;
   }
-  #real-estate .real-estate-main .finance-main-top, #vietnam .real-estate-main .finance-main-top {
+  #real-estate .real-estate-main .finance-main-top,
+  #vietnam .real-estate-main .finance-main-top {
     border-bottom: 1px solid #dedede;
   }
-  #real-estate .real-estate-main .finance-main-bottom, #vietnam .real-estate-main .finance-main-bottom {
+  #real-estate .real-estate-main .finance-main-bottom,
+  #vietnam .real-estate-main .finance-main-bottom {
     padding-left: 0;
   }
   #image {
@@ -891,29 +1030,35 @@ section {
   #image .image-main .image-main-top .box-news-child:first-child {
     padding-top: 0;
   }
-  #cooperative, #startup {
+  #cooperative,
+  #startup {
     max-width: 970px;
     margin: 0 auto;
   }
-  #cooperative .box, #startup .box {
+  #cooperative .box,
+  #startup .box {
     display: inherit;
     border-bottom: 0;
     margin-bottom: 0;
     padding-bottom: 0;
   }
-  #cooperative .box .box-image, #startup .box .box-image {
+  #cooperative .box .box-image,
+  #startup .box .box-image {
     width: auto;
   }
-  #cooperative .box .box-title, #startup .box .box-title {
+  #cooperative .box .box-title,
+  #startup .box .box-title {
     padding-left: 0;
     width: auto;
   }
-  #cooperative .col-md-6 .box-title h5, #startup .col-md-6 .box-title h5 {
+  #cooperative .col-md-6 .box-title h5,
+  #startup .col-md-6 .box-title h5 {
     font-size: 20px;
     line-height: 26px;
     font-family: "Roboto-bold";
   }
-  #cooperative .col-md-3:last-child .box, #startup .col-md-3:last-child .box {
+  #cooperative .col-md-3:last-child .box,
+  #startup .col-md-3:last-child .box {
     border: 0;
   }
   #business {

@@ -1,7 +1,4 @@
 @import 'variable';
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -46,7 +43,11 @@ section {
     padding: 8px 20px 8px 20px;
     border-radius: 2px;
 }
-.n-color-red { color: $red; }
+
+.n-color-red {
+    color: $red;
+}
+
 .n-btn-light {
     color: $grey3;
     background-color: $grey7;
@@ -58,7 +59,7 @@ section {
     text-transform: uppercase;
 
     .heading {
-        margin: 40px 0;
+        margin: 35px 0;
         position: relative;
         background-color: $red;
         height: 1px;
@@ -90,8 +91,9 @@ section {
 
     .heading-content {
         margin: 0 20px;
-        span{
-            font-size:12px;
+
+        span {
+            font-size: 12px;
             border: 1px solid #fff;
             border-radius: 100%;
             padding: 3px
@@ -140,11 +142,14 @@ section {
     pointer-events: none;
     color: #aaa;
 }
-.box-title{
-    padding-top: 10px;
-}
+
+
 
 .box {
+    margin-top: 10px;
+    .box-title {
+        padding-top: 16px;
+    }
     .box-img {
         img {
             width: 100%;
@@ -154,8 +159,10 @@ section {
 }
 
 #header {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.22);
     .navbar {
         height: 54px;
+        padding: 0;
     }
 
     .logo {
@@ -166,18 +173,20 @@ section {
             width: 100%;
         }
     }
-    .btn-icon-header{
-img{
-    width: auto;
 
-}
+    .btn-icon-header {
+        img {
+            width: auto;
+
+        }
     }
-        
 
 
 }
 
-#first-content,#first-content-thoi-su,#first-content-detail {
+#first-content,
+#first-content-thoi-su,
+#first-content-detail {
     .left-first-content {
         .left-first-content-child {
             .box {
@@ -187,8 +196,9 @@ img{
                 .box-content {
                     border-bottom: 1px dotted $grey6;
                 }
-                .box-title:first-child{
-                    padding-top:0;
+
+                .box-title:first-child {
+                    padding-top: 0;
                 }
             }
         }
@@ -270,7 +280,9 @@ img{
     }
 }
 
-#finance,#video,#world,
+#finance,
+#video,
+#world,
 #enterprise {
     .finance-main {
         .content-main {
@@ -293,9 +305,9 @@ img{
                 }
             }
 
-            .box-news-child:last-child {
-                border-bottom: 0;
-            }
+            // .box-news-child:last-child {
+            //     border-bottom: 0;
+            // }
         }
 
         .finance-main-bottom {
@@ -332,16 +344,21 @@ img{
 
 #stock {
     .stock-main {
+        .bg-grey7{
+            margin-bottom: 10px;
+        }
         .box-header {
             margin-top: 20px;
         }
 
         .box-stock {
-            border-bottom: 1px dotted $grey6;
-            padding: 10px 0;
+            border-bottom: 1px dashed $grey6;
+            padding:10px 0;
 
             .box-stock-child {
+            padding-bottom: 15px;
 
+                border-bottom: 1px dashed $grey6;
                 display: flex;
 
                 .box-stock-child-image {
@@ -356,7 +373,7 @@ img{
         }
 
         .box-stock:last-child {
-            margin-bottom: 10px;
+            
             border-bottom: 0;
         }
 
@@ -366,11 +383,15 @@ img{
             margin-top: 10px;
             margin-bottom: 10px;
         }
+        .col-md-8{
+            background-color: $grey7;
+        }
     }
 
 }
 
-#real-estate,#vietnam {
+#real-estate,
+#vietnam {
     .real-estate-main {
         .content-main {
             border-bottom: 1px dotted $grey6;
@@ -495,7 +516,8 @@ img{
     }
 }
 
-#cooperative, #startup {
+#cooperative,
+#startup {
     .box {
         display: flex;
         border-bottom: 1px dashed $grey6;
@@ -518,26 +540,33 @@ img{
         }
     }
 }
-#business{
+
+#business {
     background-color: $grey2;
-    color:#fff;
+    color: #fff;
     padding-bottom: 40px;
-    .slick-prev, .slick-next{
-        display:none !important;
+
+    .slick-prev,
+    .slick-next {
+        display: none !important;
     }
+
     .slick-list.draggable {
         margin: 0 15px;
     }
-    .slick-dots li.slick-active button:before{
+
+    .slick-dots li.slick-active button:before {
         color: $red;
         border: 0;
 
     }
-    .slick-dots li button:before{
-        color:$grey2;
+
+    .slick-dots li button:before {
+        color: $grey2;
         border: 1px solid #fff;
 
     }
+
     // .slick-slide{
     //     margin: 0;
     // }
@@ -623,7 +652,7 @@ img{
 @media (min-width: 576px) {}
 
 @media (min-width: 768px) {
-  
+
     #header {
         .top-header {
             @include w970VsCenter;
@@ -665,7 +694,9 @@ img{
         }
     }
 
-    #first-content,#first-content-thoi-su,#first-content-detail {
+    #first-content,
+    #first-content-thoi-su,
+    #first-content-detail {
         @include w970VsCenter;
         margin-top: 20px;
 
@@ -766,7 +797,8 @@ img{
     }
 
     #thoi-su,
-    #hi-tech,#other-news,
+    #hi-tech,
+    #other-news,
     #live {
         @include w970VsCenter;
 
@@ -776,7 +808,9 @@ img{
 
     }
 
-    #finance,#video,#world,
+    #finance,
+    #video,
+    #world,
     #enterprise {
         @include w970VsCenter;
 
@@ -808,22 +842,25 @@ img{
 
     #stock {
         @include w970VsCenter;
-
+        
         .stock-main {
-            .box-header {
+            .box-header{
                 margin-top: 20px;
             }
-
+            .col-md-8{
+                background-color: $white;
+            }
             .box-stock {
                 border-bottom: 1px dotted $grey6;
                 padding: 10px 0;
 
                 .box-stock-child {
-
+                    border-bottom:0 !important;
                     display: flex;
 
                     .box-stock-child-image {
                         width: 30%;
+                        padding-left: 10px;
                     }
 
                     .box-stock-child-content {
@@ -841,19 +878,20 @@ img{
             .form-vat {
                 border: 1px solid $grey6;
                 padding: 15px 20px;
-                margin-top: 0px;
+                margin-top: 20px;
                 margin-bottom: 10px;
             }
-
+            
             .col-md-6:last-child {
                 border-left: 1px dotted $grey6;
 
             }
         }
 
-    }     
+    }
 
-    #real-estate,#vietnam {
+    #real-estate,
+    #vietnam {
         @include w970VsCenter;
 
         .real-estate-main {
@@ -892,8 +930,10 @@ img{
         }
     }
 
-    #cooperative , #startup {
+    #cooperative,
+    #startup {
         @include w970VsCenter;
+
         .box {
             display: inherit;
             border-bottom: 0;
@@ -926,7 +966,8 @@ img{
             }
         }
     }
-    #business{
+
+    #business {
         @include w970VsCenter;
     }
 
