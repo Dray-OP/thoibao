@@ -12,7 +12,10 @@ img {
 section {
     margin-top: 30px;
 }
-
+a:hover{
+    text-decoration: none;
+    color:$grey2;
+}
 .box-header {
     color: $red;
 }
@@ -229,7 +232,7 @@ section {
 
                 .box-body-time {
 
-                    h5 {
+                    .h5 {
                         padding: 10px;
                         border-right: 1px solid $grey6;
                         color: $grey6;
@@ -237,7 +240,7 @@ section {
                 }
 
                 .box-body-content {
-                    h6 {
+                    .h6 {
                         padding-left: 10px;
                         color: $grey1;
                     }
@@ -249,7 +252,7 @@ section {
                 margin-top: 10px;
 
                 .box-bottom-content {
-                    h6 {
+                    .h6 {
                         margin: 0;
                         line-height: 25px;
                     }
@@ -454,7 +457,12 @@ section {
 
 #image {
     background: $grey2;
-    color: $white;
+    color: $white ;
+    a{
+        color: $white !important;
+
+    }
+    
 
     .image-main {
         .content-main {
@@ -608,7 +616,7 @@ section {
         .row>div {
             border-bottom: 1px dashed #dedede;
 
-            h6 {
+            .h6 {
                 padding: 10px 0;
             }
         }
@@ -654,6 +662,8 @@ section {
 @media (min-width: 768px) {
 
     #header {
+    box-shadow: none ;
+
         .top-header {
             @include w970VsCenter;
             display: flex;
@@ -782,7 +792,7 @@ section {
                             padding: 0 10px;
                         }
 
-                        h6 {
+                        .h6 {
                             color: $grey1;
                         }
                     }
@@ -952,7 +962,7 @@ section {
 
         .col-md-6 {
             .box-title {
-                h5 {
+                .h5 {
                     font-size: 20px;
                     line-height: 26px;
                     font-family: "Roboto-bold";
@@ -996,7 +1006,7 @@ section {
             .row>div {
                 border-bottom: 0;
 
-                h6 {
+                .h6 {
                     padding-bottom: 0;
                     color: red;
                     font-family: "Roboto-bold";
