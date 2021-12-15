@@ -20,11 +20,147 @@
     <link rel="stylesheet" href="./css/site.css">
     <!-- css -->
     <link rel="stylesheet" href="./css/styleLayout.css">
-
 </head>
-
 <body>
-    
+     <!-- header -->
+     <header id="header">
+        <div class="top-header d-none d-md-flex">
+            <div class="top-header-logo">
+                <a href="#"> <img src="./images/logo.png" alt=""></a>
+            </div>
+            <div class="top-header-icons">
+                <div class="box-icon">
+                    <a href="" title=""><img src="./images/icons/FB.png" alt=""></a>
+                </div>
+                <div class="box-icon">
+                    <a href="" title=""><img src="./images/icons/Twitter.png" alt=""></a>
+                </div>
+                <div class="box-icon">
+                    <a href="" title=""><img src="./images/icons/G+.png" alt=""></a>
+                </div>
+                <div class="box-icon">
+                    <a href="" title=""><img src="./images/icons/Linkedin.png" alt=""></a>
+                </div>
+                <div class="box-icon">
+                    <a href="" title=""><img src="./images/icons/Mail.png" alt=""></a>
+                </div>
+                <div class="box-icon box-search">
+                    <div class="input-group">
+                        <input type="text" class="form-control bg-light" placeholder="Tìm kiếm">
+                        <div class="input-group-append">
+                            <button class="btn btn-light" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-icon">
+                    <a href="" title=""><img class="d-none d-md-block" src="./images/User.png" alt=""></a>
+                </div>
+            </div>
+
+
+            <div class="bot-footer-btn d-md-none">
+                <a href="" title="" class="btn ">Trở về phiên bản máy tính</a>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-md nav-header">
+            <div class="d-flex">
+                <div class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarN"
+                    aria-controls="navbarN" aria-expanded="false" aria-label="Toggle navigation">
+                    <a href="#"> <img class="n-icon-show" src="./images/Icon_menu.png" alt=""></a>
+                    <a href="#"> <img class="n-icon-hide" src="./images/icon_close.png"
+                            style=" width: 18px; height: 18px;filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);"
+                            alt=""></a>
+                </div>
+                <div class="logo d-md-none">
+                    <a href="#"> <img src="./images/logo.png" alt=""></a>
+                </div>
+            </div>
+
+            <a class="navbar-brand user-icon d-md-none" href="#">
+                <!--<> <img class="d-none d-md-block" src="./images/User.png" alt=""> -->
+                <img class="" src="./images/fa-solid_user.png" alt="">
+            </a>
+
+
+            <div class="collapse navbar-collapse" id="navbarN">
+                <form class="form-inline my-2 my-lg-0 d-md-none">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm">
+                        <div class="input-group-append">
+                            <button class="btn btn-default" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link d-none d-md-block" href="#">
+                            <img src="./images/icon_home.png" alt="">
+                        </a>
+                        <a class="nav-link d-md-none" href="#">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Thời sự</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tài chính</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Chứng khoán</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Bất động sản</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Doanh nghiệp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">HI-TECH</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">COOPERATIVE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">STARTUP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SỐNG</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li> -->
+                    <li class="nav-item d-md-none">
+                        <button type="button" class="btn btn-light btn-icon-header btn-block">
+                            <a href="#"> <img src="./images/Icon_computer.png" alt=""></a>
+                            Phiên bản máy tính
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-icon-header btn-block">
+                            <a href="#"> <img src="./images/icon_send.png" style="color:white" alt=""></a>
+                            Liên hệ quảng cáo
+                        </button>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <div class="header-stock-api">
+
+        </div>
+        <div class="header-banner-ads d-none d-md-block">
+            <a href="#"> <img src="./images/Ads 970x90.png " alt=""></a>
+        </div>
+    </header>
 
     
     <!-- bootstrap 4 -->

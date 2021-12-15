@@ -70,6 +70,9 @@ a:hover{
     }
 
     .heading-content {
+        .heading-content-name{
+            font-size:18px;
+        }
         position: absolute;
         right: 50%;
         top: 50%;
@@ -159,9 +162,19 @@ a:hover{
 
         }
     }
+    .box-content{
+        padding-top:12px;
+    }
+    .box-link{
+        padding-top: 8px;
+        div{
+            padding-top: 8px;
+        }
+    }
 }
 
 #header {
+    margin-top: 20px;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.22);
     .navbar {
         height: 54px;
@@ -183,7 +196,7 @@ a:hover{
 
         }
     }
-
+    
 
 }
 
@@ -191,19 +204,60 @@ a:hover{
 #first-content-thoi-su,
 #first-content-detail {
     .left-first-content {
+        .left-first-content-main ,.box{
+            
+                margin-top:0;
+            
+        }
         .left-first-content-child {
+            overflow: auto;
+            height: 478px;
+            border-right: 1px solid $grey6;
             .box {
-                border-right: 1px solid $grey6;
+                margin-top:0;
                 padding-right: 10px;
-
-                .box-content {
-                    border-bottom: 1px dotted $grey6;
-                }
-
                 .box-title:first-child {
                     padding-top: 0;
                 }
+                .box-content {
+                    padding-top: 6px;
+                    padding-bottom:12px;
+                    border-bottom: 1px dotted $grey6;
+                }
             }
+            .box:last-child {
+                .box-content{
+                    border-bottom: 0;
+
+                }
+
+            }
+            .box:not(:first-child){
+                margin-top: 16px;
+            }
+        }
+        ::-webkit-scrollbar {
+            width: 1px;
+            left: 1px;
+          }
+           
+          /* Handle */
+          ::-webkit-scrollbar-thumb {
+            background: $grey2 ; 
+            border-radius: 0;
+          }
+        .left-first-content-child-row-2{
+            margin-top: 12px;
+            .box{
+                margin-top :20px;
+                .box-title{
+                    padding-top: 10px;
+                }
+                .box-content{
+                    padding-top: 10px;
+                }
+            }
+            
         }
     }
 
@@ -212,14 +266,14 @@ a:hover{
     }
 
     .right-first-content {
-        padding: 15px;
         background-color: $grey7;
-
-
+        
+        
         .box-news {
+            padding: 0 16px 16px 16px;
             .box-header {
+                // padding: 12px 0 0 16px;
                 border-bottom: 1px solid $grey6;
-
                 h4 {
                     color: $red;
                 }
@@ -228,7 +282,7 @@ a:hover{
             .box-body {
                 display: flex;
                 border-bottom: 1px dotted $grey6;
-                margin-top: 10px;
+               
 
                 .box-body-time {
 
@@ -717,40 +771,46 @@ a:hover{
         }
 
         .col-md-4 {
-            padding: 15px;
+            padding: 10px;
         }
 
         .right-first-content {
+            .box-header{
+                border-bottom: 1px solid $grey6;
+                padding: 16px 12px;
+            }
+            .box-body{
+                padding: 12px 0;
+            }
             background-color: $white;
             border: 1px solid $grey6;
         }
 
         .box-ads {
-            margin-top: 20px;
+            margin-top: 24px;
             padding: 0;
         }
 
         .box-bao-giay {
             border: 1px solid $grey6;
-            padding: 10px;
-            margin-top: 20px;
+            margin-top: 24px;
 
             .box-header {
-
+                padding: 12px 20px ;
                 border-bottom: 1px solid $grey6;
 
-                h4 {
-                    color: $red;
+                .h4 {
+                    padding-right: 20px;
                 }
             }
 
             .box-main {
-                margin-top: 20px;
+                margin: 16px;
 
                 display: flex;
 
                 .box-main-image {
-                    padding-right: 10px;
+                    padding-right: 16px;
                 }
 
                 .box-main-content {
@@ -768,30 +828,27 @@ a:hover{
 
         .box-top-views {
             border: 1px solid $grey6;
-            padding: 10px;
             margin-top: 20px;
 
             .box-header {
+                padding: 12px 20px ;
 
                 border-bottom: 1px solid $grey6;
 
-                h4 {
-                    color: $red;
-                }
+               
             }
 
             .box-main {
+                
                 .box-main-content {
                     .box-main-content-child {
-                        padding-top: 15px;
+                        padding: 16px;
                         display: flex;
                         border-bottom: 1px dotted $grey6;
-
-                        h2 {
+                        .h2 {
                             color: $grey6;
-                            padding: 0 10px;
+                            margin-right: 10px;
                         }
-
                         .h6 {
                             color: $grey1;
                         }

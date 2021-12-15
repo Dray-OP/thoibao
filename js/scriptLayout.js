@@ -96,3 +96,14 @@ $(".n-icon-hide").on("click", function(){
     $(".n-icon-show").css({'display': 'block'})
     $(".n-icon-hide").css({'display': 'none'})
 })
+
+ var totalItems = $('.carousel-item').length;
+ var currentIndex = $('.carousel-item.active').index() + 1;
+
+$('.num').html(''+currentIndex+'/'+totalItems+'');
+
+$('.box-bottom-icon').click(function(){
+    currentIndex = $('.carousel-item.active').index() + 1;
+    console.log(currentIndex)
+    $('.num').html(''+currentIndex+'/'+totalItems+'');
+})
