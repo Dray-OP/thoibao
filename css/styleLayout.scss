@@ -1,4 +1,4 @@
-@import 'variable';
+@import "variable";
 * {
     margin: 0;
     padding: 0;
@@ -12,9 +12,9 @@ img {
 section {
     margin-top: 30px;
 }
-a:hover{
+a:hover {
     text-decoration: none;
-    color:$grey2;
+    color: $grey2;
 }
 .box-header {
     color: $red;
@@ -24,21 +24,13 @@ a:hover{
     margin-right: 0;
     margin-left: 0;
 
-    >.col,
-    >[class*="col-"] {
+    > .col,
+    > [class*="col-"] {
         padding-right: 0;
         padding-left: 0;
     }
 }
 
-.slick-next {
-    left: 88%;
-}
-
-.slick-prev {
-    left: 20px;
-    z-index: 9;
-}
 
 .n-btn-red {
     color: #fff;
@@ -62,7 +54,7 @@ a:hover{
     text-transform: uppercase;
 
     .heading {
-        margin: 35px 0;
+        margin: 52px 0 39px 0;
         position: relative;
         background-color: $red;
         height: 1px;
@@ -70,13 +62,20 @@ a:hover{
     }
 
     .heading-content {
-        .heading-content-name{
-            font-size:18px;
+        padding: 8px 36px;
+        
+        .heading-content-name {
+            font-size: 18px;
         }
         position: absolute;
         right: 50%;
         top: 50%;
         transform: translate(50%, -50%);
+    }
+    h2 {
+        font-size: 18px;
+        line-height: 23px;
+        font-weight: 700;
     }
 }
 
@@ -97,12 +96,22 @@ a:hover{
 
     .heading-content {
         margin: 0 20px;
+        h2 {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
 
+            font-size: 18px;
+            line-height: 23px;
+            font-weight: 700;
+        }
         span {
+            margin-left: 5px;
             font-size: 12px;
+            line-height: 15px;
             border: 1px solid #fff;
             border-radius: 100%;
-            padding: 3px
+            padding: 3px;
         }
     }
 }
@@ -117,7 +126,6 @@ a:hover{
 
 .bg-grey7 {
     background-color: $grey7;
-
 }
 
 .box-icon {
@@ -149,8 +157,6 @@ a:hover{
     color: #aaa;
 }
 
-
-
 .box {
     margin-top: 10px;
     .box-title {
@@ -159,15 +165,14 @@ a:hover{
     .box-img {
         img {
             width: 100%;
-
         }
     }
-    .box-content{
-        padding-top:12px;
+    .box-content {
+        padding-top: 12px;
     }
-    .box-link{
+    .box-link {
         padding-top: 8px;
-        div{
+        div {
             padding-top: 8px;
         }
     }
@@ -193,71 +198,64 @@ a:hover{
     .btn-icon-header {
         img {
             width: auto;
-
         }
     }
-    
-
 }
 
 #first-content,
 #first-content-thoi-su,
 #first-content-detail {
     .left-first-content {
-        .left-first-content-main ,.box{
-            
-                margin-top:0;
-            
+        .left-first-content-main,
+        .box {
+            margin-top: 0;
         }
         .left-first-content-child {
             overflow: auto;
             height: 478px;
             border-right: 1px solid $grey6;
             .box {
-                margin-top:0;
+                margin-top: 0;
                 padding-right: 10px;
                 .box-title:first-child {
                     padding-top: 0;
                 }
                 .box-content {
                     padding-top: 6px;
-                    padding-bottom:12px;
+                    padding-bottom: 12px;
                     border-bottom: 1px dotted $grey6;
                 }
             }
             .box:last-child {
-                .box-content{
+                .box-content {
                     border-bottom: 0;
-
                 }
-
             }
-            .box:not(:first-child){
+            .box:not(:first-child) {
                 margin-top: 16px;
             }
         }
         ::-webkit-scrollbar {
             width: 1px;
             left: 1px;
-          }
-           
-          /* Handle */
-          ::-webkit-scrollbar-thumb {
-            background: $grey2 ; 
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: $grey2;
             border-radius: 0;
-          }
-        .left-first-content-child-row-2{
+        }
+        .left-first-content-child-row-2 {
             margin-top: 12px;
-            .box{
-                margin-top :20px;
-                .box-title{
+            .box {
+                margin-top: 20px;
+                .box-title {
                     padding-top: 10px;
                 }
-                .box-content{
+                .box-content {
                     padding-top: 10px;
                 }
             }
-            
         }
     }
 
@@ -267,8 +265,7 @@ a:hover{
 
     .right-first-content {
         background-color: $grey7;
-        
-        
+
         .box-news {
             padding: 0 16px 16px 16px;
             .box-header {
@@ -282,14 +279,12 @@ a:hover{
             .box-body {
                 display: flex;
                 border-bottom: 1px dotted $grey6;
-               
 
                 .box-body-time {
-
                     .h5 {
                         padding: 10px;
                         border-right: 1px solid $grey6;
-                        color: $grey6;
+                        color: $grey5;
                     }
                 }
 
@@ -299,7 +294,6 @@ a:hover{
                         color: $grey1;
                     }
                 }
-
             }
 
             .box-bottom {
@@ -313,7 +307,6 @@ a:hover{
                 }
 
                 .box-bottom-icon {
-
                     i {
                         font-size: 10px;
                         color: $grey5;
@@ -321,11 +314,9 @@ a:hover{
                         padding: 4px 6px;
                         border: 1px solid $grey5;
                     }
-
                 }
             }
         }
-
     }
 
     .box-ads {
@@ -349,8 +340,8 @@ a:hover{
         .finance-main-top {
             .box-news-child {
                 display: flex;
-                padding: 10px 0 10px 0;
-                border-bottom: 1px dotted $grey6;
+                padding: 20px 0 20px 0;
+                border-bottom: 1px dashed $grey6;
 
                 .box-news-child-image {
                     width: 50%;
@@ -360,11 +351,16 @@ a:hover{
                     width: 50%;
                     padding-left: 10px;
                 }
+                .content-main {
+                    .box-content {
+                        margin-top: 10px;
+                    }
+                }
             }
 
-            // .box-news-child:last-child {
-            //     border-bottom: 0;
-            // }
+            .box-news-child:last-child {
+                border-bottom: 0;
+            }
         }
 
         .finance-main-bottom {
@@ -377,7 +373,7 @@ a:hover{
             .finance-main-top {
                 .box-news-child {
                     display: flex;
-                    padding: 10px 0 10px 0;
+                    padding: 20px 0 20px 0;
                     border-bottom: 1px dotted $grey6;
 
                     .box-news-child-image {
@@ -401,7 +397,7 @@ a:hover{
 
 #stock {
     .stock-main {
-        .bg-grey7{
+        .bg-grey7 {
             margin-bottom: 10px;
         }
         .box-header {
@@ -410,10 +406,10 @@ a:hover{
 
         .box-stock {
             border-bottom: 1px dashed $grey6;
-            padding:10px 0;
+            padding: 10px 0;
 
             .box-stock-child {
-            padding-bottom: 15px;
+                padding-bottom: 15px;
 
                 border-bottom: 1px dashed $grey6;
                 display: flex;
@@ -430,7 +426,6 @@ a:hover{
         }
 
         .box-stock:last-child {
-            
             border-bottom: 0;
         }
 
@@ -440,11 +435,10 @@ a:hover{
             margin-top: 10px;
             margin-bottom: 10px;
         }
-        .col-md-8{
+        .col-md-8 {
             background-color: $grey7;
         }
     }
-
 }
 
 #real-estate,
@@ -457,7 +451,7 @@ a:hover{
         .real-estate-main-top {
             .box-news-child {
                 display: flex;
-                padding: 10px 0 10px 0;
+                padding: 20px 0 20px 0;
                 border-bottom: 1px dotted $grey6;
 
                 .box-news-child-image {
@@ -469,7 +463,6 @@ a:hover{
                     padding-left: 10px;
                 }
             }
-
         }
 
         .real-estate-main-bottom {
@@ -494,7 +487,6 @@ a:hover{
                         padding-left: 10px;
                     }
                 }
-
             }
         }
 
@@ -511,12 +503,10 @@ a:hover{
 
 #image {
     background: $grey2;
-    color: $white ;
-    a{
+    color: $white;
+    a {
         color: $white !important;
-
     }
-    
 
     .image-main {
         .content-main {
@@ -538,7 +528,6 @@ a:hover{
                     padding-left: 10px;
                 }
             }
-
         }
 
         .image-main-bottom {
@@ -563,7 +552,6 @@ a:hover{
                         padding-left: 10px;
                     }
                 }
-
             }
         }
 
@@ -581,9 +569,11 @@ a:hover{
 #cooperative,
 #startup {
     .box {
+        
         display: flex;
         border-bottom: 1px dashed $grey6;
         margin-bottom: 10px;
+        margin-top: 0px;
         padding-bottom: 10px;
 
         .box-image {
@@ -591,9 +581,11 @@ a:hover{
         }
 
         .box-title {
+            padding-top:10px;
             padding-left: 10px;
             width: 50%;
         }
+        
     }
 
     .col-md-3:last-child {
@@ -604,13 +596,19 @@ a:hover{
 }
 
 #business {
+    padding: 0 32px 25px 36px;
     background-color: $grey2;
     color: #fff;
-    padding-bottom: 40px;
-
-    .slick-prev,
+    .slick-prev {
+        width:15px;
+        height:24px;
+        left: -23px;
+        z-index: 9;
+    }
     .slick-next {
-        display: none !important;
+        width:15px;
+        height:24px;
+        right: -18px;
     }
 
     .slick-list.draggable {
@@ -620,25 +618,15 @@ a:hover{
     .slick-dots li.slick-active button:before {
         color: $red;
         border: 0;
-
     }
 
     .slick-dots li button:before {
         color: $grey2;
         border: 1px solid #fff;
-
     }
-
-    // .slick-slide{
-    //     margin: 0;
-    // }
-    // .box-news-child{
-    //     margin: 0 15px;
-    // }
 }
 
 #footer {
-
     .top-footer {
         background-color: $grey6;
         height: 50px;
@@ -661,13 +649,16 @@ a:hover{
 
         .top-footer-right {
             display: flex;
+            a,span{
+                color: $grey3;
+            }
         }
     }
 
     .mid-footer {
         background-color: $grey7;
 
-        .row>div {
+        .row > div {
             border-bottom: 1px dashed #dedede;
 
             .h6 {
@@ -682,22 +673,19 @@ a:hover{
 
     .bot-footer {
         .bot-footer-logo {
-            margin: 15px;
-
+            
         }
 
         .bot-footer-icons {
             display: flex;
-
         }
     }
 
     .bot-footer-content {
-        >div {
+        > div {
             margin-bottom: 10px;
         }
-
-        margin: 15px;
+    
     }
 
     .bot-footer-btn {
@@ -711,12 +699,12 @@ a:hover{
     }
 }
 
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+}
 
 @media (min-width: 768px) {
-
     #header {
-    box-shadow: none ;
+        box-shadow: none;
 
         .top-header {
             @include w970VsCenter;
@@ -726,7 +714,6 @@ a:hover{
             .top-header-icons {
                 display: flex;
                 align-items: center;
-
             }
 
             button.btn.btn-light {
@@ -743,7 +730,6 @@ a:hover{
             a.nav-link {
                 color: $red;
                 border-bottom: 2px solid $red;
-
             }
         }
 
@@ -754,7 +740,6 @@ a:hover{
 
         .header-banner-ads {
             @include w970VsCenter;
-
         }
     }
 
@@ -775,11 +760,11 @@ a:hover{
         }
 
         .right-first-content {
-            .box-header{
+            .box-header {
                 border-bottom: 1px solid $grey6;
                 padding: 16px 12px;
             }
-            .box-body{
+            .box-body {
                 padding: 12px 0;
             }
             background-color: $white;
@@ -796,7 +781,7 @@ a:hover{
             margin-top: 24px;
 
             .box-header {
-                padding: 12px 20px ;
+                padding: 12px 20px;
                 border-bottom: 1px solid $grey6;
 
                 .h4 {
@@ -823,7 +808,6 @@ a:hover{
                     }
                 }
             }
-
         }
 
         .box-top-views {
@@ -831,15 +815,12 @@ a:hover{
             margin-top: 20px;
 
             .box-header {
-                padding: 12px 20px ;
+                padding: 12px 20px;
 
                 border-bottom: 1px solid $grey6;
-
-               
             }
 
             .box-main {
-                
                 .box-main-content {
                     .box-main-content-child {
                         padding: 16px;
@@ -856,7 +837,6 @@ a:hover{
 
                     .box-main-content-child:last-child {
                         border-bottom: 0px;
-
                     }
                 }
             }
@@ -870,9 +850,16 @@ a:hover{
         @include w970VsCenter;
 
         .thoi-su-main {
-            margin-top: 40px;
+            .box {
+                margin-top: 0;
+                .box-title {
+                    padding-top: 10px;
+                }
+                .box-content {
+                    padding-top: 10px;
+                }
+            }
         }
-
     }
 
     #finance,
@@ -880,7 +867,9 @@ a:hover{
     #world,
     #enterprise {
         @include w970VsCenter;
-
+        .heading-category{
+            padding: 32px 0 20px 0;
+        }
         .finance-main {
             .content-main {
                 border: 0;
@@ -891,52 +880,92 @@ a:hover{
                         line-height: 30px;
                         font-family: "Roboto-bold";
                     }
-
                 }
             }
 
             .finance-main-top {
+                padding-bottom: 28px;
                 border-bottom: 1px solid $grey6;
+                .box-news-child:first-child{
+                    padding-top: 0px;
+                }
             }
 
             .finance-main-bottom {
                 padding-left: 0;
+                padding-bottom: 27px;
+                .box-header {
+                    padding: 16px 0;
+                }
+                .box-news-child {
+                    display: flex;
+                    .box-news-child-image {
+                        width: 45%;
+                    }
+                    .box-news-child-content {
+                        width: 55%;
+                        padding-left: 14px;
+                    }
+                }
+               
             }
         }
-
-
     }
 
     #stock {
         @include w970VsCenter;
-        
+
         .stock-main {
-            .box-header{
-                margin-top: 20px;
+            .box {
+                margin-top: 0;
+                .box-title {
+                    padding-top: 10px;
+                }
+                .box-content {
+                    padding-top: 10px;
+                }
             }
-            .col-md-8{
+
+            .box-header {
+                margin-top: 28px;
+                padding-top: 16px;
+                padding-left: 20px;
+            }
+            .col-md-8 {
                 background-color: $white;
             }
             .box-stock {
                 border-bottom: 1px dotted $grey6;
-                padding: 10px 0;
-
+                margin-right: 15px;
+                padding: 12px 0 10px 20px;
+                border-left: 1px dotted $grey6;
                 .box-stock-child {
-                    border-bottom:0 !important;
+                    border-bottom: 0 !important;
                     display: flex;
 
                     .box-stock-child-image {
-                        width: 30%;
-                        padding-left: 10px;
+                        width: 34%;
                     }
 
                     .box-stock-child-content {
-                        width: 70%;
-                        padding-left: 10px;
+                        width: 66%;
+                        padding-left: 12px;
+                        .box-content {
+                            padding-top: 8px;
+                        }
+                        .box-author {
+                            padding-top: 11px;
+                        }
                     }
                 }
-            }
 
+                .box-author {
+                    padding-top: 4px;
+                }
+            }
+            .col-md-6:first-child .box-stock {
+                border-left: 0;
+            }
             .box-stock:last-child {
                 margin-bottom: 10px;
                 border-bottom: 0;
@@ -944,17 +973,18 @@ a:hover{
 
             .form-vat {
                 border: 1px solid $grey6;
-                padding: 15px 20px;
-                margin-top: 20px;
-                margin-bottom: 10px;
-            }
-            
-            .col-md-6:last-child {
-                border-left: 1px dotted $grey6;
-
+                padding: 16px 0px 20px 21px;
+                margin-top: 28px;
+                .box-checkbox {
+                    div {
+                        padding-top: 10px;
+                    }
+                }
+                .box-btn {
+                    padding-top: 24px;
+                }
             }
         }
-
     }
 
     #real-estate,
@@ -962,6 +992,8 @@ a:hover{
         @include w970VsCenter;
 
         .real-estate-main {
+            .real-estate-main-top {
+            }
             .content-main {
                 border: 0;
             }
@@ -980,20 +1012,21 @@ a:hover{
         @include w970VsCenter;
 
         .image-main {
-            padding-left: 15px;
+            padding: 0 20px;
 
             .content-main {
+                padding-bottom: 37px;
                 border: 0;
             }
 
             .image-main-top {
-                border-bottom: 1px solid $grey6;
-
+                .box-news-child {
+                    padding: 20px 0 20px 0;
+                }
                 .box-news-child:first-child {
                     padding-top: 0;
                 }
             }
-
         }
     }
 
@@ -1036,9 +1069,11 @@ a:hover{
 
     #business {
         @include w970VsCenter;
+        .heading-category-2{
+            margin-top: 32px;
+
+        }
     }
-
-
 
     #footer {
         .top-footer {
@@ -1058,16 +1093,17 @@ a:hover{
 
         .mid-footer {
             @include w970VsCenter;
-            padding: 20px 0 24px 0;
-
-            .row>div {
+            padding-bottom: 24px;
+            .row > div {
                 border-bottom: 0;
 
                 .h6 {
+                    padding-top:20px;
+                    a{
                     padding-bottom: 0;
                     color: red;
                     font-family: "Roboto-bold";
-
+                    }
                 }
             }
 
@@ -1078,22 +1114,22 @@ a:hover{
 
         .bot-footer {
             @include w970VsCenter;
+            padding: 22px 0 24px 0;
             display: flex;
             justify-content: space-between;
 
             .bot-footer-icons {
                 display: none;
             }
-
+            .bot-footer-logo{
+                
+                margin-right: 60px;
+            }
             .bot-footer-content {
                 display: flex;
             }
         }
     }
-
-
-
-
 }
 
 @media (min-width: 992px) {
@@ -1102,4 +1138,5 @@ a:hover{
     }
 }
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}

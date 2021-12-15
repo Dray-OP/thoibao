@@ -129,15 +129,6 @@ a:hover {
   padding-left: 0;
 }
 
-.slick-next {
-  left: 88%;
-}
-
-.slick-prev {
-  left: 20px;
-  z-index: 9;
-}
-
 .n-btn-red {
   color: #fff;
   background-color: #ec0001;
@@ -161,7 +152,7 @@ a:hover {
 }
 
 .heading-category .heading {
-  margin: 35px 0;
+  margin: 52px 0 39px 0;
   position: relative;
   background-color: #ec0001;
   height: 1px;
@@ -169,6 +160,7 @@ a:hover {
 }
 
 .heading-category .heading-content {
+  padding: 8px 36px;
   position: absolute;
   right: 50%;
   top: 50%;
@@ -178,6 +170,12 @@ a:hover {
 
 .heading-category .heading-content .heading-content-name {
   font-size: 18px;
+}
+
+.heading-category h2 {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 700;
 }
 
 .heading-category-2 {
@@ -206,8 +204,26 @@ a:hover {
   margin: 0 20px;
 }
 
+.heading-category-2 .heading-content h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 700;
+}
+
 .heading-category-2 .heading-content span {
+  margin-left: 5px;
   font-size: 12px;
+  line-height: 15px;
   border: 1px solid #fff;
   border-radius: 100%;
   padding: 3px;
@@ -306,7 +322,8 @@ a:hover {
   /* Handle */
 }
 
-#first-content .left-first-content .left-first-content-main, #first-content .left-first-content .box,
+#first-content .left-first-content .left-first-content-main,
+#first-content .left-first-content .box,
 #first-content-thoi-su .left-first-content .left-first-content-main,
 #first-content-thoi-su .left-first-content .box,
 #first-content-detail .left-first-content .left-first-content-main,
@@ -437,7 +454,7 @@ a:hover {
 #first-content-detail .right-first-content .box-news .box-body .box-body-time .h5 {
   padding: 10px;
   border-right: 1px solid #dedede;
-  color: #dedede;
+  color: #c6c6c6;
 }
 
 #first-content .right-first-content .box-news .box-body .box-body-content .h6,
@@ -496,8 +513,8 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 0 10px 0;
-  border-bottom: 1px dotted #dedede;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px dashed #dedede;
 }
 
 #finance .finance-main .finance-main-top .box-news-child .box-news-child-image,
@@ -513,6 +530,20 @@ a:hover {
 #enterprise .finance-main .finance-main-top .box-news-child .box-news-child-content {
   width: 50%;
   padding-left: 10px;
+}
+
+#finance .finance-main .finance-main-top .box-news-child .content-main .box-content,
+#video .finance-main .finance-main-top .box-news-child .content-main .box-content,
+#world .finance-main .finance-main-top .box-news-child .content-main .box-content,
+#enterprise .finance-main .finance-main-top .box-news-child .content-main .box-content {
+  margin-top: 10px;
+}
+
+#finance .finance-main .finance-main-top .box-news-child:last-child,
+#video .finance-main .finance-main-top .box-news-child:last-child,
+#world .finance-main .finance-main-top .box-news-child:last-child,
+#enterprise .finance-main .finance-main-top .box-news-child:last-child {
+  border-bottom: 0;
 }
 
 #finance .finance-main .finance-main-bottom,
@@ -536,7 +567,7 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 0 10px 0;
+  padding: 20px 0 20px 0;
   border-bottom: 1px dotted #dedede;
 }
 
@@ -618,7 +649,7 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 0 10px 0;
+  padding: 20px 0 20px 0;
   border-bottom: 1px dotted #dedede;
 }
 
@@ -745,6 +776,7 @@ a:hover {
   display: flex;
   border-bottom: 1px dashed #dedede;
   margin-bottom: 10px;
+  margin-top: 0px;
   padding-bottom: 10px;
 }
 
@@ -755,6 +787,7 @@ a:hover {
 
 #cooperative .box .box-title,
 #startup .box .box-title {
+  padding-top: 10px;
   padding-left: 10px;
   width: 50%;
 }
@@ -765,14 +798,22 @@ a:hover {
 }
 
 #business {
+  padding: 0 32px 25px 36px;
   background-color: #444444;
   color: #fff;
-  padding-bottom: 40px;
 }
 
-#business .slick-prev,
+#business .slick-prev {
+  width: 15px;
+  height: 24px;
+  left: -23px;
+  z-index: 9;
+}
+
 #business .slick-next {
-  display: none !important;
+  width: 15px;
+  height: 24px;
+  right: -18px;
 }
 
 #business .slick-list.draggable {
@@ -818,6 +859,10 @@ a:hover {
   display: flex;
 }
 
+#footer .top-footer .top-footer-right a, #footer .top-footer .top-footer-right span {
+  color: #666666;
+}
+
 #footer .mid-footer {
   background-color: #f5f5f5;
 }
@@ -834,18 +879,10 @@ a:hover {
   display: none;
 }
 
-#footer .bot-footer .bot-footer-logo {
-  margin: 15px;
-}
-
 #footer .bot-footer .bot-footer-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-#footer .bot-footer-content {
-  margin: 15px;
 }
 
 #footer .bot-footer-content > div {
@@ -1031,11 +1068,23 @@ a:hover {
     max-width: 970px;
     margin: 0 auto;
   }
-  #thoi-su .thoi-su-main,
-  #hi-tech .thoi-su-main,
-  #other-news .thoi-su-main,
-  #live .thoi-su-main {
-    margin-top: 40px;
+  #thoi-su .thoi-su-main .box,
+  #hi-tech .thoi-su-main .box,
+  #other-news .thoi-su-main .box,
+  #live .thoi-su-main .box {
+    margin-top: 0;
+  }
+  #thoi-su .thoi-su-main .box .box-title,
+  #hi-tech .thoi-su-main .box .box-title,
+  #other-news .thoi-su-main .box .box-title,
+  #live .thoi-su-main .box .box-title {
+    padding-top: 10px;
+  }
+  #thoi-su .thoi-su-main .box .box-content,
+  #hi-tech .thoi-su-main .box .box-content,
+  #other-news .thoi-su-main .box .box-content,
+  #live .thoi-su-main .box .box-content {
+    padding-top: 10px;
   }
   #finance,
   #video,
@@ -1043,6 +1092,12 @@ a:hover {
   #enterprise {
     max-width: 970px;
     margin: 0 auto;
+  }
+  #finance .heading-category,
+  #video .heading-category,
+  #world .heading-category,
+  #enterprise .heading-category {
+    padding: 32px 0 20px 0;
   }
   #finance .finance-main .content-main,
   #video .finance-main .content-main,
@@ -1062,27 +1117,75 @@ a:hover {
   #video .finance-main .finance-main-top,
   #world .finance-main .finance-main-top,
   #enterprise .finance-main .finance-main-top {
+    padding-bottom: 28px;
     border-bottom: 1px solid #dedede;
+  }
+  #finance .finance-main .finance-main-top .box-news-child:first-child,
+  #video .finance-main .finance-main-top .box-news-child:first-child,
+  #world .finance-main .finance-main-top .box-news-child:first-child,
+  #enterprise .finance-main .finance-main-top .box-news-child:first-child {
+    padding-top: 0px;
   }
   #finance .finance-main .finance-main-bottom,
   #video .finance-main .finance-main-bottom,
   #world .finance-main .finance-main-bottom,
   #enterprise .finance-main .finance-main-bottom {
     padding-left: 0;
+    padding-bottom: 27px;
+  }
+  #finance .finance-main .finance-main-bottom .box-header,
+  #video .finance-main .finance-main-bottom .box-header,
+  #world .finance-main .finance-main-bottom .box-header,
+  #enterprise .finance-main .finance-main-bottom .box-header {
+    padding: 16px 0;
+  }
+  #finance .finance-main .finance-main-bottom .box-news-child,
+  #video .finance-main .finance-main-bottom .box-news-child,
+  #world .finance-main .finance-main-bottom .box-news-child,
+  #enterprise .finance-main .finance-main-bottom .box-news-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #finance .finance-main .finance-main-bottom .box-news-child .box-news-child-image,
+  #video .finance-main .finance-main-bottom .box-news-child .box-news-child-image,
+  #world .finance-main .finance-main-bottom .box-news-child .box-news-child-image,
+  #enterprise .finance-main .finance-main-bottom .box-news-child .box-news-child-image {
+    width: 45%;
+  }
+  #finance .finance-main .finance-main-bottom .box-news-child .box-news-child-content,
+  #video .finance-main .finance-main-bottom .box-news-child .box-news-child-content,
+  #world .finance-main .finance-main-bottom .box-news-child .box-news-child-content,
+  #enterprise .finance-main .finance-main-bottom .box-news-child .box-news-child-content {
+    width: 55%;
+    padding-left: 14px;
   }
   #stock {
     max-width: 970px;
     margin: 0 auto;
   }
+  #stock .stock-main .box {
+    margin-top: 0;
+  }
+  #stock .stock-main .box .box-title {
+    padding-top: 10px;
+  }
+  #stock .stock-main .box .box-content {
+    padding-top: 10px;
+  }
   #stock .stock-main .box-header {
-    margin-top: 20px;
+    margin-top: 28px;
+    padding-top: 16px;
+    padding-left: 20px;
   }
   #stock .stock-main .col-md-8 {
     background-color: #ffffff;
   }
   #stock .stock-main .box-stock {
     border-bottom: 1px dotted #dedede;
-    padding: 10px 0;
+    margin-right: 15px;
+    padding: 12px 0 10px 20px;
+    border-left: 1px dotted #dedede;
   }
   #stock .stock-main .box-stock .box-stock-child {
     border-bottom: 0 !important;
@@ -1091,12 +1194,23 @@ a:hover {
     display: flex;
   }
   #stock .stock-main .box-stock .box-stock-child .box-stock-child-image {
-    width: 30%;
-    padding-left: 10px;
+    width: 34%;
   }
   #stock .stock-main .box-stock .box-stock-child .box-stock-child-content {
-    width: 70%;
-    padding-left: 10px;
+    width: 66%;
+    padding-left: 12px;
+  }
+  #stock .stock-main .box-stock .box-stock-child .box-stock-child-content .box-content {
+    padding-top: 8px;
+  }
+  #stock .stock-main .box-stock .box-stock-child .box-stock-child-content .box-author {
+    padding-top: 11px;
+  }
+  #stock .stock-main .box-stock .box-author {
+    padding-top: 4px;
+  }
+  #stock .stock-main .col-md-6:first-child .box-stock {
+    border-left: 0;
   }
   #stock .stock-main .box-stock:last-child {
     margin-bottom: 10px;
@@ -1104,12 +1218,14 @@ a:hover {
   }
   #stock .stock-main .form-vat {
     border: 1px solid #dedede;
-    padding: 15px 20px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    padding: 16px 0px 20px 21px;
+    margin-top: 28px;
   }
-  #stock .stock-main .col-md-6:last-child {
-    border-left: 1px dotted #dedede;
+  #stock .stock-main .form-vat .box-checkbox div {
+    padding-top: 10px;
+  }
+  #stock .stock-main .form-vat .box-btn {
+    padding-top: 24px;
   }
   #real-estate,
   #vietnam {
@@ -1133,13 +1249,14 @@ a:hover {
     margin: 0 auto;
   }
   #image .image-main {
-    padding-left: 15px;
+    padding: 0 20px;
   }
   #image .image-main .content-main {
+    padding-bottom: 37px;
     border: 0;
   }
-  #image .image-main .image-main-top {
-    border-bottom: 1px solid #dedede;
+  #image .image-main .image-main-top .box-news-child {
+    padding: 20px 0 20px 0;
   }
   #image .image-main .image-main-top .box-news-child:first-child {
     padding-top: 0;
@@ -1179,6 +1296,9 @@ a:hover {
     max-width: 970px;
     margin: 0 auto;
   }
+  #business .heading-category-2 {
+    margin-top: 32px;
+  }
   #footer .top-footer {
     max-width: 970px;
     margin: 0 auto;
@@ -1193,12 +1313,15 @@ a:hover {
   #footer .mid-footer {
     max-width: 970px;
     margin: 0 auto;
-    padding: 20px 0 24px 0;
+    padding-bottom: 24px;
   }
   #footer .mid-footer .row > div {
     border-bottom: 0;
   }
   #footer .mid-footer .row > div .h6 {
+    padding-top: 20px;
+  }
+  #footer .mid-footer .row > div .h6 a {
     padding-bottom: 0;
     color: red;
     font-family: "Roboto-bold";
@@ -1209,6 +1332,7 @@ a:hover {
   #footer .bot-footer {
     max-width: 970px;
     margin: 0 auto;
+    padding: 22px 0 24px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1218,6 +1342,9 @@ a:hover {
   }
   #footer .bot-footer .bot-footer-icons {
     display: none;
+  }
+  #footer .bot-footer .bot-footer-logo {
+    margin-right: 60px;
   }
   #footer .bot-footer .bot-footer-content {
     display: -webkit-box;
