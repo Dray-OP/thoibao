@@ -81,6 +81,7 @@ div#navbarN {
         padding-top: 16px;
     }
 
+    #vietnam .box-content,
     #real-estate .box-content,
     #enterprise .box-content,
     #image .box-content,
@@ -374,7 +375,7 @@ h6 {
     #video .finance-main .finance-main-top .box-news-child:last-child,
     #world .finance-main .finance-main-top .box-news-child:last-child,
     #enterprise .finance-main .finance-main-top .box-news-child:last-child {
-        border-bottom: 1px dashed #dedede !important;
+        /* border-bottom: 1px dashed #dedede !important; */
     }
 
     #finance .finance-main .finance-main-bottom .box-header,
@@ -411,31 +412,72 @@ h6 {
     padding-left: 16px
     } */
 
-    #footer {
+    #footer {}
 
-    }
-    #footer .bot-footer{
+    #footer .bot-footer {
         padding: 23px 16px 16px 16px;
     }
+
     #footer .bot-footer .bot-footer-logo img {
-        width:auto;
+        width: auto;
     }
-    #footer .bot-footer .bot-footer-icons{
+
+    #footer .bot-footer .bot-footer-icons {
         padding-top: 20px;
     }
-    #footer .bot-footer .bot-footer-icons .box-icon:first-child{
-        margin-left:0!important;
+
+    #footer .bot-footer .bot-footer-icons .box-icon:first-child {
+        margin-left: 0 !important;
     }
-    #footer .bot-footer-content{
+
+    #footer .bot-footer-content {
         padding-top: 20px;
 
     }
+
     #footer .bot-footer-btn {
-        margin: 20px 0 0  0 !important;
+        margin: 20px 0 0 0 !important;
         background-color: #f5f5f5;
         text-align: center;
     }
-    #business .box-news-child-content .h5{
+
+    #business .box-news-child-content a {
         color: #fff;
     }
+
+    #business.box-news-child-content {
+        padding-top: 12px;
+    }
+
+    #business img.a-right.control-c.next.slick-next.slick-arrow ,
+    #business img.a-left.control-c.prev.slick-prev.slick-arrow 
+    {
+        display: none !important;
+    }
+    #business .slick-list.draggable {
+        margin: 0 15px;
+    }
+    #business .slick-dots li.slick-active button:before {
+        
+        border: 0;
+    }
+    #business .slick-dots li button:before {
+       
+        border: 1px solid #fff;
+    }
+    #business {
+        padding: 0 16px 25px 10px;
+        color: #fff;
+    }
+    #image.image-main-top {
+        padding-bottom: 10px;
+    }
+   
+
+}
+/* end max-with 767 */
+
+
+.box-header.d-none.d-md-block.text-header-primary {
+    padding-bottom: 16px;
 }

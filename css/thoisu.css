@@ -94,46 +94,103 @@ body {
   color: #666666;
 }
 
-#first-content-thoi-su .box-top-views .box-header, #first-content-detail .box-top-views .box-header {
+#first-content-thoi-su .box-header:first-child,
+#first-content-detail .box-header:first-child {
+  padding-bottom: 16px;
+}
+
+#first-content-thoi-su .box-top-views .box-header,
+#first-content-detail .box-top-views .box-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 0;
+  padding: 0;
 }
 
-#first-content-thoi-su .box-top-views .box-header h4, #first-content-detail .box-top-views .box-header h4 {
+#first-content-thoi-su .box-top-views .box-header .h4,
+#first-content-detail .box-top-views .box-header .h4 {
   color: #999999;
   cursor: pointer;
+  white-space: nowrap;
+}
+
+#first-content-thoi-su .box-top-views .box-header .box-header-item,
+#first-content-detail .box-top-views .box-header .box-header-item {
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
   border-bottom: 1px solid #dedede;
 }
 
-#first-content-thoi-su .box-top-views .box-header h4.active, #first-content-detail .box-top-views .box-header h4.active {
-  color: #ec0001;
-  padding-bottom: 5px;
+#first-content-thoi-su .box-top-views .box-header .active,
+#first-content-detail .box-top-views .box-header .active {
   border-bottom: 1px solid #ec0001;
 }
 
-#first-content-thoi-su .professional, #first-content-detail .professional {
+#first-content-thoi-su .box-top-views .box-header .active .h4,
+#first-content-detail .box-top-views .box-header .active .h4 {
+  color: #ec0001;
+}
+
+#first-content-thoi-su .box-top-views .box-main-content .box-main-content-child div:first-child,
+#first-content-detail .box-top-views .box-main-content .box-main-content-child div:first-child {
+  padding-right: 16px;
+  color: #c6c6c6;
+}
+
+#first-content-thoi-su .col-md-4,
+#first-content-detail .col-md-4 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#first-content-thoi-su .professional,
+#first-content-detail .professional {
+  margin-top: 32px;
   padding: 16px 20px;
 }
 
-#first-content-thoi-su .professional .box, #first-content-detail .professional .box {
+#first-content-thoi-su .professional .box-header:first-child,
+#first-content-detail .professional .box-header:first-child {
+  padding-bottom: 0px;
+}
+
+#first-content-thoi-su .professional .box,
+#first-content-detail .professional .box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-right: 1px dotted #dedede;
 }
 
-#first-content-thoi-su .professional .box .box-image, #first-content-detail .professional .box .box-image {
-  width: 30%;
+#first-content-thoi-su .professional .box .box-image,
+#first-content-detail .professional .box .box-image {
+  width: 33%;
 }
 
-#first-content-thoi-su .professional .box .box-content, #first-content-detail .professional .box .box-content {
-  padding-left: 10px;
-  width: 70%;
+#first-content-thoi-su .professional .box .box-content,
+#first-content-detail .professional .box .box-content {
+  padding-left: 12px;
+  padding-top: 0;
+  width: 67%;
 }
 
-#first-content-thoi-su .professional .box:last-child, #first-content-detail .professional .box:last-child {
+#first-content-thoi-su .professional .box .box-content .box-content-content,
+#first-content-detail .professional .box .box-content .box-content-content {
+  padding-top: 8px;
+}
+
+#first-content-thoi-su .professional .box .box-content .box-content-author,
+#first-content-detail .professional .box .box-content .box-content-author {
+  padding-top: 10px;
+}
+
+#first-content-thoi-su .professional .box:last-child,
+#first-content-detail .professional .box:last-child {
   border-right: 0;
 }
 
@@ -161,8 +218,13 @@ body {
     width: 50%;
   }
   #top-reading .box .box-content {
-    padding-left: 10px;
+    padding-top: 0;
+    padding-left: 14px;
     width: 50%;
+  }
+  #world .finance-main .finance-main-top {
+    padding-bottom: 0;
+    border-bottom: 0;
   }
 }
 /*# sourceMappingURL=thoisu.css.map */

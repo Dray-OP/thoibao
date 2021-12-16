@@ -1,35 +1,75 @@
 @import 'variable';
-#first-content-thoi-su,#first-content-detail{
+#first-content-thoi-su,
+#first-content-detail{
+    .box-header:first-child{
+        padding-bottom: 16px;
+    }
     .box-top-views{
         .box-header{
             display: flex;
+            justify-content: center;
             border: 0;
-            h4{
+            padding: 0;
+            .h4{
                 color: $grey4;
                 cursor: pointer;
+                
+                white-space: nowrap;
+            }
+            .box-header-item{
+                width: 100%;
+                text-align: center;
+                padding: 12px 0;
                 border-bottom: 1px solid $grey6;
             }
-            h4.active{
-                color: $red;
-                padding-bottom: 5px;
+            .active{
                 border-bottom: 1px solid $red;
+                .h4{
+                    color: $red;
+                }
             }
+           
         }
+       .box-main-content{
+           .box-main-content-child{
+                div:first-child{
+                    padding-right:16px;
+                    color: $grey5;
+                }
+           }
+           
+       }
        
     }
+    .col-md-4{
+        padding-top: 0;
+        padding-bottom: 0;
+   }
     .professional{
-        
+            margin-top: 32px;
             padding: 16px 20px;
-
+            .box-header:first-child{
+                padding-bottom: 0px;
+            }
         .box{
             display: flex;
             border-right: 1px dotted $grey6;
             .box-image{
-                width: 30%;
+                width: 33%;
             }
             .box-content{
-                padding-left: 10px;
-                width: 70%;
+                padding-left: 12px;
+                padding-top: 0;
+                width: 67%;
+                .box-content-title{
+
+                }
+                .box-content-content{
+                    padding-top: 8px;
+                }
+                .box-content-author{
+                    padding-top: 10px;
+                }
             }
         }
         .box:last-child{
@@ -58,10 +98,15 @@
                 width: 50%;
             }
             .box-content{
-                padding-left: 10px;
+                padding-top: 0;
+                padding-left: 14px;
                 width: 50%;
             }
         }
 
+    }
+    #world .finance-main .finance-main-top{
+        padding-bottom: 0;
+        border-bottom: 0;
     }
 }
