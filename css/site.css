@@ -1,33 +1,36 @@
-.n-text-normal{
- font-size: 18px;
- line-height:23px;
+.n-text-normal {
+    font-size: 18px;
+    line-height: 23px;
 }
 
 
 nav.navbar.navbar-expand-md.nav-header {
     z-index: 99;
 }
+
 div#navbarN {
     background: white;
 }
 
 #typical-products .slick-prev,
-#typical-products .slick-next
-{
-    display:none !important;
+#typical-products .slick-next {
+    display: none !important;
 }
+
 .slick-dots {
     bottom: -40px;
 }
+
 .slick-slide {
-    margin: 0 10px ;
+    margin: 0 10px;
 }
-.slick-track{
-    margin: 0 -10px ;
+
+.slick-track {
+    margin: 0 -10px;
 
 }
 
-.slick-dots li button{
+.slick-dots li button {
     border: 0;
     background: transparent;
     display: block;
@@ -41,14 +44,15 @@ div#navbarN {
     cursor: pointer;
 }
 
-.slick-dots li.slick-active button:before{
+.slick-dots li.slick-active button:before {
     color: red;
     opacity: 0.75;
     font-size: 14px;
-    border:0;
+    border: 0;
     line-height: 14px;
 }
-.slick-dots li button:before{
+
+.slick-dots li button:before {
     width: 10px;
     height: 10px;
     font-size: 0px;
@@ -56,40 +60,115 @@ div#navbarN {
     border: 1px solid gray;
     border-radius: 100%;
 }
-@media (min-width: 768px){
+
+@media (min-width: 768px) {
     .navbar-expand-md .navbar-nav .nav-link {
         padding-right: 12px;
-        padding-left:12px;
-        font-size:14px;
+        padding-left: 12px;
+        font-size: 14px;
         text-transform: uppercase;
     }
-    .content-main .box-title h3{
+
+    .content-main .box-title h3 {
         margin-top: 16px;
     }
-    #business a{
+
+    #business a {
         color: #fff;
     }
-    #business a .h5{
+
+    #business a .h5 {
         padding-top: 16px;
     }
 
-   #real-estate .box-content, 
-   #enterprise .box-content, 
-   #image .box-content, 
-   #video .box-content, 
-   #finance .box-content.d-none.d-md-block{
+    #real-estate .box-content,
+    #enterprise .box-content,
+    #image .box-content,
+    #video .box-content,
+    #finance .box-content.d-none.d-md-block {
         margin-top: 10px;
     }
 
 
 }
-.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+
+.col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-auto,
+.col-lg,
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-auto,
+.col-md,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-auto,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-auto,
+.col-xl,
+.col-xl-1,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-auto {
     position: relative;
     width: 100%;
     min-height: 1px;
     padding-right: 10px;
     padding-left: 10px;
 }
+
 .row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -99,7 +178,19 @@ div#navbarN {
     margin-right: -10px;
     margin-left: -10px;
 }
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-bottom: 0;
     font-family: inherit;
     font-weight: 500;
@@ -111,10 +202,240 @@ div#navbarN {
 .box-bottom-icon.left {
     cursor: pointer;
 }
+
 #business .slick-list.draggable {
-    margin: 0 0px 0 10px!important;
+    margin: 0 0px 0 10px !important;
 }
 
-.slick-dotted.slick-slider {
-    
+.slick-dotted.slick-slider {}
+
+@media (max-width: 767px) {
+
+    .col,
+    .col-1,
+    .col-10,
+    .col-11,
+    .col-12,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-auto,
+    .col-lg,
+    .col-lg-1,
+    .col-lg-10,
+    .col-lg-11,
+    .col-lg-12,
+    .col-lg-2,
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-5,
+    .col-lg-6,
+    .col-lg-7,
+    .col-lg-8,
+    .col-lg-9,
+    .col-lg-auto,
+    .col-md,
+    .col-md-1,
+    .col-md-10,
+    .col-md-11,
+    .col-md-12,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9,
+    .col-md-auto,
+    .col-sm,
+    .col-sm-1,
+    .col-sm-10,
+    .col-sm-11,
+    .col-sm-12,
+    .col-sm-2,
+    .col-sm-3,
+    .col-sm-4,
+    .col-sm-5,
+    .col-sm-6,
+    .col-sm-7,
+    .col-sm-8,
+    .col-sm-9,
+    .col-sm-auto,
+    .col-xl,
+    .col-xl-1,
+    .col-xl-10,
+    .col-xl-11,
+    .col-xl-12,
+    .col-xl-2,
+    .col-xl-3,
+    .col-xl-4,
+    .col-xl-5,
+    .col-xl-6,
+    .col-xl-7,
+    .col-xl-8,
+    .col-xl-9,
+    .col-xl-auto {
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+    .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -8px;
+        margin-left: -8px;
+    }
+
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: 0;
+        font-family: inherit;
+        font-weight: 500;
+        line-height: 1.2;
+        color: inherit;
+    }
+
+    .content-main .box-title h3 {
+        margin-top: 16px;
+        margin-bottom: 20px;
+    }
+
+    div#carouselExampleControls {
+        margin: 0 -6px;
+    }
+
+    #carouselExampleControls .box-header {
+        padding: 12px 16px 0 16px;
+        margin-top: 36px;
+    }
+
+    #carouselExampleControls .box-header .h4 {
+        border-bottom: 1px solid #dedede;
+        padding-bottom: 12px;
+
+    }
+
+    #first-content .right-first-content .box-news,
+    #first-content-thoi-su .right-first-content .box-news,
+    #first-content-detail .right-first-content .box-news {
+        padding: 0 !important;
+    }
+
+    #carouselExampleControls .row {
+
+        margin-right: -16px;
+        margin-left: -16px;
+    }
+
+    #first-content .right-first-content .box-news .box-body .box-body-time .h5,
+    #first-content-thoi-su .right-first-content .box-news .box-body .box-body-time .h5,
+    #first-content-detail .right-first-content .box-news .box-body .box-body-time .h5 {
+        padding: 5px 10px 5px 16px !important;
+        margin: 20px 0 20px 0 !important;
+    }
+
+    #carouselExampleControls .carousel-item {
+        padding: 0 16px 0 16px;
+    }
+
+    #carouselExampleControls .box-body-content {
+        padding: 16px 0 0 0;
+    }
+
+    #first-content .right-first-content .box-news .box-bottom,
+    #first-content-thoi-su .right-first-content .box-news .box-bottom,
+    #first-content-detail .right-first-content .box-news .box-bottom {
+        margin: 16px 16px 16px 0 !important;
+    }
+
+    #finance .finance-main .finance-main-top .box-news-child:last-child,
+    #video .finance-main .finance-main-top .box-news-child:last-child,
+    #world .finance-main .finance-main-top .box-news-child:last-child,
+    #enterprise .finance-main .finance-main-top .box-news-child:last-child {
+        border-bottom: 1px dashed #dedede !important;
+    }
+
+    #finance .finance-main .finance-main-bottom .box-header,
+    #video .finance-main .finance-main-bottom .box-header,
+    #world .finance-main .finance-main-bottom .box-header,
+    #enterprise .finance-main .finance-main-bottom .box-header {
+        padding: 20px 0 16px 0;
+    }
+
+    #finance .finance-main .box-ads,
+    #video .finance-main .box-ads,
+    #world .finance-main .box-ads,
+    #enterprise .finance-main .box-ads {
+
+        padding: 37.5px 52.5px 0 37.5px !important;
+    }
+
+    #stock .stock-main .form-vat {
+        border: 1px solid #dedede;
+        padding: 16px 0px 20px 21px;
+        margin-top: 28px;
+    }
+
+    #stock .stock-main .row {
+        margin-right: -16px;
+        margin-left: -16px;
+    }
+
+    /* #stock .stock-main .row .col-md-8 {
+        position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 16px;
+    padding-left: 16px
+    } */
+
+    #footer {
+
+    }
+    #footer .bot-footer{
+        padding: 23px 16px 16px 16px;
+    }
+    #footer .bot-footer .bot-footer-logo img {
+        width:auto;
+    }
+    #footer .bot-footer .bot-footer-icons{
+        padding-top: 20px;
+    }
+    #footer .bot-footer .bot-footer-icons .box-icon:first-child{
+        margin-left:0!important;
+    }
+    #footer .bot-footer-content{
+        padding-top: 20px;
+
+    }
+    #footer .bot-footer-btn {
+        margin: 20px 0 0  0 !important;
+        background-color: #f5f5f5;
+        text-align: center;
+    }
+    #business .box-news-child-content .h5{
+        color: #fff;
+    }
 }

@@ -176,6 +176,7 @@ a:hover {
   font-size: 18px;
   line-height: 23px;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .heading-category-2 {
@@ -215,6 +216,7 @@ a:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  white-space: nowrap;
   font-size: 18px;
   line-height: 23px;
   font-weight: 700;
@@ -290,12 +292,6 @@ a:hover {
 
 .box .box-link div {
   padding-top: 8px;
-}
-
-#header {
-  margin-top: 20px;
-  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.22);
-          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.22);
 }
 
 #header .navbar {
@@ -382,7 +378,7 @@ a:hover {
 #first-content .left-first-content ::-webkit-scrollbar-thumb,
 #first-content-thoi-su .left-first-content ::-webkit-scrollbar-thumb,
 #first-content-detail .left-first-content ::-webkit-scrollbar-thumb {
-  background: #444444;
+  background: #999999;
   border-radius: 0;
 }
 
@@ -590,7 +586,7 @@ a:hover {
 #video .finance-main .box-ads,
 #world .finance-main .box-ads,
 #enterprise .finance-main .box-ads {
-  padding-right: 15px;
+  padding-right: 16px;
   margin: 40px 0 20px 0;
 }
 
@@ -630,9 +626,16 @@ a:hover {
 
 #stock .stock-main .form-vat {
   border: 1px solid #dedede;
-  padding: 15px 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding: 16px 0px 20px 21px;
+  margin-top: 28px;
+}
+
+#stock .stock-main .form-vat .box-checkbox div {
+  padding-top: 10px;
+}
+
+#stock .stock-main .form-vat .box-btn {
+  padding-top: 24px;
 }
 
 #stock .stock-main .col-md-8 {
@@ -901,6 +904,9 @@ a:hover {
 
 @media (min-width: 768px) {
   #header {
+    margin-top: 20px;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.22);
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.22);
     -webkit-box-shadow: none;
             box-shadow: none;
   }
@@ -1356,6 +1362,92 @@ a:hover {
 @media (min-width: 992px) {
   .container-fluid {
     padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .container-fluid {
+    width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #header .navbar-toggler {
+    padding: 21px 16px;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+  }
+  #header .logo {
+    padding-top: 9px;
+  }
+  #first-content .left-first-content .left-first-content-child-row-2 {
+    margin-top: 0px;
+  }
+  .stock-main .box {
+    margin-top: 0;
+  }
+  .stock-main .box .box-title {
+    padding-top: 10px;
+  }
+  .stock-main .box .box-content {
+    padding-top: 10px;
+  }
+  .stock-main .box-header {
+    margin-top: 28px;
+  }
+  .stock-main .col-md-8 {
+    background-color: #ffffff;
+  }
+  .stock-main .box-stock {
+    border-bottom: 1px dotted #dedede;
+    margin-right: 15px;
+    padding: 12px 0 10px 20px;
+  }
+  .stock-main .box-stock .box-stock-child {
+    padding-bottom: 0px !important;
+    border-bottom: 0 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .stock-main .box-stock .box-stock-child .box-stock-child-image {
+    width: 34%;
+  }
+  .stock-main .box-stock .box-stock-child .box-stock-child-content {
+    width: 66%;
+    padding-left: 12px;
+  }
+  .stock-main .box-stock .box-stock-child .box-stock-child-content .box-content {
+    padding-top: 8px;
+  }
+  .stock-main .box-stock .box-stock-child .box-stock-child-content .box-author {
+    padding-top: 11px;
+  }
+  .stock-main .box-stock .box-author {
+    padding-top: 4px;
+  }
+  .stock-main .col-md-6:first-child .box-stock {
+    border-left: 0;
+  }
+  .stock-main .box-stock:last-child {
+    border-bottom: 0;
+  }
+  .stock-main .form-vat {
+    border: 1px solid #dedede;
+    padding: 16px 0px 20px 21px;
+    margin-top: 28px;
+  }
+  .stock-main .form-vat .box-checkbox div {
+    padding-top: 10px;
+  }
+  .stock-main .form-vat .box-btn {
+    padding-top: 24px;
+  }
+  #footer {
+    margin-top: 36px;
   }
 }
 /*# sourceMappingURL=styleLayout.css.map */

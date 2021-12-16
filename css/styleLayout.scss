@@ -76,6 +76,7 @@ a:hover {
         font-size: 18px;
         line-height: 23px;
         font-weight: 700;
+        white-space: nowrap;
     }
 }
 
@@ -100,7 +101,7 @@ a:hover {
             display: flex;
             flex-direction: row;
             align-items: flex-start;
-
+            white-space: nowrap;
             font-size: 18px;
             line-height: 23px;
             font-weight: 700;
@@ -179,8 +180,7 @@ a:hover {
 }
 
 #header {
-    margin-top: 20px;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.22);
+   
     .navbar {
         height: 54px;
         padding: 0;
@@ -242,7 +242,7 @@ a:hover {
 
         /* Handle */
         ::-webkit-scrollbar-thumb {
-            background: $grey2;
+            background: $grey4;
             border-radius: 0;
         }
         .left-first-content-child-row-2 {
@@ -389,7 +389,7 @@ a:hover {
         }
 
         .box-ads {
-            padding-right: 15px;
+            padding-right: 16px;
             margin: 40px 0 20px 0;
         }
     }
@@ -429,11 +429,19 @@ a:hover {
             border-bottom: 0;
         }
 
+        
         .form-vat {
             border: 1px solid $grey6;
-            padding: 15px 20px;
-            margin-top: 10px;
-            margin-bottom: 10px;
+            padding: 16px 0px 20px 21px;
+            margin-top: 28px;
+            .box-checkbox {
+                div {
+                    padding-top: 10px;
+                }
+            }
+            .box-btn {
+                padding-top: 24px;
+            }
         }
         .col-md-8 {
             background-color: $grey7;
@@ -704,6 +712,8 @@ a:hover {
 
 @media (min-width: 768px) {
     #header {
+        margin-top: 20px;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.22);
         box-shadow: none;
 
         .top-header {
@@ -1138,5 +1148,103 @@ a:hover {
     }
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 767px) {
+    .container-fluid {
+        width: 100%;
+        padding-right: 16px;
+        padding-left: 16px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #header {
+        .navbar-toggler {
+            padding: 21px 16px;
+            font-size: 1.25rem;
+            line-height: 1;
+            background-color: transparent;
+            border: 1px solid transparent;
+        }
+        .logo {
+            padding-top: 9px;
+        }
+    }
+    #first-content {
+        .left-first-content{
+            .left-first-content-child-row-2{
+                margin-top: 0px;
+            }
+
+        }
+    }
+
+    .stock-main {
+        .box {
+            margin-top: 0;
+            .box-title {
+                padding-top: 10px;
+            }
+            .box-content {
+                padding-top: 10px;
+            }
+        }
+
+        .box-header {
+            margin-top: 28px;
+        }
+        .col-md-8 {
+            background-color: $white;
+        }
+        .box-stock {
+            border-bottom: 1px dotted $grey6;
+            margin-right: 15px;
+            padding: 12px 0 10px 20px;
+            .box-stock-child {
+                padding-bottom: 0px !important;
+                border-bottom: 0 !important;
+                display: flex;
+
+                .box-stock-child-image {
+                    width: 34%;
+                }
+
+                .box-stock-child-content {
+                    width: 66%;
+                    padding-left: 12px;
+                    .box-content {
+                        padding-top: 8px;
+                    }
+                    .box-author {
+                        padding-top: 11px;
+                    }
+                }
+            }
+
+            .box-author {
+                padding-top: 4px;
+            }
+        }
+        .col-md-6:first-child .box-stock {
+            border-left: 0;
+        }
+        .box-stock:last-child {
+            border-bottom: 0;
+        }
+
+        .form-vat {
+            border: 1px solid $grey6;
+            padding: 16px 0px 20px 21px;
+            margin-top: 28px;
+            .box-checkbox {
+                div {
+                    padding-top: 10px;
+                }
+            }
+            .box-btn {
+                padding-top: 24px;
+            }
+        }
+    }
+    #footer {
+        margin-top:36px;
+    }
 }
