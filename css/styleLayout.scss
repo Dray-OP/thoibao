@@ -31,7 +31,6 @@ a:hover {
     }
 }
 
-
 .n-btn-red {
     color: #fff;
     background-color: $red;
@@ -67,7 +66,7 @@ a:hover {
 
     .heading-content {
         padding: 8px 36px;
-        
+
         .heading-content-name {
             font-size: 18px;
         }
@@ -77,6 +76,9 @@ a:hover {
         transform: translate(50%, -50%);
     }
     h2 {
+        a {
+            color: #fff;
+        }
         font-size: 18px;
         line-height: 23px;
         font-weight: 700;
@@ -101,6 +103,11 @@ a:hover {
 
     .heading-content {
         margin: 0 20px;
+        margin: 0 20px;
+        font-size: 18px;
+        line-height: 23px;
+        /* font-weight: 700; */
+        white-space: nowrap;
         h2 {
             display: flex;
             flex-direction: row;
@@ -184,7 +191,6 @@ a:hover {
 }
 
 #header {
-   
     .navbar {
         height: 54px;
         padding: 0;
@@ -213,7 +219,6 @@ a:hover {
         .left-first-content-main,
         .box {
             margin-top: 0;
-            
         }
         .left-first-content-child {
             overflow: auto;
@@ -229,7 +234,6 @@ a:hover {
                     padding-top: 6px;
                     padding-bottom: 12px;
                     border-bottom: 1px dotted $grey6;
-                    
                 }
             }
             .box:last-child {
@@ -260,12 +264,11 @@ a:hover {
                 }
                 .box-content {
                     padding-top: 10px;
-                    
-                        display: none;
-                        @media (min-width:768px) {
-                            display: block;
-                        }
-                    
+
+                    display: none;
+                    @media (min-width: 768px) {
+                        display: block;
+                    }
                 }
             }
         }
@@ -441,7 +444,6 @@ a:hover {
             border-bottom: 0;
         }
 
-        
         .form-vat {
             border: 1px solid $grey6;
             padding: 16px 0px 20px 21px;
@@ -589,7 +591,6 @@ a:hover {
 #cooperative,
 #startup {
     .box {
-        
         display: flex;
         border-bottom: 1px dashed $grey6;
         margin-bottom: 10px;
@@ -601,11 +602,10 @@ a:hover {
         }
 
         .box-title {
-            padding-top:10px;
+            padding-top: 10px;
             padding-left: 10px;
             width: 50%;
         }
-        
     }
 
     .col-md-3:last-child {
@@ -619,18 +619,18 @@ a:hover {
     padding: 0 32px 25px 36px;
     background-color: $grey2;
     color: #fff;
-    a{
+    a {
         color: #fff;
     }
     .slick-prev {
-        width:15px;
-        height:24px;
+        width: 15px;
+        height: 24px;
         left: -23px;
         z-index: 9;
     }
     .slick-next {
-        width:15px;
-        height:24px;
+        width: 15px;
+        height: 24px;
         right: -18px;
     }
 
@@ -650,8 +650,8 @@ a:hover {
 }
 
 #footer {
-        margin-top:36px;
-    
+    margin-top: 36px;
+
     .top-footer {
         background-color: $grey6;
         height: 50px;
@@ -674,7 +674,8 @@ a:hover {
 
         .top-footer-right {
             display: flex;
-            a,span{
+            a,
+            span {
                 color: $grey3;
             }
         }
@@ -698,7 +699,6 @@ a:hover {
 
     .bot-footer {
         .bot-footer-logo {
-            
         }
 
         .bot-footer-icons {
@@ -710,7 +710,6 @@ a:hover {
         > div {
             margin-bottom: 10px;
         }
-    
     }
 
     .bot-footer-btn {
@@ -769,7 +768,7 @@ a:hover {
             @include w970VsCenter;
         }
     }
-    
+
     #first-content,
     #first-content-thoi-su,
     #first-content-detail {
@@ -894,7 +893,7 @@ a:hover {
     #world,
     #enterprise {
         @include w970VsCenter;
-        .heading-category{
+        .heading-category {
             padding: 32px 0 20px 0;
         }
         .finance-main {
@@ -912,7 +911,7 @@ a:hover {
 
             .finance-main-top {
                 // border-bottom: 1px solid $grey6;
-                .box-news-child:first-child{
+                .box-news-child:first-child {
                     padding-top: 0px;
                 }
             }
@@ -933,7 +932,6 @@ a:hover {
                         padding-left: 14px;
                     }
                 }
-               
             }
         }
     }
@@ -1095,11 +1093,11 @@ a:hover {
 
     #business {
         @include w970VsCenter;
-        .heading-category-2{
+        .heading-category-2 {
             margin-top: 32px;
         }
-        .box-news-child-content{
-            padding-top:10px;
+        .box-news-child-content {
+            padding-top: 10px;
         }
     }
 
@@ -1126,11 +1124,11 @@ a:hover {
                 border-bottom: 0;
 
                 .h6 {
-                    padding-top:20px;
-                    a{
-                    padding-bottom: 0;
-                    color: red;
-                    font-family: "Roboto-bold";
+                    padding-top: 20px;
+                    a {
+                        padding-bottom: 0;
+                        color: red;
+                        font-family: "Roboto-bold";
                     }
                 }
             }
@@ -1149,8 +1147,7 @@ a:hover {
             .bot-footer-icons {
                 display: none;
             }
-            .bot-footer-logo{
-                
+            .bot-footer-logo {
                 margin-right: 60px;
             }
             .bot-footer-content {
@@ -1164,9 +1161,103 @@ a:hover {
     .container-fluid {
         padding: 0;
     }
+    div#navbarN {
+        .dropdown-menu {
+            display: none;
+        }
+        .dropdown-toggle::after {
+            display: none;
+        }
+    }
 }
-
+// mobile
 @media (max-width: 767px) {
+    div#navbarN {
+        padding: 0 16px 16px;
+        li.nav-item {
+            border-bottom: 1px dashed #dedede;
+        }
+        li.nav-item:last-child{
+            border-bottom:0;
+            .btn-icon-header{
+                svg{
+                    margin-bottom:-3px;
+                    margin-right: 12px;
+                }
+            }
+            .nav-btn-header-pc{
+                margin-top:24px;
+                background: #F5F5F5;
+                border-radius: 2px;
+            }
+            .nav-btn-header-ads{
+                margin-top:13px;
+            }
+        }
+        .dropdown-toggle-active::after {
+            -ms-transform: rotate(-180deg); /* IE 9 */
+            -webkit-transform: rotate(-180deg); /* Chrome, Safari, Opera */
+            transform: rotate(-180deg);
+            float: right;
+            display: inline-block;
+            width: 0;
+            height: 0;
+            /* margin-left: 18.255em; */
+            /* right: 0; */
+            vertical-align: 0.255em;
+            content: "";
+            border-top: 0.3em solid;
+            border-right: 0.3em solid transparent;
+            border-bottom: 0;
+            border-left: 0.3em solid transparent;
+            margin-top: 9px;
+        }
+        .dropdown-toggle::after {
+            color: $grey5;
+            /* top: 18px; */
+            float: right;
+            display: inline-block;
+            width: 0;
+            height: 0;
+            /* margin-left: 18.255em; */
+            /* right: 0; */
+            vertical-align: 0.255em;
+            content: "";
+            border-top: 0.3em solid;
+            border-right: 0.3em solid transparent;
+            border-bottom: 0;
+            border-left: 0.3em solid transparent;
+            margin-top: 9px;
+        }
+        .dropdown-menu.show {
+            border: 0;
+            background: #f5f5f5;
+        }
+        .dropdown-divider {
+            height: 0;
+            margin: 0.5rem 0;
+            overflow: hidden;
+            border-top: 1px dashed #e9ecef;
+        }
+        a.dropdown-item:before {
+            content: "\A";
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: #999999;
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 2px;
+        }
+        .dropdown-item {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            color: #666666;
+        }
+    }
+
     .container-fluid {
         width: 100%;
         padding-right: 16px;
@@ -1176,7 +1267,7 @@ a:hover {
     }
     #header {
         .navbar-toggler {
-            padding: 21px 16px;
+            padding: 21px 16px 10px 16px;
             font-size: 1.25rem;
             line-height: 1;
             background-color: transparent;
@@ -1187,14 +1278,13 @@ a:hover {
         }
     }
     #first-content {
-        .left-first-content{
-            .left-first-content-child-row-2{
+        .left-first-content {
+            .left-first-content-child-row-2 {
                 margin-top: 0px;
             }
-
         }
     }
-    
+
     .stock-main {
         .box {
             margin-top: 0;
@@ -1212,7 +1302,7 @@ a:hover {
         .col-md-8 {
             background-color: $white;
         }
-        
+
         /* #stock .stock-main .box-stock .box-stock-child{
             border-bottom: 1px dashed #dedede !important;
             padding-bottom: 12px;
@@ -1220,13 +1310,14 @@ a:hover {
         #stock .stock-main .col-md-4 {
             padding: 0 16px;
         }  */
-        .col-md-4 ,.col-md-8{
+        .col-md-4,
+        .col-md-8 {
             padding: 0 16px;
-        } 
+        }
         .box-stock {
             border-bottom: 1px dotted $grey6;
             // margin-right: 15px;
-            padding: 16px 8px  16px 8px !important;
+            padding: 16px 8px 16px 8px !important;
             border-bottom: 1px dotted $grey6 !important;
 
             .box-stock-child {
@@ -1256,7 +1347,7 @@ a:hover {
         .col-md-6:first-child .box-stock {
             border-left: 0;
         }
-        .col-md-6:last-child .box-stock:last-child{
+        .col-md-6:last-child .box-stock:last-child {
             border-bottom: 0 !important;
         }
 
@@ -1274,62 +1365,60 @@ a:hover {
             }
         }
     }
-    
 }
 
 @media (max-width: 767px) {
     #thoi-su,
     #hi-tech,
     #other-news,
-    #live
-    {
-        .thoi-su-main{
-            .box{
+    #live {
+        .thoi-su-main {
+            .box {
                 display: flex;
                 border-bottom: 1px dashed $grey6;
                 padding-bottom: 20px;
                 padding-top: 20px;
                 margin-top: 0px;
-                .box-img{
+                .box-img {
                     width: 50%;
                 }
-                .box-title{
+                .box-title {
                     padding-top: 0;
                     padding-left: 15px;
                     width: 50%;
                 }
-                .box-content{
-                    display:none;
+                .box-content {
+                    display: none;
                 }
             }
-            .col-md-4:last-child .box{
+            .col-md-4:last-child .box {
                 border-bottom: 0;
             }
-        }   
+        }
     }
-    #stock{
-        .stock-main{
-            .box{
+    #stock {
+        .stock-main {
+            .box {
                 display: flex;
                 border-bottom: 1px dashed $grey6;
                 padding-bottom: 20px;
                 padding-top: 20px;
                 margin-top: 0px;
-                .box-img{
+                .box-img {
                     width: 50%;
                 }
-                .box-title{
+                .box-title {
                     padding-top: 0;
                     padding-left: 15px;
                     width: 50%;
                 }
-                .box-content{
-                    display:none;
+                .box-content {
+                    display: none;
                 }
             }
-            .col-md-4:nth-child(3) .box{
+            .col-md-4:nth-child(3) .box {
                 border-bottom: 0;
             }
-        }   
+        }
     }
 }

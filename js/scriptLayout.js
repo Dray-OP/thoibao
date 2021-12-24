@@ -109,3 +109,24 @@ $('.box-bottom-icon').click(function(){
     console.log(currentIndex)
     $('.num').html(''+currentIndex+'/'+totalItems+'');
 })
+var i = 0;
+
+
+$('.dropdown-toggle').click(function(){
+    var width = $(window).width();
+    if (width <= 768){
+        $('.dropdown-toggle').removeClass('dropdown-toggle-active');
+        if(i==0){
+            $(this).addClass('dropdown-toggle-active');
+            $(this).parent('li.nav-item').css('border-bottom','0');
+            i+=1;
+        }else{
+            $(this).removeClass('dropdown-toggle-active');
+            $(this).parent('li.nav-item').css('border-bottom','1px dashed #DEDEDE');
+            i=0;
+        }
+    }
+    else{
+        
+    }
+})
