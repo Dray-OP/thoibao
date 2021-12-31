@@ -1,0 +1,126 @@
+
+body {
+    background-color: #e3e4e8;
+  }
+  .post {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      max-width: 640px;
+      height: 137px;
+      padding: 0px;
+      margin: 0px auto 0;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      background-color: #fff;
+      border: 1px solid #e8e8e8;
+  }
+  .panel-effect {
+      position: relative;
+      background: #f6f7f8 no-repeat 800px 104px;
+      background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y2ZjdmOCIvPjxzdG9wIG9mZnNldD0iMjAlIiBzdG9wLWNvbG9yPSIjZWRlZWYxIi8+PHN0b3Agb2Zmc2V0PSI0MCUiIHN0b3AtY29sb3I9IiNmNmY3ZjgiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmNmY3ZjgiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+      background-size: 100%;
+      background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #f6f7f8), color-stop(20%, #edeef1), color-stop(40%, #f6f7f8), color-stop(100%, #f6f7f8));
+      background-image: -moz-linear-gradient(left, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+      background-image: -webkit-linear-gradient(left, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+      background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+      height: 130px;
+      -moz-animation: anim 1s forwards infinite linear;
+      -webkit-animation: anim 1s forwards infinite linear;
+      animation: anim 1s forwards infinite linear;
+  }
+  .fake-effect {
+      position: absolute;
+      background: #fff;
+      right: 0;
+      left: 0;
+      height: 0px;
+  }
+  .fe-0 {
+      height: 14px;
+    top: 1px;
+  }
+  
+  .fe-1 {
+      top: 14px;
+    height: 80px;
+    width: 15px;
+    right: unset;
+    left: 0;
+  }
+  
+  .fe-2 {
+    left: 188px;
+    top: 14px;
+    width: 15px;
+    height: 104px;
+    right: unset;
+}
+  
+  .fe-3 {
+    right: 0;
+    left:unset;
+    top: 14px;
+    float: left;
+    width: 440px;
+    height: 10px;
+  }
+  
+  .fe-4 {
+    right: 0;
+    left:unset;
+    top: 24px;
+    float: left;
+    width: 68px;
+    height: 11px;
+  }
+  
+  .fe-5 {
+          right: 0;
+      left:unset;
+      top: 35px;
+      float: left;
+      width: 440px;
+      height: 10px;
+  }
+  .fe-6{
+    right: 0;
+    left:unset;
+    top: 56px;
+    float: left;
+    width: 440px;
+    height: 11px;
+  }
+  .fe-7 {
+    right: 0;
+    left: unset;
+    top: 90px;
+    float: left;
+    width: 440px;
+    height: 15px;
+}
+  .fe-8{
+      height: 15px;
+    top: 65px;
+    width: 368px;
+    right: 0;
+    left: unset;
+  }
+  .fe-9{
+      height: 11px;
+    top: 45px;
+    width: 268px;
+    left: unset;
+    right: 0;
+  }
+  .fe-10{
+    right: 0;
+    left:0;
+    top: unset;
+    float: left;
+    width: 100%;
+    height: 14px;
+    bottom:0;
+  }
+  

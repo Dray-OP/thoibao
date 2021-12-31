@@ -1422,3 +1422,198 @@ a:hover {
         }
     }
 }
+// css modal
+.n-input-group{
+    display: block;
+    width: 100%;
+    height: 36px;
+    padding: 0.375rem 0.75rem;
+    font-size: 14px;
+    line-height: 20px;
+    color: #111;
+    background-color: #fff;
+    background-clip: padding-box;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border-radius: 4px;
+    border: 1px solid #DEDEDE;
+    ::placeholder {
+        color: #999999;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+      }
+}
+.n-btn{
+    width:100%;
+    border-radius: 4px;
+    height: 36px;
+    line-height: 36px;
+}   
+.n-btn-danger{
+    width: 132px;
+    white-space: nowrap;
+    padding: 0 20px;
+    background: #EC0001;
+    border-radius: 4px;
+    display: block;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    color: #FFFFFF;
+    margin-right: 40px;
+}
+.n-btn-facebook{
+    position: relative;
+    width:188px;
+    background: #5D82D0;
+    display:block;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    color: #FFFFFF;
+    svg{
+        position: absolute;
+        left: 15px;
+        top: 10px;
+    }
+}
+.n-btn-gmail{
+    position: relative;
+    width:188px;
+    background: #EF4F41;
+    display:block;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    color: #FFFFFF;
+    svg{
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+}
+.n-forgot-password{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 36px;
+    color: #666666;
+    width: 100%;
+    white-space: nowrap;
+}
+.n-sign-now{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 19px;
+    color: #444444;
+    width: 100%;
+}
+
+
+.modal
+{
+    a:hover{
+        color: #DEDEDE;
+    }
+    .modal-content{
+        width: auto;
+    }
+    .modal-header {
+        border-bottom: 0px;
+        padding: 20px 30px 0 30px;
+        .close{
+            padding: 10px;
+        }
+        .modal-title {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 23px;
+            color: #222222;
+        }
+    }
+    .modal-body{
+        padding: 16px 30px 24px 30px;
+    }
+  
+}
+#userModal{
+    .modal-body {
+        .modal-body-box{
+            display:flex;
+            .modal-body-box-left{
+                padding-right: 30px;
+                margin-right: 30px;
+                border-right: 1px dashed #DEDEDE;
+            }
+        }
+    }
+}
+#newsPaperModal,#signUpModal{
+    .modal-dialog {
+        max-width: 500px;
+        margin: 1.75rem auto;
+    }
+    .modal-body-box{
+        .form-control-p{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 15px;
+            color: #666666;
+            width: 85%;
+        }
+    }
+    .modal-box-body-captcha{
+        display: flex;
+        &-input{
+            margin-right: 12px;
+            width: 120px;
+        }
+        &-code{
+            margin-right: 12px;
+        }
+        &-return {
+            padding-top: 8px;
+        }
+    }
+    .modal-box-footer{
+        margin-top:calc(20px - 1rem);
+        border-top:1px dashed $grey6;
+        padding-top: 20px;
+    }
+    .form-control-agree{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        color: #444444;
+    }
+}
+#signUpModal{
+    .modal-dialog {
+        width: 340px;
+        margin: 1.75rem auto;
+    }
+    .modal-body{
+        &-box{
+            .form-control{
+                &-p{
+                    margin-top: 8px;
+                    width: 85%;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #666666;
+                }
+            }
+        }
+    }
+}
